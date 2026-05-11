@@ -1,0 +1,1155 @@
+<\!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Empower Mindfulness — FB 廣告成效報告 2026/01–04/18</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:#0f172a; color:#e2e8f0; font-family:'SF Pro Text','Segoe UI',sans-serif; font-size:14px; }
+  .header { background:linear-gradient(135deg,#1e1b4b 0%,#312e81 50%,#1e3a5f 100%); padding:36px 32px 28px; border-bottom:1px solid #334155; }
+  .header h1 { font-size:26px; font-weight:700; color:#e0e7ff; letter-spacing:-0.5px; }
+  .header p { color:#94a3b8; margin-top:6px; font-size:13px; }
+  .badge { display:inline-block; background:#4338ca; color:#c7d2fe; padding:3px 10px; border-radius:20px; font-size:11px; font-weight:600; margin-top:10px; }
+  .container { padding:28px 32px; max-width:1400px; margin:0 auto; }
+  
+  /* Summary Cards */
+  .cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:16px; margin-bottom:32px; }
+  .card { background:#1e293b; border:1px solid #334155; border-radius:12px; padding:20px 22px; }
+  .card .label { font-size:11px; text-transform:uppercase; letter-spacing:1px; color:#64748b; margin-bottom:8px; }
+  .card .value { font-size:26px; font-weight:700; color:#f1f5f9; }
+  .card .sub { font-size:11px; color:#64748b; margin-top:4px; }
+  .card.green { border-color:#166534; background:#052e16; }
+  .card.green .value { color:#4ade80; }
+  .card.purple { border-color:#4c1d95; background:#1e1b4b; }
+  .card.purple .value { color:#a78bfa; }
+  .card.blue { border-color:#1e3a5f; background:#0c2340; }
+  .card.blue .value { color:#67e8f9; }
+  .card.yellow { border-color:#78350f; background:#1c1003; }
+  .card.yellow .value { color:#fbbf24; }
+
+  /* Section */
+  .section { margin-bottom:36px; }
+  .section-title { font-size:16px; font-weight:700; color:#c7d2fe; margin-bottom:16px; display:flex; align-items:center; gap:8px; }
+  .section-title::before { content:''; display:block; width:4px; height:18px; background:#6366f1; border-radius:2px; }
+
+  /* Charts grid */
+  .charts-grid { display:grid; grid-template-columns:1fr 1fr; gap:20px; margin-bottom:32px; }
+  .chart-card { background:#1e293b; border:1px solid #334155; border-radius:12px; padding:20px; }
+  .chart-title { font-size:13px; color:#94a3b8; margin-bottom:14px; font-weight:600; }
+  .chart-wrap { position:relative; height:280px; }
+
+  /* Table */
+  .table-wrap { overflow-x:auto; }
+  table { width:100%; border-collapse:collapse; font-size:13px; }
+  th { background:#1e293b; color:#64748b; text-align:left; padding:10px 12px; font-size:11px; text-transform:uppercase; letter-spacing:0.5px; border-bottom:1px solid #334155; white-space:nowrap; }
+  td { padding:10px 12px; border-bottom:1px solid #1e293b; vertical-align:middle; }
+  tr:hover td { background:#1e293b88; }
+  .ad-name { color:#e2e8f0; font-weight:600; font-size:13px; }
+  .campaign-tag { color:#64748b; font-size:11px; margin-top:2px; }
+
+  /* Active ads */
+  .active-section { background:#0f2a1a; border:1px solid #166534; border-radius:12px; padding:24px; margin-bottom:32px; }
+  .active-title { font-size:15px; font-weight:700; color:#4ade80; margin-bottom:16px; }
+
+  /* Recommendations */
+  .recs { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:32px; }
+  .rec-card { background:#1e293b; border:1px solid #334155; border-radius:12px; padding:20px; }
+  .rec-card h3 { font-size:13px; font-weight:700; margin-bottom:12px; }
+  .rec-item { display:flex; gap:10px; margin-bottom:10px; align-items:flex-start; font-size:13px; color:#cbd5e1; line-height:1.5; }
+  .rec-icon { flex-shrink:0; font-size:16px; }
+  .green-card { border-color:#166534; background:#052e16; }
+  .green-card h3 { color:#4ade80; }
+  .red-card { border-color:#7f1d1d; background:#1c0505; }
+  .red-card h3 { color:#f87171; }
+  .blue-card { border-color:#1e3a5f; background:#0c1929; }
+  .blue-card h3 { color:#67e8f9; }
+  .yellow-card { border-color:#78350f; background:#1c0f03; }
+  .yellow-card h3 { color:#fbbf24; }
+
+  .freq-warning { background:#1c0f03; border:1px solid #92400e; border-radius:8px; padding:14px 16px; margin-bottom:20px; color:#fbbf24; font-size:13px; }
+  
+  @media(max-width:768px) {
+    .charts-grid, .recs { grid-template-columns:1fr; }
+    .container { padding:16px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>📊 Empower Mindfulness — FB 廣告成效報告</h1>
+  <p>帳號：Tuner ｜ 報告期間：2026-01-01 ~ 2026-04-18</p>
+  <span class="badge">共 47 組廣告 · 繁體中文市場 · 台灣</span>
+</div>
+
+<div class="container">
+
+  <\!-- Summary Cards -->
+  <div class="cards">
+    <div class="card yellow">
+      <div class="label">總花費</div>
+      <div class="value">NT$34,024</div>
+      <div class="sub">2026/01/01–04/18</div>
+    </div>
+    <div class="card blue">
+      <div class="label">總觸及人數</div>
+      <div class="value">113,730</div>
+      <div class="sub">不重複受眾</div>
+    </div>
+    <div class="card blue">
+      <div class="label">總曝光次數</div>
+      <div class="value">504,598</div>
+      <div class="sub">整體頻率 4.44x</div>
+    </div>
+    <div class="card blue">
+      <div class="label">總點擊次數</div>
+      <div class="value">58,390</div>
+      <div class="sub">平均 CPC NT$0.58</div>
+    </div>
+    <div class="card purple">
+      <div class="label">FB 粉絲增加</div>
+      <div class="value">2,053</div>
+      <div class="sub">追蹤 / 粉絲讚</div>
+    </div>
+    <div class="card green">
+      <div class="label">最佳 CPC</div>
+      <div class="value">NT$0.16</div>
+      <div class="sub">如果你的生命正在經歷失去</div>
+    </div>
+  </div>
+
+  <\!-- Frequency Warning -->
+  <div class="freq-warning">
+    ⚠️ <strong>廣告頻率警示：</strong>整體平均頻率 <strong>4.44 次</strong>，部分廣告已超過 2.0x。頻率過高容易造成受眾疲勞、互動率下降、CPM 上升。建議定期更換廣告素材，或擴大受眾範圍。
+  </div>
+
+  <\!-- Charts -->
+  <div class="section">
+    <div class="section-title">成效視覺化</div>
+    <div class="charts-grid">
+      <div class="chart-card">
+        <div class="chart-title">📉 各廣告 CPC 比較（花費前 15 名）</div>
+        <div class="chart-wrap"><canvas id="cpcChart"></canvas></div>
+      </div>
+      <div class="chart-card">
+        <div class="chart-title">💸 廣告活動花費佔比</div>
+        <div class="chart-wrap"><canvas id="pieChart"></canvas></div>
+      </div>
+      <div class="chart-card">
+        <div class="chart-title">👥 觸及 vs 花費（前 15 名）</div>
+        <div class="chart-wrap"><canvas id="reachChart"></canvas></div>
+      </div>
+      <div class="chart-card">
+        <div class="chart-title">🔁 廣告頻率分析（花費前 10 名）</div>
+        <div class="chart-wrap"><canvas id="freqChart"></canvas></div>
+      </div>
+    </div>
+  </div>
+
+  <\!-- Active Ads -->
+  <div class="active-section">
+    <div class="active-title">🟢 目前投放中的廣告（7 組）— 立即行動建議</div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>廣告名稱</th>
+            <th>CPC</th>
+            <th>花費</th>
+            <th>觸及</th>
+            <th>粉絲</th>
+            <th>建議行動</th>
+          </tr>
+        </thead>
+        <tbody>
+    <tr>
+      <td><div class="ad-name">長姊病-biz</div><div class="campaign-tag">AB test #2 / #2 Ads-biz audience</div></td>
+      <td style="color:#22c55e; font-weight:700">NT$0.60</td>
+      <td style="color:#cbd5e1">NT$1,735</td>
+      <td style="color:#94a3b8">14,043</td>
+      <td style="color:#fbbf24">118</td>
+      <td style="color:#22c55e; font-weight:600; font-size:13px">🚀 建議加大預算 20–50%</td>
+    </tr>
+    <tr>
+      <td><div class="ad-name">長姊病-spirit -</div><div class="campaign-tag">AB test #2 / ＃2 Ads-spirit audience</div></td>
+      <td style="color:#22c55e; font-weight:700">NT$0.42</td>
+      <td style="color:#cbd5e1">NT$801</td>
+      <td style="color:#94a3b8">9,070</td>
+      <td style="color:#fbbf24">65</td>
+      <td style="color:#22c55e; font-weight:600; font-size:13px">🚀 建議加大預算 20–50%</td>
+    </tr>
+    <tr>
+      <td><div class="ad-name">無反應練習 -biz</div><div class="campaign-tag">AB test #2 / #2 Ads-biz audience</div></td>
+      <td style="color:#22c55e; font-weight:700">NT$0.57</td>
+      <td style="color:#cbd5e1">NT$227</td>
+      <td style="color:#94a3b8">2,645</td>
+      <td style="color:#fbbf24">23</td>
+      <td style="color:#22c55e; font-weight:600; font-size:13px">🚀 建議加大預算 20–50%</td>
+    </tr>
+    <tr>
+      <td><div class="ad-name">良心生的太大顆-biz</div><div class="campaign-tag">AB test #4 / #4 Ads-biz audience</div></td>
+      <td style="color:#22c55e; font-weight:700">NT$0.89</td>
+      <td style="color:#cbd5e1">NT$149</td>
+      <td style="color:#94a3b8">1,483</td>
+      <td style="color:#fbbf24">4</td>
+      <td style="color:#f59e0b; font-weight:600; font-size:13px">👁 持續觀察 7 天</td>
+    </tr>
+    <tr>
+      <td><div class="ad-name">無反應練習-spirit</div><div class="campaign-tag">AB test #2 / ＃2 Ads-spirit audience</div></td>
+      <td style="color:#22c55e; font-weight:700">NT$0.39</td>
+      <td style="color:#cbd5e1">NT$112</td>
+      <td style="color:#94a3b8">1,569</td>
+      <td style="color:#fbbf24">10</td>
+      <td style="color:#22c55e; font-weight:600; font-size:13px">🚀 建議加大預算 20–50%</td>
+    </tr>
+    <tr>
+      <td><div class="ad-name">別再問當初-spirit</div><div class="campaign-tag">AB test #2 / ＃2 Ads-spirit audience</div></td>
+      <td style="color:#22c55e; font-weight:700">NT$0.19</td>
+      <td style="color:#cbd5e1">NT$11</td>
+      <td style="color:#94a3b8">338</td>
+      <td style="color:#fbbf24">2</td>
+      <td style="color:#22c55e; font-weight:600; font-size:13px">🚀 建議加大預算 20–50%</td>
+    </tr>
+    <tr>
+      <td><div class="ad-name">別再問當初-biz</div><div class="campaign-tag">AB test #2 / #2 Ads-biz audience</div></td>
+      <td style="color:#22c55e; font-weight:700">NT$0.25</td>
+      <td style="color:#cbd5e1">NT$4</td>
+      <td style="color:#94a3b8">138</td>
+      <td style="color:#fbbf24">0</td>
+      <td style="color:#22c55e; font-weight:600; font-size:13px">🚀 建議加大預算 20–50%</td>
+    </tr></tbody>
+      </table>
+    </div>
+  </div>
+
+  <\!-- Strategy Recommendations -->
+  <div class="section">
+    <div class="section-title">策略建議</div>
+    <div class="recs">
+      <div class="rec-card green-card">
+        <h3>🚀 建議加大預算</h3>
+        <div class="rec-item"><span class="rec-icon">💰</span><span><strong>別再問當初-spirit</strong>（CPC NT$0.19）— AB test #2 中表現最佳，同時有 2 個粉絲增加，建議增加預算 30–50%</span></div>
+        <div class="rec-item"><span class="rec-icon">💰</span><span><strong>別再問當初-biz</strong>（CPC NT$0.25）— 同一批次另一版本，CPC 低，建議對比 spirit 版本持續觀察</span></div>
+        <div class="rec-item"><span class="rec-icon">💰</span><span><strong>無反應練習-spirit</strong>（CPC NT$0.39）— CPC 遠低於平均，且有 10 個粉絲增加，高效廣告</span></div>
+        <div class="rec-item"><span class="rec-icon">💰</span><span><strong>長姊病-spirit</strong>（CPC NT$0.42）— 觸及 9,070，互動佳，建議複製受眾到新廣告組</span></div>
+      </div>
+      <div class="rec-card red-card">
+        <h3>🛑 建議停用或降預算</h3>
+        <div class="rec-item"><span class="rec-icon">⛔</span><span><strong>然後呢（Ads#2）</strong>（CPC NT$4.42）— 效益極差，建議立即停用</span></div>
+        <div class="rec-item"><span class="rec-icon">⛔</span><span><strong>能量清理 感恩練習</strong>（CPC NT$3.42）— 已不投放，花費 NT$41 但效益差</span></div>
+        <div class="rec-item"><span class="rec-icon">⛔</span><span><strong>願力</strong>（CPC NT$1.25）— 花費 NT$1,002，CPC 偏高，建議降低預算或停用</span></div>
+        <div class="rec-item"><span class="rec-icon">⛔</span><span><strong>被對與錯綁架的人生</strong>（CPC NT$1.24）— 花費 NT$102，CPC 偏高，已停用，不需再啟動</span></div>
+      </div>
+      <div class="rec-card blue-card">
+        <h3>🔬 建議 A/B 測試</h3>
+        <div class="rec-item"><span class="rec-icon">🧪</span><span><strong>良心生的太大顆-biz</strong>（AB test #4，CPC NT$0.89）— 剛啟動，建議同步開一個「spirit」版本來對比受眾</span></div>
+        <div class="rec-item"><span class="rec-icon">🧪</span><span><strong>焦慮是大腦的生存騙局</strong>（花費 NT$1,761、觸及 24,224）— 觸及佳，建議拆出「biz」vs「spirit」受眾測試</span></div>
+        <div class="rec-item"><span class="rec-icon">🧪</span><span><strong>傷害你的人正在溺水</strong>（花費 NT$8,832，最高）— 雖已停用，是歷史最高花費廣告，建議用類似主題重新測試新文案</span></div>
+        <div class="rec-item"><span class="rec-icon">🧪</span><span>建議測試「算命 / 諮詢」受眾：你算命嗎？CPC 只有 NT$0.31，流量品質可進一步驗證</span></div>
+      </div>
+      <div class="rec-card yellow-card">
+        <h3>📌 受眾 & 素材優化建議</h3>
+        <div class="rec-item"><span class="rec-icon">👁</span><span>整體頻率 <strong>4.44x</strong>，已偏高。主要投放廣告「傷害你的人正在溺水」頻率達 2.36x，建議更換素材或擴大受眾</span></div>
+        <div class="rec-item"><span class="rec-icon">👁</span><span>spirit 受眾（身心靈興趣）普遍 CPC 低於 biz 受眾，建議在新廣告中優先測試 spirit 受眾</span></div>
+        <div class="rec-item"><span class="rec-icon">👁</span><span>FB Reels 版位的頻率通常較低，可考慮加入更多 Reels 投放，延伸觸及新受眾</span></div>
+        <div class="rec-item"><span class="rec-icon">👁</span><span>粉絲增加集中在「傷害你的人正在溺水」（519 人），建議分析該廣告受眾，建立相似受眾（Lookalike）</span></div>
+      </div>
+    </div>
+  </div>
+
+  <\!-- Full Table -->
+  <div class="section">
+    <div class="section-title">所有廣告完整成效表（依 CPC 由低到高）</div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>廣告名稱</th>
+            <th>投放狀態</th>
+            <th>花費 (TWD)</th>
+            <th>觸及</th>
+            <th>CPC</th>
+            <th>每次結果成本</th>
+            <th>CTR</th>
+            <th>粉絲增加</th>
+            <th>建議</th>
+          </tr>
+        </thead>
+        <tbody>
+    <tr>
+      <td><div class="ad-name">如果你的生命正在經歷失去</div><div class="campaign-tag">文章推薦</div></td>
+      <td><span style="color:#94a3b8; font-weight:600">🔴 未投放</span></td>
+      <td style="color:#cbd5e1">NT$4</td>
+      <td style="color:#94a3b8">190</td>
+      <td style="color:#22c55e; font-weight:700">NT$0.16</td>
+      <td style="color:#a78bfa">NT$0.80</td>
+      <td style="color:#67e8f9">10.1%</td>
+      <td style="color:#fbbf24">0</td>
+      <td style="color:#22c55e; font-size:12px; font-weight:600">💰 優質 — 可加預算</td>
+    </tr>
+    <tr>
+      <td><div class="ad-name">別再問當初-spirit</div><div class="campaign-tag">AB test #2</div></td>
+      <td><span style="color:#22c55e; font-weight:600">🟢 投放中</span></td>
+      <td style="color:#cbd5e1">NT$11</td>
+      <td style="color:#94a3b8">338</td>
+      <td style="color:#22c55e; font-weight:700">NT$0.19</td>
+      <td style="color:#a78bfa">NT$0.61</td>
+      <td style="color:#67e8f9">13.3%</td>
+      <td style="color:#fbbf24">2</td>
+      <td style="color:#22c55e; font-size:12px; font-weight:600">💰 優質 — 可加預算</td>
+    </tr>
+    <tr>
+      <td><div class="ad-name">丙午赤馬年，你準備好</div><div class="campaign-tag">文章推薦</div></td>
+      <td><span style="color:#f59e0b; font-weight:600">🟡 暫停</span></td>
+      <td style="color:#cbd5e1">NT$1</td>
+      <td style="color:#94a3b8">65</td>
+      <td style="color:#22c55e; font-weight:700">NT$0.20</td>
+      <td style="color:#a78bfa">NT$1.00</td>
+      <td style="color:#67e8f9">6.5%</td>
+      <td style="color:#fbbf24">0</td>
+      <td style="color:#22c55e; font-size:12px; font-weight:600">💰 優質 — 可加預算</td>
+    </tr>
+    <tr>
+      <td><div class="ad-name">別再問當初-biz</div><div class="campaign-tag">AB test #2</div></td>
+      <td><span style="color:#22c55e; font-weight:600">🟢 投放中</span></td>
+      <td style="color:#cbd5e1">NT$4</td>
+      <td style="color:#94a3b8">138</td>
+      <td style="color:#22c55e; font-weight:700">NT$0.25</td>
+      <td style="color:#a78bfa">NT$1.33</td>
+      <td style="color:#67e8f9">10.6%</td>
+      <td style="color:#fbbf24">0</td>
+      <td style="color:#22c55e; font-size:12px; font-weight:600">💰 優質 — 可加預算</td>
+    </tr>
+    <tr>
+      <td><div class="ad-name">你算命嗎？算命是怎麼一回事呢？</div><div class="campaign-tag">文章推薦</div></td>
+      <td><span style="color:#94a3b8; font-weight:600">🔴 未投放</span></td>
+      <td style="color:#cbd5e1">NT$9</td>
+      <td style="color:#94a3b8">236</td>
+      <td style="color:#22c55e; font-weight:700">NT$0.31</td>
+      <td style="color:#a78bfa">NT$0.60</td>
+      <td style="color:#67e8f9">9.4%</td>
+      <td style="color:#fbbf24">0</td>
+      <td style="color:#22c55e; font-size:12px; font-weight:600">💰 優質 — 可加預算</td>
+    </tr>
+    <tr>
+      <td><div class="ad-name">請允許不一樣</div><div class="campaign-tag">文章推薦</div></td>
+      <td><span style="color:#94a3b8; font-weight:600">🔴 未投放</span></td>
+      <td style="color:#cbd5e1">NT$298</td>
+      <td style="color:#94a3b8">4,064</td>
+      <td style="color:#22c55e; font-weight:700">NT$0.34</td>
+      <td style="color:#a78bfa">NT$4.81</td>
+      <td style="color:#67e8f9">14.6%</td>
+      <td style="color:#fbbf24">13</td>
+      <td style="color:#22c55e; font-size:12px; font-weight:600">💰 優質 — 可加預算</td>
+    </tr>
+    <tr>
+      <td><div class="ad-name">#吸引力法則 #善護念你的念頭</div><div class="campaign-tag">文章推薦</div></td>
+      <td><span style="color:#94a3b8; font-weight:600">🔴 未投放</span></td>
+      <td style="color:#cbd5e1">NT$2,605</td>
+      <td style="color:#94a3b8">20,125</td>
+      <td style="color:#22c55e; font-weight:700">NT$0.34</td>
+      <td style="color:#a78bfa">NT$3.57</td>
+      <td style="color:#67e8f9">19.3%</td>
+      <td style="color:#fbbf24">153</td>
+      <td style="color:#22c55e; font-size:12px; font-weight:600">💰 優質 — 可加預算</td>
+    </tr>
+    <tr>
+      <td><div class="ad-name">無反應練習-spirit</div><div class="campaign-tag">AB test #2</div></td>
+      <td><span style="color:#22c55e; font-weight:600">🟢 投放中</span></td>
+      <td style="color:#cbd5e1">NT$112</td>
+      <td style="color:#94a3b8">1,569</td>
+      <td style="color:#22c55e; font-weight:700">NT$0.39</td>
+      <td style="color:#a78bfa">NT$2.00</td>
+      <td style="color:#67e8f9">13.0%</td>
+      <td style="color:#fbbf24">10</td>
+      <td style="color:#22c55e; font-size:12px; font-weight:600">💰 優質 — 可加預算</td>
+    </tr>
+    <tr>
+      <td><div class="ad-name">長姊病-spirit -</div><div class="campaign-tag">AB test #2</div></td>
+      <td><span style="color:#22c55e; font-weight:600">🟢 投放中</span></td>
+      <td style="color:#cbd5e1">NT$801</td>
+      <td style="color:#94a3b8">9,070</td>
+      <td style="color:#22c55e; font-weight:700">NT$0.42</td>
+      <td style="color:#a78bfa">NT$2.24</td>
+      <td style="color:#67e8f9">13.5%</td>
+      <td style="color:#fbbf24">65</td>
+      <td style="color:#22c55e; font-size:12px; font-weight:600">💰 優質 — 可加預算</td>
+    </tr>
+    <tr>
+      <td><div class="ad-name">焦慮是大腦的生存騙局</div><div class="campaign-tag">文章推薦</div></td>
+      <td><span style="color:#94a3b8; font-weight:600">🔴 未投放</span></td>
+      <td style="color:#cbd5e1">NT$1,761</td>
+      <td style="color:#94a3b8">24,224</td>
+      <td style="color:#22c55e; font-weight:700">NT$0.44</td>
+      <td style="color:#a78bfa">NT$3.54</td>
+      <td style="color:#67e8f9">9.8%</td>
+      <td style="color:#fbbf24">116</td>
+      <td style="color:#22c55e; font-size:12px; font-weight:600">💰 優質 — 可加預算</td>
+    </tr>
+    <tr>
+      <td><div class="ad-name">歲末感恩</div><div class="campaign-tag">文章推薦</div></td>
+      <td><span style="color:#94a3b8; font-weight:600">🔴 未投放</span></td>
+      <td style="color:#cbd5e1">NT$7</td>
+      <td style="color:#94a3b8">128</td>
+      <td style="color:#22c55e; font-weight:700">NT$0.44</td>
+      <td style="color:#a78bfa">NT$7.00</td>
+      <td style="color:#67e8f9">9.4%</td>
+      <td style="color:#fbbf24">0</td>
+      <td style="color:#22c55e; font-size:12px; font-weight:600">💰 優質 — 可加預算</td>
+    </tr>
+    <tr>
+      <td><div class="ad-name">順著天意做事-spirit</div><div class="campaign-tag">AB test #3</div></td>
+      <td><span style="color:#94a3b8; font-weight:600">🔴 未投放</span></td>
+      <td style="color:#cbd5e1">NT$84</td>
+      <td style="color:#94a3b8">1,216</td>
+      <td style="color:#22c55e; font-weight:700">NT$0.45</td>
+      <td style="color:#a78bfa">NT$2.15</td>
+      <td style="color:#67e8f9">12.5%</td>
+      <td style="color:#fbbf24">5</td>
+      <td style="color:#22c55e; font-size:12px; font-weight:600">💰 優質 — 可加預算</td>
+    </tr>
+    <tr>
+      <td><div class="ad-name">忍辱還是忍耐，你確定你修行修對了嗎？</div><div class="campaign-tag">文章推薦</div></td>
+      <td><span style="color:#f59e0b; font-weight:600">🟡 暫停</span></td>
+      <td style="color:#cbd5e1">NT$2,471</td>
+      <td style="color:#94a3b8">19,834</td>
+      <td style="color:#22c55e; font-weight:700">NT$0.52</td>
+      <td style="color:#a78bfa">NT$3.22</td>
+      <td style="color:#67e8f9">11.6%</td>
+      <td style="color:#fbbf24">193</td>
+      <td style="color:#22c55e; font-size:12px; font-weight:600">💰 優質 — 可加預算</td>
+    </tr>
+    <tr>
+      <td><div class="ad-name">傷害你的人正在溺水</div><div class="campaign-tag">文章推薦</div></td>
+      <td><span style="color:#94a3b8; font-weight:600">🔴 未投放</span></td>
+      <td style="color:#cbd5e1">NT$8,832</td>
+      <td style="color:#94a3b8">51,813</td>
+      <td style="color:#22c55e; font-weight:700">NT$0.54</td>
+      <td style="color:#a78bfa">NT$3.65</td>
+      <td style="color:#67e8f9">13.5%</td>
+      <td style="color:#fbbf24">519</td>
+      <td style="color:#22c55e; font-size:12px; font-weight:600">💰 優質 — 可加預算</td>
+    </tr>
+    <tr>
+      <td><div class="ad-name">忍辱還是忍耐，你確定你修行修對了嗎？ - Copy</div><div class="campaign-tag">文章推薦</div></td>
+      <td><span style="color:#94a3b8; font-weight:600">🔴 未投放</span></td>
+      <td style="color:#cbd5e1">NT$59</td>
+      <td style="color:#94a3b8">884</td>
+      <td style="color:#22c55e; font-weight:700">NT$0.55</td>
+      <td style="color:#a78bfa">NT$3.28</td>
+      <td style="color:#67e8f9">10.0%</td>
+      <td style="color:#fbbf24">5</td>
+      <td style="color:#22c55e; font-size:12px; font-weight:600">💰 優質 — 可加預算</td>
+    </tr>
+    <tr>
+      <td><div class="ad-name">小心負能量炸彈</div><div class="campaign-tag">文章推薦</div></td>
+      <td><span style="color:#94a3b8; font-weight:600">🔴 未投放</span></td>
+      <td style="color:#cbd5e1">NT$16</td>
+      <td style="color:#94a3b8">173</td>
+      <td style="color:#22c55e; font-weight:700">NT$0.55</td>
+      <td style="color:#a78bfa">NT$3.20</td>
+      <td style="color:#67e8f9">13.3%</td>
+      <td style="color:#fbbf24">0</td>
+      <td style="color:#22c55e; font-size:12px; font-weight:600">💰 優質 — 可加預算</td>
+    </tr>
+    <tr>
+      <td><div class="ad-name">無反應練習 -biz</div><div class="campaign-tag">AB test #2</div></td>
+      <td><span style="color:#22c55e; font-weight:600">🟢 投放中</span></td>
+      <td style="color:#cbd5e1">NT$227</td>
+      <td style="color:#94a3b8">2,645</td>
+      <td style="color:#22c55e; font-weight:700">NT$0.57</td>
+      <td style="color:#a78bfa">NT$3.20</td>
+      <td style="color:#67e8f9">10.5%</td>
+      <td style="color:#fbbf24">23</td>
+      <td style="color:#22c55e; font-size:12px; font-weight:600">💰 優質 — 可加預算</td>
+    </tr>
+    <tr>
+      <td><div class="ad-name">【我的菩薩，是一匹馬：在拉扯中看見覺醒】</div><div class="campaign-tag">文章推薦</div></td>
+      <td><span style="color:#94a3b8; font-weight:600">🔴 未投放</span></td>
+      <td style="color:#cbd5e1">NT$88</td>
+      <td style="color:#94a3b8">1,212</td>
+      <td style="color:#22c55e; font-weight:700">NT$0.59</td>
+      <td style="color:#a78bfa">NT$3.83</td>
+      <td style="color:#67e8f9">9.2%</td>
+      <td style="color:#fbbf24">1</td>
+      <td style="color:#22c55e; font-size:12px; font-weight:600">💰 優質 — 可加預算</td>
+    </tr>
+    <tr>
+      <td><div class="ad-name">隱藏關卡-spirit</div><div class="campaign-tag">AB test #3</div></td>
+      <td><span style="color:#94a3b8; font-weight:600">🔴 未投放</span></td>
+      <td style="color:#cbd5e1">NT$22</td>
+      <td style="color:#94a3b8">323</td>
+      <td style="color:#22c55e; font-weight:700">NT$0.59</td>
+      <td style="color:#a78bfa">NT$1.57</td>
+      <td style="color:#67e8f9">10.2%</td>
+      <td style="color:#fbbf24">2</td>
+      <td style="color:#22c55e; font-size:12px; font-weight:600">💰 優質 — 可加預算</td>
+    </tr>
+    <tr>
+      <td><div class="ad-name">長姊病-biz</div><div class="campaign-tag">AB test #2</div></td>
+      <td><span style="color:#22c55e; font-weight:600">🟢 投放中</span></td>
+      <td style="color:#cbd5e1">NT$1,735</td>
+      <td style="color:#94a3b8">14,043</td>
+      <td style="color:#22c55e; font-weight:700">NT$0.60</td>
+      <td style="color:#a78bfa">NT$4.22</td>
+      <td style="color:#67e8f9">11.5%</td>
+      <td style="color:#fbbf24">118</td>
+      <td style="color:#22c55e; font-size:12px; font-weight:600">💰 優質 — 可加預算</td>
+    </tr>
+    <tr>
+      <td><div class="ad-name">被討厭的勇氣</div><div class="campaign-tag">文章推薦</div></td>
+      <td><span style="color:#94a3b8; font-weight:600">🔴 未投放</span></td>
+      <td style="color:#cbd5e1">NT$2,404</td>
+      <td style="color:#94a3b8">17,203</td>
+      <td style="color:#22c55e; font-weight:700">NT$0.61</td>
+      <td style="color:#a78bfa">NT$3.70</td>
+      <td style="color:#67e8f9">10.3%</td>
+      <td style="color:#fbbf24">241</td>
+      <td style="color:#22c55e; font-size:12px; font-weight:600">💰 優質 — 可加預算</td>
+    </tr>
+    <tr>
+      <td><div class="ad-name">被討厭的勇氣</div><div class="campaign-tag">文章推薦</div></td>
+      <td><span style="color:#94a3b8; font-weight:600">🔴 未投放</span></td>
+      <td style="color:#cbd5e1">NT$2,404</td>
+      <td style="color:#94a3b8">17,203</td>
+      <td style="color:#22c55e; font-weight:700">NT$0.61</td>
+      <td style="color:#a78bfa">NT$3.32</td>
+      <td style="color:#67e8f9">10.2%</td>
+      <td style="color:#fbbf24">43</td>
+      <td style="color:#22c55e; font-size:12px; font-weight:600">💰 優質 — 可加預算</td>
+    </tr>
+    <tr>
+      <td><div class="ad-name">被討厭的勇氣</div><div class="campaign-tag">文章推薦</div></td>
+      <td><span style="color:#94a3b8; font-weight:600">🔴 未投放</span></td>
+      <td style="color:#cbd5e1">NT$2,404</td>
+      <td style="color:#94a3b8">17,203</td>
+      <td style="color:#22c55e; font-weight:700">NT$0.61</td>
+      <td style="color:#a78bfa">NT$3.70</td>
+      <td style="color:#67e8f9">10.3%</td>
+      <td style="color:#fbbf24">241</td>
+      <td style="color:#22c55e; font-size:12px; font-weight:600">💰 優質 — 可加預算</td>
+    </tr>
+    <tr>
+      <td><div class="ad-name">被討厭的勇氣</div><div class="campaign-tag">文章推薦</div></td>
+      <td><span style="color:#94a3b8; font-weight:600">🔴 未投放</span></td>
+      <td style="color:#cbd5e1">NT$2,404</td>
+      <td style="color:#94a3b8">17,203</td>
+      <td style="color:#22c55e; font-weight:700">NT$0.61</td>
+      <td style="color:#a78bfa">NT$3.32</td>
+      <td style="color:#67e8f9">10.2%</td>
+      <td style="color:#fbbf24">43</td>
+      <td style="color:#22c55e; font-size:12px; font-weight:600">💰 優質 — 可加預算</td>
+    </tr>
+    <tr>
+      <td><div class="ad-name">付出那一刻就得到</div><div class="campaign-tag">文章推薦</div></td>
+      <td><span style="color:#f59e0b; font-weight:600">🟡 暫停</span></td>
+      <td style="color:#cbd5e1">NT$38</td>
+      <td style="color:#94a3b8">290</td>
+      <td style="color:#22c55e; font-weight:700">NT$0.63</td>
+      <td style="color:#a78bfa">NT$2.11</td>
+      <td style="color:#67e8f9">11.9%</td>
+      <td style="color:#fbbf24">2</td>
+      <td style="color:#22c55e; font-size:12px; font-weight:600">💰 優質 — 可加預算</td>
+    </tr>
+    <tr>
+      <td><div class="ad-name">付出那一刻就得到</div><div class="campaign-tag">文章推薦</div></td>
+      <td><span style="color:#f59e0b; font-weight:600">🟡 暫停</span></td>
+      <td style="color:#cbd5e1">NT$38</td>
+      <td style="color:#94a3b8">290</td>
+      <td style="color:#22c55e; font-weight:700">NT$0.63</td>
+      <td style="color:#a78bfa">NT$2.11</td>
+      <td style="color:#67e8f9">11.9%</td>
+      <td style="color:#fbbf24">2</td>
+      <td style="color:#22c55e; font-size:12px; font-weight:600">💰 優質 — 可加預算</td>
+    </tr>
+    <tr>
+      <td><div class="ad-name">付出那一刻就得到</div><div class="campaign-tag">文章推薦</div></td>
+      <td><span style="color:#f59e0b; font-weight:600">🟡 暫停</span></td>
+      <td style="color:#cbd5e1">NT$38</td>
+      <td style="color:#94a3b8">290</td>
+      <td style="color:#22c55e; font-weight:700">NT$0.63</td>
+      <td style="color:#a78bfa">NT$5.14</td>
+      <td style="color:#67e8f9">11.6%</td>
+      <td style="color:#fbbf24">72</td>
+      <td style="color:#22c55e; font-size:12px; font-weight:600">💰 優質 — 可加預算</td>
+    </tr>
+    <tr>
+      <td><div class="ad-name">付出那一刻就得到</div><div class="campaign-tag">文章推薦</div></td>
+      <td><span style="color:#f59e0b; font-weight:600">🟡 暫停</span></td>
+      <td style="color:#cbd5e1">NT$38</td>
+      <td style="color:#94a3b8">290</td>
+      <td style="color:#22c55e; font-weight:700">NT$0.63</td>
+      <td style="color:#a78bfa">NT$5.14</td>
+      <td style="color:#67e8f9">11.6%</td>
+      <td style="color:#fbbf24">72</td>
+      <td style="color:#22c55e; font-size:12px; font-weight:600">💰 優質 — 可加預算</td>
+    </tr>
+    <tr>
+      <td><div class="ad-name">『離開』是為了逃避？</div><div class="campaign-tag">文章推薦</div></td>
+      <td><span style="color:#94a3b8; font-weight:600">🔴 未投放</span></td>
+      <td style="color:#cbd5e1">NT$293</td>
+      <td style="color:#94a3b8">3,892</td>
+      <td style="color:#22c55e; font-weight:700">NT$0.64</td>
+      <td style="color:#a78bfa">NT$4.51</td>
+      <td style="color:#67e8f9">9.0%</td>
+      <td style="color:#fbbf24">13</td>
+      <td style="color:#22c55e; font-size:12px; font-weight:600">💰 優質 — 可加預算</td>
+    </tr>
+    <tr>
+      <td><div class="ad-name">順著天意做事-biz</div><div class="campaign-tag">AB test #3</div></td>
+      <td><span style="color:#94a3b8; font-weight:600">🔴 未投放</span></td>
+      <td style="color:#cbd5e1">NT$316</td>
+      <td style="color:#94a3b8">3,418</td>
+      <td style="color:#22c55e; font-weight:700">NT$0.65</td>
+      <td style="color:#a78bfa">NT$4.86</td>
+      <td style="color:#67e8f9">10.2%</td>
+      <td style="color:#fbbf24">21</td>
+      <td style="color:#22c55e; font-size:12px; font-weight:600">💰 優質 — 可加預算</td>
+    </tr>
+    <tr>
+      <td><div class="ad-name">隱藏關卡-biz</div><div class="campaign-tag">AB test #3</div></td>
+      <td><span style="color:#94a3b8; font-weight:600">🔴 未投放</span></td>
+      <td style="color:#cbd5e1">NT$45</td>
+      <td style="color:#94a3b8">475</td>
+      <td style="color:#22c55e; font-weight:700">NT$0.66</td>
+      <td style="color:#a78bfa">NT$9.00</td>
+      <td style="color:#67e8f9">12.0%</td>
+      <td style="color:#fbbf24">1</td>
+      <td style="color:#22c55e; font-size:12px; font-weight:600">💰 優質 — 可加預算</td>
+    </tr>
+    <tr>
+      <td><div class="ad-name">為什麼生活像鬼打牆（習氣）</div><div class="campaign-tag">文章推薦</div></td>
+      <td><span style="color:#f59e0b; font-weight:600">🟡 暫停</span></td>
+      <td style="color:#cbd5e1">NT$8</td>
+      <td style="color:#94a3b8">82</td>
+      <td style="color:#22c55e; font-weight:700">NT$0.67</td>
+      <td style="color:#a78bfa">NT$1.60</td>
+      <td style="color:#67e8f9">10.0%</td>
+      <td style="color:#fbbf24">0</td>
+      <td style="color:#22c55e; font-size:12px; font-weight:600">💰 優質 — 可加預算</td>
+    </tr>
+    <tr>
+      <td><div class="ad-name">無路是因為你只想走眼前的這條路</div><div class="campaign-tag">文章推薦</div></td>
+      <td><span style="color:#94a3b8; font-weight:600">🔴 未投放</span></td>
+      <td style="color:#cbd5e1">NT$699</td>
+      <td style="color:#94a3b8">8,105</td>
+      <td style="color:#22c55e; font-weight:700">NT$0.68</td>
+      <td style="color:#a78bfa">NT$3.60</td>
+      <td style="color:#67e8f9">8.6%</td>
+      <td style="color:#fbbf24">38</td>
+      <td style="color:#22c55e; font-size:12px; font-weight:600">💰 優質 — 可加預算</td>
+    </tr>
+    <tr>
+      <td><div class="ad-name">被討厭的勇氣</div><div class="campaign-tag">文章推薦</div></td>
+      <td><span style="color:#94a3b8; font-weight:600">🔴 未投放</span></td>
+      <td style="color:#cbd5e1">NT$378</td>
+      <td style="color:#94a3b8">3,840</td>
+      <td style="color:#f59e0b; font-weight:700">NT$0.69</td>
+      <td style="color:#a78bfa">NT$3.70</td>
+      <td style="color:#67e8f9">10.3%</td>
+      <td style="color:#fbbf24">241</td>
+      <td style="color:#f59e0b; font-size:12px; font-weight:600">👁 觀察中</td>
+    </tr>
+    <tr>
+      <td><div class="ad-name">被討厭的勇氣</div><div class="campaign-tag">文章推薦</div></td>
+      <td><span style="color:#94a3b8; font-weight:600">🔴 未投放</span></td>
+      <td style="color:#cbd5e1">NT$378</td>
+      <td style="color:#94a3b8">3,840</td>
+      <td style="color:#f59e0b; font-weight:700">NT$0.69</td>
+      <td style="color:#a78bfa">NT$3.70</td>
+      <td style="color:#67e8f9">10.3%</td>
+      <td style="color:#fbbf24">241</td>
+      <td style="color:#f59e0b; font-size:12px; font-weight:600">👁 觀察中</td>
+    </tr>
+    <tr>
+      <td><div class="ad-name">被討厭的勇氣</div><div class="campaign-tag">文章推薦</div></td>
+      <td><span style="color:#94a3b8; font-weight:600">🔴 未投放</span></td>
+      <td style="color:#cbd5e1">NT$378</td>
+      <td style="color:#94a3b8">3,840</td>
+      <td style="color:#f59e0b; font-weight:700">NT$0.69</td>
+      <td style="color:#a78bfa">NT$3.32</td>
+      <td style="color:#67e8f9">10.2%</td>
+      <td style="color:#fbbf24">43</td>
+      <td style="color:#f59e0b; font-size:12px; font-weight:600">👁 觀察中</td>
+    </tr>
+    <tr>
+      <td><div class="ad-name">被討厭的勇氣</div><div class="campaign-tag">文章推薦</div></td>
+      <td><span style="color:#94a3b8; font-weight:600">🔴 未投放</span></td>
+      <td style="color:#cbd5e1">NT$378</td>
+      <td style="color:#94a3b8">3,840</td>
+      <td style="color:#f59e0b; font-weight:700">NT$0.69</td>
+      <td style="color:#a78bfa">NT$3.32</td>
+      <td style="color:#67e8f9">10.2%</td>
+      <td style="color:#fbbf24">43</td>
+      <td style="color:#f59e0b; font-size:12px; font-weight:600">👁 觀察中</td>
+    </tr>
+    <tr>
+      <td><div class="ad-name">外在的顯化來自於內在的轉化</div><div class="campaign-tag">文章推薦</div></td>
+      <td><span style="color:#94a3b8; font-weight:600">🔴 未投放</span></td>
+      <td style="color:#cbd5e1">NT$273</td>
+      <td style="color:#94a3b8">2,197</td>
+      <td style="color:#f59e0b; font-weight:700">NT$0.72</td>
+      <td style="color:#a78bfa">NT$4.48</td>
+      <td style="color:#67e8f9">11.1%</td>
+      <td style="color:#fbbf24">16</td>
+      <td style="color:#f59e0b; font-size:12px; font-weight:600">👁 觀察中</td>
+    </tr>
+    <tr>
+      <td><div class="ad-name">你看到的是攻擊，我看到的是求救。</div><div class="campaign-tag">文章推薦</div></td>
+      <td><span style="color:#94a3b8; font-weight:600">🔴 未投放</span></td>
+      <td style="color:#cbd5e1">NT$392</td>
+      <td style="color:#94a3b8">3,427</td>
+      <td style="color:#f59e0b; font-weight:700">NT$0.73</td>
+      <td style="color:#a78bfa">NT$4.84</td>
+      <td style="color:#67e8f9">11.8%</td>
+      <td style="color:#fbbf24">22</td>
+      <td style="color:#f59e0b; font-size:12px; font-weight:600">👁 觀察中</td>
+    </tr>
+    <tr>
+      <td><div class="ad-name">你看到的是攻擊，我看到的是求救。</div><div class="campaign-tag">文章推薦</div></td>
+      <td><span style="color:#94a3b8; font-weight:600">🔴 未投放</span></td>
+      <td style="color:#cbd5e1">NT$392</td>
+      <td style="color:#94a3b8">3,427</td>
+      <td style="color:#f59e0b; font-weight:700">NT$0.73</td>
+      <td style="color:#a78bfa">NT$4.84</td>
+      <td style="color:#67e8f9">11.8%</td>
+      <td style="color:#fbbf24">22</td>
+      <td style="color:#f59e0b; font-size:12px; font-weight:600">👁 觀察中</td>
+    </tr>
+    <tr>
+      <td><div class="ad-name">別用一生去治癒童年</div><div class="campaign-tag">文章推薦</div></td>
+      <td><span style="color:#94a3b8; font-weight:600">🔴 未投放</span></td>
+      <td style="color:#cbd5e1">NT$3,913</td>
+      <td style="color:#94a3b8">31,491</td>
+      <td style="color:#f59e0b; font-weight:700">NT$0.75</td>
+      <td style="color:#a78bfa">NT$4.01</td>
+      <td style="color:#67e8f9">8.3%</td>
+      <td style="color:#fbbf24">199</td>
+      <td style="color:#f59e0b; font-size:12px; font-weight:600">👁 觀察中</td>
+    </tr>
+    <tr>
+      <td><div class="ad-name">不是息心除妄想 ，只緣無事可思量</div><div class="campaign-tag">文章推薦</div></td>
+      <td><span style="color:#94a3b8; font-weight:600">🔴 未投放</span></td>
+      <td style="color:#cbd5e1">NT$219</td>
+      <td style="color:#94a3b8">2,274</td>
+      <td style="color:#f59e0b; font-weight:700">NT$0.82</td>
+      <td style="color:#a78bfa">NT$3.59</td>
+      <td style="color:#67e8f9">7.9%</td>
+      <td style="color:#fbbf24">15</td>
+      <td style="color:#f59e0b; font-size:12px; font-weight:600">👁 觀察中</td>
+    </tr>
+    <tr>
+      <td><div class="ad-name">不是息心除妄想 ，只緣無事可思量</div><div class="campaign-tag">文章推薦</div></td>
+      <td><span style="color:#94a3b8; font-weight:600">🔴 未投放</span></td>
+      <td style="color:#cbd5e1">NT$219</td>
+      <td style="color:#94a3b8">2,274</td>
+      <td style="color:#f59e0b; font-weight:700">NT$0.82</td>
+      <td style="color:#a78bfa">NT$3.59</td>
+      <td style="color:#67e8f9">7.9%</td>
+      <td style="color:#fbbf24">15</td>
+      <td style="color:#f59e0b; font-size:12px; font-weight:600">👁 觀察中</td>
+    </tr>
+    <tr>
+      <td><div class="ad-name">靈性成長的代價</div><div class="campaign-tag">文章推薦</div></td>
+      <td><span style="color:#94a3b8; font-weight:600">🔴 未投放</span></td>
+      <td style="color:#cbd5e1">NT$73</td>
+      <td style="color:#94a3b8">982</td>
+      <td style="color:#f59e0b; font-weight:700">NT$0.85</td>
+      <td style="color:#a78bfa">NT$3.48</td>
+      <td style="color:#67e8f9">7.3%</td>
+      <td style="color:#fbbf24">3</td>
+      <td style="color:#f59e0b; font-size:12px; font-weight:600">👁 觀察中</td>
+    </tr>
+    <tr>
+      <td><div class="ad-name">良心生的太大顆-biz</div><div class="campaign-tag">AB test #4</div></td>
+      <td><span style="color:#22c55e; font-weight:600">🟢 投放中</span></td>
+      <td style="color:#cbd5e1">NT$149</td>
+      <td style="color:#94a3b8">1,483</td>
+      <td style="color:#f59e0b; font-weight:700">NT$0.89</td>
+      <td style="color:#a78bfa">NT$4.81</td>
+      <td style="color:#67e8f9">8.9%</td>
+      <td style="color:#fbbf24">4</td>
+      <td style="color:#f59e0b; font-size:12px; font-weight:600">👁 觀察中</td>
+    </tr>
+    <tr>
+      <td><div class="ad-name">定海神針-biz</div><div class="campaign-tag">AB test</div></td>
+      <td><span style="color:#94a3b8; font-weight:600">🔴 未投放</span></td>
+      <td style="color:#cbd5e1">NT$224</td>
+      <td style="color:#94a3b8">2,718</td>
+      <td style="color:#f59e0b; font-weight:700">NT$0.94</td>
+      <td style="color:#a78bfa">NT$5.21</td>
+      <td style="color:#67e8f9">6.8%</td>
+      <td style="color:#fbbf24">4</td>
+      <td style="color:#f59e0b; font-size:12px; font-weight:600">👁 觀察中</td>
+    </tr>
+    <tr>
+      <td><div class="ad-name">付出那一刻就得到</div><div class="campaign-tag">文章推薦</div></td>
+      <td><span style="color:#94a3b8; font-weight:600">🔴 未投放</span></td>
+      <td style="color:#cbd5e1">NT$1,398</td>
+      <td style="color:#94a3b8">5,972</td>
+      <td style="color:#f59e0b; font-weight:700">NT$0.99</td>
+      <td style="color:#a78bfa">NT$5.14</td>
+      <td style="color:#67e8f9">11.6%</td>
+      <td style="color:#fbbf24">72</td>
+      <td style="color:#f59e0b; font-size:12px; font-weight:600">👁 觀察中</td>
+    </tr>
+    <tr>
+      <td><div class="ad-name">付出那一刻就得到</div><div class="campaign-tag">文章推薦</div></td>
+      <td><span style="color:#94a3b8; font-weight:600">🔴 未投放</span></td>
+      <td style="color:#cbd5e1">NT$1,398</td>
+      <td style="color:#94a3b8">5,972</td>
+      <td style="color:#f59e0b; font-weight:700">NT$0.99</td>
+      <td style="color:#a78bfa">NT$5.14</td>
+      <td style="color:#67e8f9">11.6%</td>
+      <td style="color:#fbbf24">72</td>
+      <td style="color:#f59e0b; font-size:12px; font-weight:600">👁 觀察中</td>
+    </tr>
+    <tr>
+      <td><div class="ad-name">付出那一刻就得到</div><div class="campaign-tag">文章推薦</div></td>
+      <td><span style="color:#94a3b8; font-weight:600">🔴 未投放</span></td>
+      <td style="color:#cbd5e1">NT$1,398</td>
+      <td style="color:#94a3b8">5,972</td>
+      <td style="color:#f59e0b; font-weight:700">NT$0.99</td>
+      <td style="color:#a78bfa">NT$2.11</td>
+      <td style="color:#67e8f9">11.9%</td>
+      <td style="color:#fbbf24">2</td>
+      <td style="color:#f59e0b; font-size:12px; font-weight:600">👁 觀察中</td>
+    </tr>
+    <tr>
+      <td><div class="ad-name">付出那一刻就得到</div><div class="campaign-tag">文章推薦</div></td>
+      <td><span style="color:#94a3b8; font-weight:600">🔴 未投放</span></td>
+      <td style="color:#cbd5e1">NT$1,398</td>
+      <td style="color:#94a3b8">5,972</td>
+      <td style="color:#f59e0b; font-weight:700">NT$0.99</td>
+      <td style="color:#a78bfa">NT$2.11</td>
+      <td style="color:#67e8f9">11.9%</td>
+      <td style="color:#fbbf24">2</td>
+      <td style="color:#f59e0b; font-size:12px; font-weight:600">👁 觀察中</td>
+    </tr>
+    <tr>
+      <td><div class="ad-name">大腦關機</div><div class="campaign-tag">文章推薦</div></td>
+      <td><span style="color:#94a3b8; font-weight:600">🔴 未投放</span></td>
+      <td style="color:#cbd5e1">NT$190</td>
+      <td style="color:#94a3b8">1,905</td>
+      <td style="color:#f59e0b; font-weight:700">NT$0.99</td>
+      <td style="color:#a78bfa">NT$3.28</td>
+      <td style="color:#67e8f9">6.3%</td>
+      <td style="color:#fbbf24">5</td>
+      <td style="color:#f59e0b; font-size:12px; font-weight:600">👁 觀察中</td>
+    </tr>
+    <tr>
+      <td><div class="ad-name">願力</div><div class="campaign-tag">文章推薦</div></td>
+      <td><span style="color:#f59e0b; font-weight:600">🟡 暫停</span></td>
+      <td style="color:#cbd5e1">NT$7</td>
+      <td style="color:#94a3b8">65</td>
+      <td style="color:#f59e0b; font-weight:700">NT$1.00</td>
+      <td style="color:#a78bfa">-</td>
+      <td style="color:#67e8f9">-</td>
+      <td style="color:#fbbf24">0</td>
+      <td style="color:#f59e0b; font-size:12px; font-weight:600">👁 觀察中</td>
+    </tr>
+    <tr>
+      <td><div class="ad-name">願力</div><div class="campaign-tag">文章推薦</div></td>
+      <td><span style="color:#f59e0b; font-weight:600">🟡 暫停</span></td>
+      <td style="color:#cbd5e1">NT$7</td>
+      <td style="color:#94a3b8">65</td>
+      <td style="color:#f59e0b; font-weight:700">NT$1.00</td>
+      <td style="color:#a78bfa">-</td>
+      <td style="color:#67e8f9">-</td>
+      <td style="color:#fbbf24">0</td>
+      <td style="color:#f59e0b; font-size:12px; font-weight:600">👁 觀察中</td>
+    </tr>
+    <tr>
+      <td><div class="ad-name">向死而生</div><div class="campaign-tag">文章推薦</div></td>
+      <td><span style="color:#94a3b8; font-weight:600">🔴 未投放</span></td>
+      <td style="color:#cbd5e1">NT$570</td>
+      <td style="color:#94a3b8">4,545</td>
+      <td style="color:#f59e0b; font-weight:700">NT$1.03</td>
+      <td style="color:#a78bfa">NT$3.54</td>
+      <td style="color:#67e8f9">7.4%</td>
+      <td style="color:#fbbf24">21</td>
+      <td style="color:#f59e0b; font-size:12px; font-weight:600">👁 觀察中</td>
+    </tr>
+    <tr>
+      <td><div class="ad-name">丙午赤馬年 練馬術</div><div class="campaign-tag">文章推薦</div></td>
+      <td><span style="color:#94a3b8; font-weight:600">🔴 未投放</span></td>
+      <td style="color:#cbd5e1">NT$621</td>
+      <td style="color:#94a3b8">5,042</td>
+      <td style="color:#f59e0b; font-weight:700">NT$1.07</td>
+      <td style="color:#a78bfa">NT$4.31</td>
+      <td style="color:#67e8f9">7.4%</td>
+      <td style="color:#fbbf24">10</td>
+      <td style="color:#f59e0b; font-size:12px; font-weight:600">👁 觀察中</td>
+    </tr>
+    <tr>
+      <td><div class="ad-name">定海神針-spirit</div><div class="campaign-tag">AB test</div></td>
+      <td><span style="color:#94a3b8; font-weight:600">🔴 未投放</span></td>
+      <td style="color:#cbd5e1">NT$1,071</td>
+      <td style="color:#94a3b8">7,044</td>
+      <td style="color:#f59e0b; font-weight:700">NT$1.13</td>
+      <td style="color:#a78bfa">NT$3.45</td>
+      <td style="color:#67e8f9">7.6%</td>
+      <td style="color:#fbbf24">36</td>
+      <td style="color:#f59e0b; font-size:12px; font-weight:600">👁 觀察中</td>
+    </tr>
+    <tr>
+      <td><div class="ad-name">為什麼你的靜坐沒有效</div><div class="campaign-tag">文章推薦</div></td>
+      <td><span style="color:#f59e0b; font-weight:600">🟡 暫停</span></td>
+      <td style="color:#cbd5e1">NT$88</td>
+      <td style="color:#94a3b8">337</td>
+      <td style="color:#f59e0b; font-weight:700">NT$1.22</td>
+      <td style="color:#a78bfa">NT$2.20</td>
+      <td style="color:#67e8f9">12.2%</td>
+      <td style="color:#fbbf24">1</td>
+      <td style="color:#f59e0b; font-size:12px; font-weight:600">👁 觀察中</td>
+    </tr>
+    <tr>
+      <td><div class="ad-name">被對與錯綁架的人生</div><div class="campaign-tag">文章推薦</div></td>
+      <td><span style="color:#f59e0b; font-weight:600">🟡 暫停</span></td>
+      <td style="color:#cbd5e1">NT$102</td>
+      <td style="color:#94a3b8">557</td>
+      <td style="color:#f59e0b; font-weight:700">NT$1.24</td>
+      <td style="color:#a78bfa">NT$2.68</td>
+      <td style="color:#67e8f9">10.8%</td>
+      <td style="color:#fbbf24">3</td>
+      <td style="color:#f59e0b; font-size:12px; font-weight:600">👁 觀察中</td>
+    </tr>
+    <tr>
+      <td><div class="ad-name">願力</div><div class="campaign-tag">文章推薦</div></td>
+      <td><span style="color:#94a3b8; font-weight:600">🔴 未投放</span></td>
+      <td style="color:#cbd5e1">NT$1,002</td>
+      <td style="color:#94a3b8">3,355</td>
+      <td style="color:#f59e0b; font-weight:700">NT$1.25</td>
+      <td style="color:#a78bfa">-</td>
+      <td style="color:#67e8f9">-</td>
+      <td style="color:#fbbf24">0</td>
+      <td style="color:#f59e0b; font-size:12px; font-weight:600">👁 觀察中</td>
+    </tr>
+    <tr>
+      <td><div class="ad-name">願力</div><div class="campaign-tag">文章推薦</div></td>
+      <td><span style="color:#94a3b8; font-weight:600">🔴 未投放</span></td>
+      <td style="color:#cbd5e1">NT$1,002</td>
+      <td style="color:#94a3b8">3,355</td>
+      <td style="color:#f59e0b; font-weight:700">NT$1.25</td>
+      <td style="color:#a78bfa">-</td>
+      <td style="color:#67e8f9">-</td>
+      <td style="color:#fbbf24">0</td>
+      <td style="color:#f59e0b; font-size:12px; font-weight:600">👁 觀察中</td>
+    </tr>
+    <tr>
+      <td><div class="ad-name">然後呢</div><div class="campaign-tag">文章推薦</div></td>
+      <td><span style="color:#94a3b8; font-weight:600">🔴 未投放</span></td>
+      <td style="color:#cbd5e1">NT$310</td>
+      <td style="color:#94a3b8">2,025</td>
+      <td style="color:#f59e0b; font-weight:700">NT$1.27</td>
+      <td style="color:#a78bfa">NT$2.90</td>
+      <td style="color:#67e8f9">8.0%</td>
+      <td style="color:#fbbf24">16</td>
+      <td style="color:#f59e0b; font-size:12px; font-weight:600">👁 觀察中</td>
+    </tr>
+    <tr>
+      <td><div class="ad-name">然後呢</div><div class="campaign-tag">文章推薦</div></td>
+      <td><span style="color:#94a3b8; font-weight:600">🔴 未投放</span></td>
+      <td style="color:#cbd5e1">NT$310</td>
+      <td style="color:#94a3b8">2,025</td>
+      <td style="color:#f59e0b; font-weight:700">NT$1.27</td>
+      <td style="color:#a78bfa">NT$17.67</td>
+      <td style="color:#67e8f9">2.4%</td>
+      <td style="color:#fbbf24">1</td>
+      <td style="color:#f59e0b; font-size:12px; font-weight:600">👁 觀察中</td>
+    </tr>
+    <tr>
+      <td><div class="ad-name">然後呢</div><div class="campaign-tag">文章推薦</div></td>
+      <td><span style="color:#94a3b8; font-weight:600">🔴 未投放</span></td>
+      <td style="color:#cbd5e1">NT$310</td>
+      <td style="color:#94a3b8">2,025</td>
+      <td style="color:#f59e0b; font-weight:700">NT$1.27</td>
+      <td style="color:#a78bfa">NT$17.67</td>
+      <td style="color:#67e8f9">2.4%</td>
+      <td style="color:#fbbf24">1</td>
+      <td style="color:#f59e0b; font-size:12px; font-weight:600">👁 觀察中</td>
+    </tr>
+    <tr>
+      <td><div class="ad-name">然後呢</div><div class="campaign-tag">文章推薦</div></td>
+      <td><span style="color:#94a3b8; font-weight:600">🔴 未投放</span></td>
+      <td style="color:#cbd5e1">NT$310</td>
+      <td style="color:#94a3b8">2,025</td>
+      <td style="color:#f59e0b; font-weight:700">NT$1.27</td>
+      <td style="color:#a78bfa">NT$2.90</td>
+      <td style="color:#67e8f9">8.0%</td>
+      <td style="color:#fbbf24">16</td>
+      <td style="color:#f59e0b; font-size:12px; font-weight:600">👁 觀察中</td>
+    </tr>
+    <tr>
+      <td><div class="ad-name">能量清理 感恩練習</div><div class="campaign-tag">文章推薦</div></td>
+      <td><span style="color:#94a3b8; font-weight:600">🔴 未投放</span></td>
+      <td style="color:#cbd5e1">NT$41</td>
+      <td style="color:#94a3b8">265</td>
+      <td style="color:#ef4444; font-weight:700">NT$3.42</td>
+      <td style="color:#a78bfa">NT$10.25</td>
+      <td style="color:#67e8f9">4.3%</td>
+      <td style="color:#fbbf24">1</td>
+      <td style="color:#ef4444; font-size:12px; font-weight:600">⚠️ 效益低 — 建議停用</td>
+    </tr>
+    <tr>
+      <td><div class="ad-name">然後呢</div><div class="campaign-tag">文章推薦</div></td>
+      <td><span style="color:#f59e0b; font-weight:600">🟡 暫停</span></td>
+      <td style="color:#cbd5e1">NT$53</td>
+      <td style="color:#94a3b8">490</td>
+      <td style="color:#ef4444; font-weight:700">NT$4.42</td>
+      <td style="color:#a78bfa">NT$17.67</td>
+      <td style="color:#67e8f9">2.4%</td>
+      <td style="color:#fbbf24">1</td>
+      <td style="color:#ef4444; font-size:12px; font-weight:600">⚠️ 效益低 — 建議停用</td>
+    </tr>
+    <tr>
+      <td><div class="ad-name">然後呢</div><div class="campaign-tag">文章推薦</div></td>
+      <td><span style="color:#f59e0b; font-weight:600">🟡 暫停</span></td>
+      <td style="color:#cbd5e1">NT$53</td>
+      <td style="color:#94a3b8">490</td>
+      <td style="color:#ef4444; font-weight:700">NT$4.42</td>
+      <td style="color:#a78bfa">NT$17.67</td>
+      <td style="color:#67e8f9">2.4%</td>
+      <td style="color:#fbbf24">1</td>
+      <td style="color:#ef4444; font-size:12px; font-weight:600">⚠️ 效益低 — 建議停用</td>
+    </tr>
+    <tr>
+      <td><div class="ad-name">然後呢</div><div class="campaign-tag">文章推薦</div></td>
+      <td><span style="color:#f59e0b; font-weight:600">🟡 暫停</span></td>
+      <td style="color:#cbd5e1">NT$53</td>
+      <td style="color:#94a3b8">490</td>
+      <td style="color:#ef4444; font-weight:700">NT$4.42</td>
+      <td style="color:#a78bfa">NT$2.90</td>
+      <td style="color:#67e8f9">8.0%</td>
+      <td style="color:#fbbf24">16</td>
+      <td style="color:#ef4444; font-size:12px; font-weight:600">⚠️ 效益低 — 建議停用</td>
+    </tr>
+    <tr>
+      <td><div class="ad-name">然後呢</div><div class="campaign-tag">文章推薦</div></td>
+      <td><span style="color:#f59e0b; font-weight:600">🟡 暫停</span></td>
+      <td style="color:#cbd5e1">NT$53</td>
+      <td style="color:#94a3b8">490</td>
+      <td style="color:#ef4444; font-weight:700">NT$4.42</td>
+      <td style="color:#a78bfa">NT$2.90</td>
+      <td style="color:#67e8f9">8.0%</td>
+      <td style="color:#fbbf24">16</td>
+      <td style="color:#ef4444; font-size:12px; font-weight:600">⚠️ 效益低 — 建議停用</td>
+    </tr></tbody>
+      </table>
+    </div>
+  </div>
+
+  <div style="text-align:center; color:#475569; font-size:12px; padding:20px 0 10px;">
+    Empower Mindfulness · 廣告分析報告 · 資料截至 2026-04-18 · 由 Claude AI 生成
+  </div>
+
+</div>
+
+<script>
+const cpcLabels = ["\u50b7\u5bb3\u4f60\u7684\u4eba\u6b63\u5728\u6eba\u6c34", "\u5225\u7528\u4e00\u751f\u53bb\u6cbb\u7652\u7ae5\u5e74", "#\u5438\u5f15\u529b\u6cd5\u5247 #\u5584\u8b77\u5ff5\u4f60\u7684\u5ff5\u982d", "\u5fcd\u8fb1\u9084\u662f\u5fcd\u8010\uff0c\u4f60\u78ba\u5b9a\u4f60\u4fee\u884c\u4fee\u5c0d\u4e86\u55ce\uff1f", "\u88ab\u8a0e\u53ad\u7684\u52c7\u6c23", "\u88ab\u8a0e\u53ad\u7684\u52c7\u6c23", "\u88ab\u8a0e\u53ad\u7684\u52c7\u6c23", "\u88ab\u8a0e\u53ad\u7684\u52c7\u6c23", "\u7126\u616e\u662f\u5927\u8166\u7684\u751f\u5b58\u9a19\u5c40", "\u9577\u59ca\u75c5-biz", "\u4ed8\u51fa\u90a3\u4e00\u523b\u5c31\u5f97\u5230", "\u4ed8\u51fa\u90a3\u4e00\u523b\u5c31\u5f97\u5230", "\u4ed8\u51fa\u90a3\u4e00\u523b\u5c31\u5f97\u5230", "\u4ed8\u51fa\u90a3\u4e00\u523b\u5c31\u5f97\u5230", "\u5b9a\u6d77\u795e\u91dd-spirit"];
+const cpcData = [0.54, 0.75, 0.34, 0.52, 0.61, 0.61, 0.61, 0.61, 0.44, 0.6, 0.99, 0.99, 0.99, 0.99, 1.13];
+const spendData = [8832.0, 3913.0, 2605.0, 2471.0, 2404.0, 2404.0, 2404.0, 2404.0, 1761.0, 1735.0, 1398.0, 1398.0, 1398.0, 1398.0, 1071.0];
+const reachData = [51813, 31491, 20125, 19834, 17203, 17203, 17203, 17203, 24224, 14043, 5972, 5972, 5972, 5972, 7044];
+const likesData = [519, 199, 153, 193, 43, 241, 43, 241, 116, 118, 2, 2, 72, 72, 36];
+const pieLabels = ["AB test", "AB test #2", "AB test #3", "AB test #4", "\u6587\u7ae0\u63a8\u85a6"];
+const pieData = [1295, 2890, 467, 149, 29223];
+const freqLabels = ["\u50b7\u5bb3\u4f60\u7684\u4eba\u6b63\u5728\u6eba\u6c34", "\u5225\u7528\u4e00\u751f\u53bb\u6cbb\u7652\u7ae5\u5e74", "\u88ab\u8a0e\u53ad\u7684\u52c7\u6c23", "#\u5438\u5f15\u529b\u6cd5\u5247 #\u5584\u8b77\u5ff5\u4f60\u7684\u5ff5\u982d", "\u5fcd\u8fb1\u9084\u662f\u5fcd\u8010\uff0c\u4f60\u78ba\u5b9a\u4f60\u4fee\u884c\u4fee\u5c0d\u4e86\u55ce\uff1f", "\u7126\u616e\u662f\u5927\u8166\u7684\u751f\u5b58\u9a19\u5c40", "\u9577\u59ca\u75c5-biz", "\u4ed8\u51fa\u90a3\u4e00\u523b\u5c31\u5f97\u5230", "\u5b9a\u6d77\u795e\u91dd-spirit", "\u9858\u529b"];
+const freqData = [2.36, 2.0, 1.81, 1.98, 2.07, 1.7, 1.61, 1.87, 1.62, 1.64];
+const avgCPC = 0.99;
+
+// CPC Chart
+new Chart(document.getElementById('cpcChart'), {
+  type: 'bar',
+  data: {
+    labels: cpcLabels,
+    datasets: [{
+      label: 'CPC (NT$)',
+      data: cpcData,
+      backgroundColor: cpcData.map(v => v <= avgCPC * 0.7 ? '#22c55e88' : v >= avgCPC * 1.5 ? '#ef444488' : '#f59e0b88'),
+      borderColor: cpcData.map(v => v <= avgCPC * 0.7 ? '#22c55e' : v >= avgCPC * 1.5 ? '#ef4444' : '#f59e0b'),
+      borderWidth: 1.5, borderRadius: 4
+    },{
+      label: '平均 CPC',
+      data: new Array(cpcLabels.length).fill(avgCPC),
+      type: 'line', borderColor: '#6366f1', borderDash: [5,5],
+      pointRadius: 0, borderWidth: 1.5, fill: false
+    }]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: { legend: { labels: { color:'#94a3b8', font:{ size:11 } } } },
+    scales: {
+      x: { ticks: { color:'#64748b', font:{ size:10 } }, grid: { color:'#1e293b' } },
+      y: { ticks: { color:'#64748b', callback: v => 'NT$'+v }, grid: { color:'#1e293b' } }
+    }
+  }
+});
+
+// Pie Chart
+new Chart(document.getElementById('pieChart'), {
+  type: 'doughnut',
+  data: {
+    labels: pieLabels,
+    datasets: [{ data: pieData,
+      backgroundColor: ['#6366f1','#8b5cf6','#a78bfa','#c4b5fd','#818cf8','#4f46e5'],
+      borderColor: '#0f172a', borderWidth: 2 }]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: { legend: { position:'right', labels: { color:'#94a3b8', font:{ size:11 }, boxWidth:12 } } }
+  }
+});
+
+// Reach vs Spend
+new Chart(document.getElementById('reachChart'), {
+  type: 'bar',
+  data: {
+    labels: cpcLabels,
+    datasets: [
+      { label: '觸及人數', data: reachData, backgroundColor: '#0ea5e933', borderColor: '#0ea5e9', borderWidth: 1.5, borderRadius: 4, yAxisID: 'y' },
+      { label: '花費 NT$', data: spendData, type: 'line', borderColor: '#f59e0b', backgroundColor: '#f59e0b22', borderWidth: 2, pointRadius: 3, fill: true, yAxisID: 'y1' }
+    ]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: { legend: { labels: { color:'#94a3b8', font:{ size:11 } } } },
+    scales: {
+      x: { ticks: { color:'#64748b', font:{ size:10 } }, grid: { color:'#1e293b' } },
+      y: { ticks: { color:'#64748b' }, grid: { color:'#1e293b' }, position:'left' },
+      y1: { ticks: { color:'#f59e0b', callback: v => 'NT$'+v }, grid: { drawOnChartArea: false }, position:'right' }
+    }
+  }
+});
+
+// Frequency Chart
+new Chart(document.getElementById('freqChart'), {
+  type: 'bar',
+  data: {
+    labels: freqLabels,
+    datasets: [{
+      label: '平均頻率',
+      data: freqData,
+      backgroundColor: freqData.map(v => v > 3 ? '#ef444488' : v > 2 ? '#f59e0b88' : '#22c55e88'),
+      borderColor: freqData.map(v => v > 3 ? '#ef4444' : v > 2 ? '#f59e0b' : '#22c55e'),
+      borderWidth: 1.5, borderRadius: 4
+    },{
+      label: '警戒線 (3x)',
+      data: new Array(freqLabels.length).fill(3),
+      type: 'line', borderColor: '#ef4444', borderDash: [5,5],
+      pointRadius: 0, borderWidth: 1.5, fill: false
+    }]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: { legend: { labels: { color:'#94a3b8', font:{ size:11 } } } },
+    scales: {
+      x: { ticks: { color:'#64748b', font:{ size:10 } }, grid: { color:'#1e293b' } },
+      y: { ticks: { color:'#64748b' }, grid: { color:'#1e293b' }, suggestedMax: 5 }
+    }
+  }
+});
+</script>
+</body>
+</html>

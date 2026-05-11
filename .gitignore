@@ -1,0 +1,12 @@
+# 保護含有 API Token 的設定檔（絕對不能上傳到 GitHub）
+meta_ads_monitor/config.json
+meta_ads_monitor/get_long_token.py
+
+# macOS
+.DS_Store
+__pycache__/
+*.pyc
+
+# 不需要的大檔案
+meta_ads_monitor/reports/report_*.json
+!meta_ads_monitor/reports/latest.json

@@ -1,0 +1,607 @@
+<\!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Empower Mindfulness — 貼文內容 x 廣告成效分析</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#0f172a;color:#e2e8f0;font-family:'SF Pro Text','Segoe UI',sans-serif;font-size:14px}
+.header{background:linear-gradient(135deg,#1e1b4b,#312e81,#1e3a5f);padding:36px 32px 28px;border-bottom:1px solid #334155}
+.header h1{font-size:24px;font-weight:700;color:#e0e7ff}
+.header p{color:#94a3b8;font-size:13px;margin-top:6px}
+.badge{display:inline-block;background:#4338ca;color:#c7d2fe;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;margin-top:10px}
+.container{padding:28px 32px;max-width:1400px;margin:0 auto}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:14px;margin-bottom:28px}
+.card{background:#1e293b;border:1px solid #334155;border-radius:12px;padding:18px 20px}
+.card .label{font-size:11px;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:6px}
+.card .value{font-size:24px;font-weight:700;color:#f1f5f9}
+.card .sub{font-size:11px;color:#64748b;margin-top:3px}
+.card.pink{border-color:#831843;background:#1a0a12}.card.pink .value{color:#f472b6}
+.card.green{border-color:#166534;background:#052e16}.card.green .value{color:#4ade80}
+.card.yellow{border-color:#78350f;background:#1c1003}.card.yellow .value{color:#fbbf24}
+.card.blue{border-color:#1e3a5f;background:#0c2340}.card.blue .value{color:#67e8f9}
+.card.purple{border-color:#4c1d95;background:#1e1b4b}.card.purple .value{color:#a78bfa}
+.section{margin-bottom:32px}
+.section-title{font-size:16px;font-weight:700;color:#c7d2fe;margin-bottom:14px;display:flex;align-items:center;gap:8px}
+.section-title::before{content:'';display:block;width:4px;height:18px;background:#6366f1;border-radius:2px}
+.charts-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:28px}
+.chart-card{background:#1e293b;border:1px solid #334155;border-radius:12px;padding:20px}
+.chart-title{font-size:13px;color:#94a3b8;margin-bottom:12px;font-weight:600}
+.chart-wrap{position:relative;height:260px}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th{background:#1e293b;color:#64748b;text-align:left;padding:10px 12px;font-size:11px;text-transform:uppercase;letter-spacing:0.5px;border-bottom:1px solid #334155;white-space:nowrap}
+td{padding:10px 12px;border-bottom:1px solid #1e293b;vertical-align:middle}
+tr:hover td{background:#1e293b88}
+.table-wrap{overflow-x:auto}
+.insight-box{background:#0c2340;border:1px solid #1e3a5f;border-radius:12px;padding:22px;margin-bottom:28px}
+.insight-box h3{color:#67e8f9;font-size:14px;font-weight:700;margin-bottom:14px}
+.insight-item{display:flex;gap:10px;margin-bottom:12px;align-items:flex-start;font-size:13px;color:#cbd5e1;line-height:1.6}
+.insight-icon{flex-shrink:0;font-size:16px}
+.missed-box{background:#1c0f03;border:1px solid #92400e;border-radius:12px;padding:22px;margin-bottom:28px}
+.missed-box h3{color:#fbbf24;font-size:14px;font-weight:700;margin-bottom:14px}
+.recs{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:28px}
+.rec{background:#1e293b;border:1px solid #334155;border-radius:12px;padding:20px}
+.rec h3{font-size:13px;font-weight:700;margin-bottom:12px}
+.rec-item{display:flex;gap:8px;margin-bottom:10px;font-size:13px;color:#cbd5e1;line-height:1.5;align-items:flex-start}
+.r1{border-color:#166534;background:#052e16}.r1 h3{color:#4ade80}
+.r2{border-color:#7f1d1d;background:#1c0505}.r2 h3{color:#f87171}
+.r3{border-color:#78350f;background:#1c0f03}.r3 h3{color:#fbbf24}
+.r4{border-color:#4c1d95;background:#1e1b4b}.r4 h3{color:#a78bfa}
+@media(max-width:768px){.charts-grid,.recs{grid-template-columns:1fr}.container{padding:16px}}
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>✍️ 貼文內容 × 廣告成效交叉分析</h1>
+  <p>帳號：Aling｜靜心與智慧的調頻師 ｜ 期間：2026-01-18 ~ 2026-04-18</p>
+  <span class="badge">共 36 篇貼文分析 · 內容主題 + 廣告投放對照</span>
+</div>
+<div class="container">
+
+<\!-- Summary Cards -->
+<div class="cards">
+  <div class="card pink"><div class="label">總 Reactions</div><div class="value">3,779</div><div class="sub">36 篇貼文累積</div></div>
+  <div class="card green"><div class="label">總 Shares</div><div class="value">1,806</div><div class="sub">病毒擴散指標</div></div>
+  <div class="card blue"><div class="label">最高單篇觸及</div><div class="value">31,898</div><div class="sub">別用一生去治癒童年</div></div>
+  <div class="card yellow"><div class="label">最強有機貼文觸及</div><div class="value">26,353</div><div class="sub">長姐病（零廣告費！）</div></div>
+  <div class="card purple"><div class="label">最高互動率</div><div class="value">4.09%</div><div class="sub">停止空轉！大腦迴路鎖死</div></div>
+</div>
+
+<\!-- Key Insight -->
+<div class="insight-box">
+  <h3>🔍 關鍵洞察</h3>
+  <div class="insight-item"><span class="insight-icon">🌟</span><span><strong>「長姐病」是本期最強有機貼文</strong>：觸及 26,353 人、593 個 Reactions、184 次分享，而且<strong>完全沒有花廣告費</strong>。這代表這篇內容本身就有極強的自傳播力，你現在把它拿來跑廣告（AB test #2）是完全正確的決定。</span></div>
+  <div class="insight-item"><span class="insight-icon">💡</span><span><strong>「社交豁免權」也是有機黑馬</strong>：觸及 20,125 人、281 Reactions、138 分享，<strong>從未投放廣告</strong>。這是最被低估的一篇，建議納入下一批廣告。</span></div>
+  <div class="insight-item"><span class="insight-icon">📊</span><span><strong>家庭關係主題表現最強</strong>：「長姐病」和「別用一生去治癒童年」是本期觸及和分享最高的兩篇，都是在講家庭動力、原生家庭傷痛。這類主題在你的受眾中引起最強共鳴。</span></div>
+  <div class="insight-item"><span class="insight-icon">⚡</span><span><strong>廣告加乘效果最明顯的文章</strong>：「別用一生去治癒童年」花了 NT$3,913，觸及 31,898 人、216 分享；「忍辱還是忍耐」花 NT$2,471，觸及 19,410 人、213 分享。兩篇投資報酬率都很好。</span></div>
+  <div class="insight-item"><span class="insight-icon">🎯</span><span><strong>觸及高但互動率偏低的文章需要注意</strong>：「焦慮是大腦的生存騙局」觸及 24,365 人，但互動率只有 1.21%。廣告帶來了曝光，但內容的共鳴度不如家庭關係類文章，下次可以考慮調整文案角度。</span></div>
+</div>
+
+<\!-- Charts -->
+<div class="section">
+  <div class="section-title">成效視覺化</div>
+  <div class="charts-grid">
+    <div class="chart-card">
+      <div class="chart-title">❤️ 各貼文 Reactions vs Shares（前 10 名）</div>
+      <div class="chart-wrap"><canvas id="reactChart"></canvas></div>
+    </div>
+    <div class="chart-card">
+      <div class="chart-title">📂 各主題類別 Reactions 總計</div>
+      <div class="chart-wrap"><canvas id="catChart"></canvas></div>
+    </div>
+    <div class="chart-card">
+      <div class="chart-title">👁 各貼文觸及人數（前 10 名）</div>
+      <div class="chart-wrap"><canvas id="reachChart"></canvas></div>
+    </div>
+    <div class="chart-card">
+      <div class="chart-title">📌 有廣告 vs 純有機 觸及比較（前 10 名）</div>
+      <div class="chart-wrap"><canvas id="advChart"></canvas></div>
+    </div>
+  </div>
+</div>
+
+<\!-- Missed Opportunities -->
+<div class="missed-box">
+  <h3>⚠️ 高有機表現但未投廣告的貼文 — 建議補投</h3>
+  <p style="color:#94a3b8;font-size:12px;margin-bottom:14px">這些貼文靠有機觸及就有不錯表現，代表內容品質夠強，補投廣告後效果可能非常好</p>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>貼文標題</th><th>主題</th><th>有機觸及</th><th>Reactions</th><th>Shares</th><th>互動率</th></tr></thead>
+      <tbody><tr>
+      <td><div style="font-weight:600;color:#fbbf24"> 有一種病叫「長姐病」：懂事得讓人心疼，卻沒人疼。</div></td>
+      <td><span style="background:#a78bfa22;color:#a78bfa;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600">算命／諮詢</span></td>
+      <td style="color:#67e8f9">26,353</td>
+      <td style="color:#f472b6">593</td>
+      <td style="color:#34d399">184</td>
+      <td style="color:#fbbf24">3.05%</td>
+    </tr><tr>
+      <td><div style="font-weight:600;color:#fbbf24">#社交豁免權 #重塑大腦對負面評價的反應</div></td>
+      <td><span style="background:#22c55e22;color:#22c55e;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600">靜心課程</span></td>
+      <td style="color:#67e8f9">20,125</td>
+      <td style="color:#f472b6">281</td>
+      <td style="color:#34d399">138</td>
+      <td style="color:#fbbf24">2.1%</td>
+    </tr><tr>
+      <td><div style="font-weight:600;color:#fbbf24">👉 別再問為什麼命不好！揭密能量法則：「業力」抵不過這一個「最強放大器」！</div></td>
+      <td><span style="background:#a78bfa22;color:#a78bfa;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600">算命／諮詢</span></td>
+      <td style="color:#67e8f9">4,291</td>
+      <td style="color:#f472b6">99</td>
+      <td style="color:#34d399">32</td>
+      <td style="color:#fbbf24">3.17%</td>
+    </tr><tr>
+      <td><div style="font-weight:600;color:#fbbf24">很多人跟我說：「Aling，我正在練習『無反應』。當對方挑釁我、酸我時，我努力告訴自己不要</div></td>
+      <td><span style="background:#a78bfa22;color:#a78bfa;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600">算命／諮詢</span></td>
+      <td style="color:#67e8f9">4,219</td>
+      <td style="color:#f472b6">43</td>
+      <td style="color:#34d399">18</td>
+      <td style="color:#fbbf24">1.47%</td>
+    </tr></tbody>
+    </table>
+  </div>
+</div>
+
+<\!-- Strategy Recommendations -->
+<div class="section">
+  <div class="section-title">內容策略建議</div>
+  <div class="recs">
+    <div class="rec r1">
+      <h3>✅ 繼續做的內容方向</h3>
+      <div class="rec-item"><span>🏆</span><span><strong>家庭關係 / 原生家庭傷痛</strong>：長姐病、別用一生去治癒童年 — 分享率最高，受眾最有共鳴，這類主題每月至少排 1–2 篇</span></div>
+      <div class="rec-item"><span>🏆</span><span><strong>具體行為模式 + 腦科學解釋</strong>：忍辱還是忍耐、社交豁免權 — 互動率高、分享多，「你也有這個問題嗎？」的切入最強</span></div>
+      <div class="rec-item"><span>🏆</span><span><strong>標題有「你」＋具體描述</strong>：「有一種病叫長姐病」「你確定你修行修對了嗎？」比抽象標題點擊率高很多</span></div>
+    </div>
+    <div class="rec r2">
+      <h3>🔄 需要調整的內容方向</h3>
+      <div class="rec-item"><span>⚠️</span><span><strong>純靈性能量法則類</strong>（業力、願力、吸引力法則）：觸及高但互動率偏低，讀者看了沒有強烈感受要分享，建議加入個人故事或具體案例增加溫度</span></div>
+      <div class="rec-item"><span>⚠️</span><span><strong>過短或純 hashtag 貼文</strong>（#使用上帝視角、#感恩）：有機表現很差，這類貼文不適合拿來投廣告</span></div>
+      <div class="rec-item"><span>⚠️</span><span><strong>時事性節慶貼文</strong>（丙午赤馬年、新春開紅盤）：熱度短暫，投廣告性價比低，建議純有機發佈即可</span></div>
+    </div>
+    <div class="rec r3">
+      <h3>🚀 下一步：補投這兩篇</h3>
+      <div class="rec-item"><span>1️⃣</span><span><strong>社交豁免權 #重塑大腦對負面評價的反應</strong>：有機觸及 20,125、138 次分享，從未投廣告。這篇潛力極大，建議加入下一個 Ad Set 測試</span></div>
+      <div class="rec-item"><span>2️⃣</span><span><strong>你也有這種病嗎？叫作「害怕自己不夠努力」</strong>（04/17 最新貼文）：有機互動率 2.89%，發布才 2 天就有 9 次分享，建議觀察 3–5 天後考慮投廣告</span></div>
+    </div>
+    <div class="rec r4">
+      <h3>💡 未來內容公式建議</h3>
+      <div class="rec-item"><span>🎯</span><span><strong>標題公式</strong>：「有一種病叫＿＿＿」「你確定你＿＿＿嗎？」「為什麼你的＿＿＿總是失敗」</span></div>
+      <div class="rec-item"><span>🎯</span><span><strong>內容公式</strong>：1️⃣ 點出讀者熟悉的痛點情境 → 2️⃣ 腦科學 or 心理學解釋 → 3️⃣ 靜心 / 諮詢作為解法</span></div>
+      <div class="rec-item"><span>🎯</span><span><strong>最強 CTA</strong>：「標記一個你想分享的朋友」「收藏這篇」比「報名課程」自然，互動更高</span></div>
+    </div>
+  </div>
+</div>
+
+<\!-- Full Table -->
+<div class="section">
+  <div class="section-title">所有貼文完整成效表（依 Reactions 由高到低）</div>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>貼文標題</th><th>主題類別</th><th>觸及</th><th>Reactions</th><th>Shares</th><th>互動率</th><th>評級</th><th>廣告投放</th></tr></thead>
+      <tbody><tr>
+      <td><div style="font-weight:600;color:#e2e8f0;font-size:13px"> 有一種病叫「長姐病」：懂事得讓人心疼，卻沒人疼。</div>
+          <div style="color:#64748b;font-size:11px;margin-top:2px">2026-04-06</div></td>
+      <td><span style="background:#a78bfa22;color:#a78bfa;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600">算命／諮詢</span></td>
+      <td style="color:#67e8f9;font-weight:700">26,353</td>
+      <td style="color:#f472b6;font-weight:700">593</td>
+      <td style="color:#34d399">184</td>
+      <td style="color:#fbbf24">3.05%</td>
+      <td>⭐⭐⭐</td>
+      <td><span style="color:#64748b;font-size:11px">📌 純有機</span></td>
+    </tr><tr>
+      <td><div style="font-weight:600;color:#e2e8f0;font-size:13px">別用一生去治癒童年，因為你已經比當年的父母更有智慧。</div>
+          <div style="color:#64748b;font-size:11px;margin-top:2px">2026-03-16</div></td>
+      <td><span style="background:#a78bfa22;color:#a78bfa;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600">算命／諮詢</span></td>
+      <td style="color:#67e8f9;font-weight:700">31,898</td>
+      <td style="color:#f472b6;font-weight:700">455</td>
+      <td style="color:#34d399">216</td>
+      <td style="color:#fbbf24">2.13%</td>
+      <td>⭐⭐</td>
+      <td><span style="color:#4ade80;font-size:11px">✅ NT$3,913</span></td>
+    </tr><tr>
+      <td><div style="font-weight:600;color:#e2e8f0;font-size:13px">忍辱還是忍耐，你確定你修行修對了嗎？</div>
+          <div style="color:#64748b;font-size:11px;margin-top:2px">2026-02-20</div></td>
+      <td><span style="background:#f59e0b22;color:#f59e0b;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600">情緒／焦慮</span></td>
+      <td style="color:#67e8f9;font-weight:700">19,410</td>
+      <td style="color:#f472b6;font-weight:700">407</td>
+      <td style="color:#34d399">213</td>
+      <td style="color:#fbbf24">3.33%</td>
+      <td>⭐⭐⭐</td>
+      <td><span style="color:#4ade80;font-size:11px">✅ NT$2,530</span></td>
+    </tr><tr>
+      <td><div style="font-weight:600;color:#e2e8f0;font-size:13px">#吸引力法則 #善護念你的念頭</div>
+          <div style="color:#64748b;font-size:11px;margin-top:2px">2026-02-04</div></td>
+      <td><span style="background:#22c55e22;color:#22c55e;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600">靜心課程</span></td>
+      <td style="color:#67e8f9;font-weight:700">20,946</td>
+      <td style="color:#f472b6;font-weight:700">390</td>
+      <td style="color:#34d399">140</td>
+      <td style="color:#fbbf24">2.58%</td>
+      <td>⭐⭐</td>
+      <td><span style="color:#4ade80;font-size:11px">✅ NT$2,605</span></td>
+    </tr><tr>
+      <td><div style="font-weight:600;color:#e2e8f0;font-size:13px">#社交豁免權 #重塑大腦對負面評價的反應</div>
+          <div style="color:#64748b;font-size:11px;margin-top:2px">2026-02-25</div></td>
+      <td><span style="background:#22c55e22;color:#22c55e;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600">靜心課程</span></td>
+      <td style="color:#67e8f9;font-weight:700">20,125</td>
+      <td style="color:#f472b6;font-weight:700">281</td>
+      <td style="color:#34d399">138</td>
+      <td style="color:#fbbf24">2.1%</td>
+      <td>⭐⭐</td>
+      <td><span style="color:#64748b;font-size:11px">📌 純有機</span></td>
+    </tr><tr>
+      <td><div style="font-weight:600;color:#e2e8f0;font-size:13px">焦慮是大腦的生存騙局</div>
+          <div style="color:#64748b;font-size:11px;margin-top:2px">2026-03-17</div></td>
+      <td><span style="background:#a78bfa22;color:#a78bfa;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600">算命／諮詢</span></td>
+      <td style="color:#67e8f9;font-weight:700">24,365</td>
+      <td style="color:#f472b6;font-weight:700">193</td>
+      <td style="color:#34d399">100</td>
+      <td style="color:#fbbf24">1.21%</td>
+      <td>⭐</td>
+      <td><span style="color:#4ade80;font-size:11px">✅ NT$1,761</span></td>
+    </tr><tr>
+      <td><div style="font-weight:600;color:#e2e8f0;font-size:13px">👉 別再問為什麼命不好！揭密能量法則：「業力」抵不過這一個「最強放大器」！</div>
+          <div style="color:#64748b;font-size:11px;margin-top:2px">2026-01-22</div></td>
+      <td><span style="background:#a78bfa22;color:#a78bfa;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600">算命／諮詢</span></td>
+      <td style="color:#67e8f9;font-weight:700">4,291</td>
+      <td style="color:#f472b6;font-weight:700">99</td>
+      <td style="color:#34d399">32</td>
+      <td style="color:#fbbf24">3.17%</td>
+      <td>⭐⭐⭐</td>
+      <td><span style="color:#64748b;font-size:11px">📌 純有機</span></td>
+    </tr><tr>
+      <td><div style="font-weight:600;color:#e2e8f0;font-size:13px">你看到的是攻擊，我看到的是求救。</div>
+          <div style="color:#64748b;font-size:11px;margin-top:2px">2026-02-10</div></td>
+      <td><span style="background:#a78bfa22;color:#a78bfa;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600">算命／諮詢</span></td>
+      <td style="color:#67e8f9;font-weight:700">5,972</td>
+      <td style="color:#f472b6;font-weight:700">88</td>
+      <td style="color:#34d399">18</td>
+      <td style="color:#fbbf24">1.88%</td>
+      <td>⭐</td>
+      <td><span style="color:#4ade80;font-size:11px">✅ NT$392</span></td>
+    </tr><tr>
+      <td><div style="font-weight:600;color:#e2e8f0;font-size:13px"> 人生是一場長征，如何長出屬於你自己的「定海神針」？</div>
+          <div style="color:#64748b;font-size:11px;margin-top:2px">2026-03-31</div></td>
+      <td><span style="background:#a78bfa22;color:#a78bfa;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600">算命／諮詢</span></td>
+      <td style="color:#67e8f9;font-weight:700">9,437</td>
+      <td style="color:#f472b6;font-weight:700">76</td>
+      <td style="color:#34d399">28</td>
+      <td style="color:#fbbf24">1.12%</td>
+      <td>⭐</td>
+      <td><span style="color:#4ade80;font-size:11px">✅ NT$1,295</span></td>
+    </tr><tr>
+      <td><div style="font-weight:600;color:#e2e8f0;font-size:13px">#無路是因為你只想走眼前的這條路</div>
+          <div style="color:#64748b;font-size:11px;margin-top:2px">2026-03-22</div></td>
+      <td><span style="background:#a78bfa22;color:#a78bfa;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600">算命／諮詢</span></td>
+      <td style="color:#67e8f9;font-weight:700">8,653</td>
+      <td style="color:#f472b6;font-weight:700">67</td>
+      <td style="color:#34d399">42</td>
+      <td style="color:#fbbf24">1.28%</td>
+      <td>⭐</td>
+      <td><span style="color:#4ade80;font-size:11px">✅ NT$699</span></td>
+    </tr><tr>
+      <td><div style="font-weight:600;color:#e2e8f0;font-size:13px"> 順著天意做事，逆著個性做人</div>
+          <div style="color:#64748b;font-size:11px;margin-top:2px">2026-04-09</div></td>
+      <td><span style="background:#a78bfa22;color:#a78bfa;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600">算命／諮詢</span></td>
+      <td style="color:#67e8f9;font-weight:700">4,891</td>
+      <td style="color:#f472b6;font-weight:700">62</td>
+      <td style="color:#34d399">19</td>
+      <td style="color:#fbbf24">1.68%</td>
+      <td>⭐</td>
+      <td><span style="color:#4ade80;font-size:11px">✅ NT$400</span></td>
+    </tr><tr>
+      <td><div style="font-weight:600;color:#e2e8f0;font-size:13px"> 『離開』是為了逃避？只有『放下』後的離開，才是自由的選擇。</div>
+          <div style="color:#64748b;font-size:11px;margin-top:2px">2026-03-26</div></td>
+      <td><span style="background:#22c55e22;color:#22c55e;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600">靜心課程</span></td>
+      <td style="color:#67e8f9;font-weight:700">4,135</td>
+      <td style="color:#f472b6;font-weight:700">45</td>
+      <td style="color:#34d399">11</td>
+      <td style="color:#fbbf24">1.38%</td>
+      <td>⭐</td>
+      <td><span style="color:#4ade80;font-size:11px">✅ NT$293</span></td>
+    </tr><tr>
+      <td><div style="font-weight:600;color:#e2e8f0;font-size:13px">很多人跟我說：「Aling，我正在練習『無反應』。當對方挑釁我、酸我時，我努力告訴自己不要</div>
+          <div style="color:#64748b;font-size:11px;margin-top:2px">2026-04-03</div></td>
+      <td><span style="background:#a78bfa22;color:#a78bfa;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600">算命／諮詢</span></td>
+      <td style="color:#67e8f9;font-weight:700">4,219</td>
+      <td style="color:#f472b6;font-weight:700">43</td>
+      <td style="color:#34d399">18</td>
+      <td style="color:#fbbf24">1.47%</td>
+      <td>⭐</td>
+      <td><span style="color:#64748b;font-size:11px">📌 純有機</span></td>
+    </tr><tr>
+      <td><div style="font-weight:600;color:#e2e8f0;font-size:13px">🔥 丙午赤馬年，你準備好「上馬」了嗎？讓你順一整年的練馬術</div>
+          <div style="color:#64748b;font-size:11px;margin-top:2px">2026-02-16</div></td>
+      <td><span style="background:#60a5fa22;color:#60a5fa;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600">腦科學</span></td>
+      <td style="color:#67e8f9;font-weight:700">5,913</td>
+      <td style="color:#f472b6;font-weight:700">34</td>
+      <td style="color:#34d399">18</td>
+      <td style="color:#fbbf24">0.9%</td>
+      <td>⭐</td>
+      <td><span style="color:#4ade80;font-size:11px">✅ NT$1</span></td>
+    </tr><tr>
+      <td><div style="font-weight:600;color:#e2e8f0;font-size:13px">如果你的生命正在經歷失去的過程，無論是愛人、親人、健康或者是事業與生活。我想跟你分享向死而</div>
+          <div style="color:#64748b;font-size:11px;margin-top:2px">2026-03-06</div></td>
+      <td><span style="background:#a78bfa22;color:#a78bfa;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600">算命／諮詢</span></td>
+      <td style="color:#67e8f9;font-weight:700">5,321</td>
+      <td style="color:#f472b6;font-weight:700">31</td>
+      <td style="color:#34d399">6</td>
+      <td style="color:#fbbf24">0.71%</td>
+      <td>⭐</td>
+      <td><span style="color:#4ade80;font-size:11px">✅ NT$4</span></td>
+    </tr><tr>
+      <td><div style="font-weight:600;color:#e2e8f0;font-size:13px">不是息心除妄想 ，只緣無事可思量</div>
+          <div style="color:#64748b;font-size:11px;margin-top:2px">2026-02-07</div></td>
+      <td><span style="background:#a78bfa22;color:#a78bfa;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600">算命／諮詢</span></td>
+      <td style="color:#67e8f9;font-weight:700">3,178</td>
+      <td style="color:#f472b6;font-weight:700">27</td>
+      <td style="color:#34d399">10</td>
+      <td style="color:#fbbf24">1.26%</td>
+      <td>⭐</td>
+      <td><span style="color:#4ade80;font-size:11px">✅ NT$219</span></td>
+    </tr><tr>
+      <td><div style="font-weight:600;color:#e2e8f0;font-size:13px">為什麼你的顯化法則，總是不靈驗？</div>
+          <div style="color:#64748b;font-size:11px;margin-top:2px">2026-03-03</div></td>
+      <td><span style="background:#22c55e22;color:#22c55e;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600">靜心課程</span></td>
+      <td style="color:#67e8f9;font-weight:700">2,745</td>
+      <td style="color:#f472b6;font-weight:700">25</td>
+      <td style="color:#34d399">11</td>
+      <td style="color:#fbbf24">1.42%</td>
+      <td>⭐</td>
+      <td><span style="color:#64748b;font-size:11px">📌 純有機</span></td>
+    </tr><tr>
+      <td><div style="font-weight:600;color:#e2e8f0;font-size:13px">停止空轉！你不是不夠努力，你只是大腦「迴路鎖死」了。</div>
+          <div style="color:#64748b;font-size:11px;margin-top:2px">2026-01-27</div></td>
+      <td><span style="background:#a78bfa22;color:#a78bfa;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600">算命／諮詢</span></td>
+      <td style="color:#67e8f9;font-weight:700">832</td>
+      <td style="color:#f472b6;font-weight:700">21</td>
+      <td style="color:#34d399">9</td>
+      <td style="color:#fbbf24">4.09%</td>
+      <td>⭐⭐⭐</td>
+      <td><span style="color:#64748b;font-size:11px">📌 純有機</span></td>
+    </tr><tr>
+      <td><div style="font-weight:600;color:#e2e8f0;font-size:13px">小心負能量炸彈，三招教你「原地滿血復活」</div>
+          <div style="color:#64748b;font-size:11px;margin-top:2px">2026-01-29</div></td>
+      <td><span style="background:#22c55e22;color:#22c55e;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600">靜心課程</span></td>
+      <td style="color:#67e8f9;font-weight:700">1,038</td>
+      <td style="color:#f472b6;font-weight:700">20</td>
+      <td style="color:#34d399">6</td>
+      <td style="color:#fbbf24">2.6%</td>
+      <td>⭐⭐</td>
+      <td><span style="color:#4ade80;font-size:11px">✅ NT$16</span></td>
+    </tr><tr>
+      <td><div style="font-weight:600;color:#e2e8f0;font-size:13px">請允許不一樣</div>
+          <div style="color:#64748b;font-size:11px;margin-top:2px">2026-03-19</div></td>
+      <td><span style="background:#a78bfa22;color:#a78bfa;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600">算命／諮詢</span></td>
+      <td style="color:#67e8f9;font-weight:700">4,891</td>
+      <td style="color:#f472b6;font-weight:700">20</td>
+      <td style="color:#34d399">16</td>
+      <td style="color:#fbbf24">0.76%</td>
+      <td>⭐</td>
+      <td><span style="color:#4ade80;font-size:11px">✅ NT$298</span></td>
+    </tr><tr>
+      <td><div style="font-weight:600;color:#e2e8f0;font-size:13px"> 別再問「如果當初...」：把過去的路，重新接回你要的未來。</div>
+          <div style="color:#64748b;font-size:11px;margin-top:2px">2026-03-30</div></td>
+      <td><span style="background:#22c55e22;color:#22c55e;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600">靜心課程</span></td>
+      <td style="color:#67e8f9;font-weight:700">883</td>
+      <td style="color:#f472b6;font-weight:700">17</td>
+      <td style="color:#34d399">9</td>
+      <td style="color:#fbbf24">3.06%</td>
+      <td>⭐⭐⭐</td>
+      <td><span style="color:#64748b;font-size:11px">📌 純有機</span></td>
+    </tr><tr>
+      <td><div style="font-weight:600;color:#e2e8f0;font-size:13px"> 你也有這種病嗎？叫作「害怕自己不夠努力」</div>
+          <div style="color:#64748b;font-size:11px;margin-top:2px">2026-04-17</div></td>
+      <td><span style="background:#a78bfa22;color:#a78bfa;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600">算命／諮詢</span></td>
+      <td style="color:#67e8f9;font-weight:700">866</td>
+      <td style="color:#f472b6;font-weight:700">15</td>
+      <td style="color:#34d399">9</td>
+      <td style="color:#fbbf24">2.89%</td>
+      <td>⭐⭐</td>
+      <td><span style="color:#64748b;font-size:11px">📌 純有機</span></td>
+    </tr><tr>
+      <td><div style="font-weight:600;color:#e2e8f0;font-size:13px">我的菩薩，是一匹馬：在拉扯中看見覺醒</div>
+          <div style="color:#64748b;font-size:11px;margin-top:2px">2026-02-27</div></td>
+      <td><span style="background:#a78bfa22;color:#a78bfa;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600">算命／諮詢</span></td>
+      <td style="color:#67e8f9;font-weight:700">1,837</td>
+      <td style="color:#f472b6;font-weight:700">14</td>
+      <td style="color:#34d399">5</td>
+      <td style="color:#fbbf24">1.09%</td>
+      <td>⭐</td>
+      <td><span style="color:#64748b;font-size:11px">📌 純有機</span></td>
+    </tr><tr>
+      <td><div style="font-weight:600;color:#e2e8f0;font-size:13px">你的恐懼，其實是大腦編出來的鬼故事 👻</div>
+          <div style="color:#64748b;font-size:11px;margin-top:2px">2026-01-25</div></td>
+      <td><span style="background:#fb923c22;color:#fb923c;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600">職場壓力</span></td>
+      <td style="color:#67e8f9;font-weight:700">822</td>
+      <td style="color:#f472b6;font-weight:700">13</td>
+      <td style="color:#34d399">1</td>
+      <td style="color:#fbbf24">1.82%</td>
+      <td>⭐</td>
+      <td><span style="color:#64748b;font-size:11px">📌 純有機</span></td>
+    </tr><tr>
+      <td><div style="font-weight:600;color:#e2e8f0;font-size:13px">這輩子，你還要為「路人」活多久？</div>
+          <div style="color:#64748b;font-size:11px;margin-top:2px">2026-01-20</div></td>
+      <td><span style="background:#a78bfa22;color:#a78bfa;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600">算命／諮詢</span></td>
+      <td style="color:#67e8f9;font-weight:700">697</td>
+      <td style="color:#f472b6;font-weight:700">12</td>
+      <td style="color:#34d399">3</td>
+      <td style="color:#fbbf24">2.3%</td>
+      <td>⭐⭐</td>
+      <td><span style="color:#64748b;font-size:11px">📌 純有機</span></td>
+    </tr><tr>
+      <td><div style="font-weight:600;color:#e2e8f0;font-size:13px">你以為是人生的死路，其實是快速升級的「隱藏關卡」。</div>
+          <div style="color:#64748b;font-size:11px;margin-top:2px">2026-04-11</div></td>
+      <td><span style="background:#a78bfa22;color:#a78bfa;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600">算命／諮詢</span></td>
+      <td style="color:#67e8f9;font-weight:700">1,056</td>
+      <td style="color:#f472b6;font-weight:700">11</td>
+      <td style="color:#34d399">4</td>
+      <td style="color:#fbbf24">1.52%</td>
+      <td>⭐</td>
+      <td><span style="color:#4ade80;font-size:11px">✅ NT$67</span></td>
+    </tr><tr>
+      <td><div style="font-weight:600;color:#e2e8f0;font-size:13px"> 怪就怪媽媽，不小心把我的「良心」生得太大顆。</div>
+          <div style="color:#64748b;font-size:11px;margin-top:2px">2026-04-15</div></td>
+      <td><span style="background:#a78bfa22;color:#a78bfa;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600">算命／諮詢</span></td>
+      <td style="color:#67e8f9;font-weight:700">1,595</td>
+      <td style="color:#f472b6;font-weight:700">11</td>
+      <td style="color:#34d399">6</td>
+      <td style="color:#fbbf24">1.44%</td>
+      <td>⭐</td>
+      <td><span style="color:#64748b;font-size:11px">📌 純有機</span></td>
+    </tr><tr>
+      <td><div style="font-weight:600;color:#e2e8f0;font-size:13px">你算命嗎？算命是怎麼一回事呢？</div>
+          <div style="color:#64748b;font-size:11px;margin-top:2px">2026-03-01</div></td>
+      <td><span style="background:#a78bfa22;color:#a78bfa;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600">算命／諮詢</span></td>
+      <td style="color:#67e8f9;font-weight:700">854</td>
+      <td style="color:#f472b6;font-weight:700">10</td>
+      <td style="color:#34d399">2</td>
+      <td style="color:#fbbf24">1.52%</td>
+      <td>⭐</td>
+      <td><span style="color:#4ade80;font-size:11px">✅ NT$9</span></td>
+    </tr><tr>
+      <td><div style="font-weight:600;color:#e2e8f0;font-size:13px">#使用上帝視角</div>
+          <div style="color:#64748b;font-size:11px;margin-top:2px">2026-01-30</div></td>
+      <td><span style="background:#94a3b822;color:#94a3b8;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600">人生哲思</span></td>
+      <td style="color:#67e8f9;font-weight:700">906</td>
+      <td style="color:#f472b6;font-weight:700">9</td>
+      <td style="color:#34d399">2</td>
+      <td style="color:#fbbf24">1.21%</td>
+      <td>⭐</td>
+      <td><span style="color:#64748b;font-size:11px">📌 純有機</span></td>
+    </tr><tr>
+      <td><div style="font-weight:600;color:#e2e8f0;font-size:13px">#你有睡不著的睡眠障礙嗎？</div>
+          <div style="color:#64748b;font-size:11px;margin-top:2px">2026-03-13</div></td>
+      <td><span style="background:#22c55e22;color:#22c55e;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600">靜心課程</span></td>
+      <td style="color:#67e8f9;font-weight:700">2,454</td>
+      <td style="color:#f472b6;font-weight:700">9</td>
+      <td style="color:#34d399">6</td>
+      <td style="color:#fbbf24">0.65%</td>
+      <td>⭐</td>
+      <td><span style="color:#64748b;font-size:11px">📌 純有機</span></td>
+    </tr><tr>
+      <td><div style="font-weight:600;color:#e2e8f0;font-size:13px">隔了兩年，我終於又回到Billy背上。</div>
+          <div style="color:#64748b;font-size:11px;margin-top:2px">2026-04-05</div></td>
+      <td><span style="background:#a78bfa22;color:#a78bfa;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600">算命／諮詢</span></td>
+      <td style="color:#67e8f9;font-weight:700">495</td>
+      <td style="color:#f472b6;font-weight:700">8</td>
+      <td style="color:#34d399">0</td>
+      <td style="color:#fbbf24">1.82%</td>
+      <td>⭐</td>
+      <td><span style="color:#64748b;font-size:11px">📌 純有機</span></td>
+    </tr><tr>
+      <td><div style="font-weight:600;color:#e2e8f0;font-size:13px">#感恩  #吸引力法則  #馬年大旺</div>
+          <div style="color:#64748b;font-size:11px;margin-top:2px">2026-02-13</div></td>
+      <td><span style="background:#a78bfa22;color:#a78bfa;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600">算命／諮詢</span></td>
+      <td style="color:#67e8f9;font-weight:700">1,245</td>
+      <td style="color:#f472b6;font-weight:700">8</td>
+      <td style="color:#34d399">3</td>
+      <td style="color:#fbbf24">1.04%</td>
+      <td>⭐</td>
+      <td><span style="color:#64748b;font-size:11px">📌 純有機</span></td>
+    </tr><tr>
+      <td><div style="font-weight:600;color:#e2e8f0;font-size:13px">控制，是這場虛擬遊戲中的無效指令🛠️</div>
+          <div style="color:#64748b;font-size:11px;margin-top:2px">2026-02-03</div></td>
+      <td><span style="background:#fb923c22;color:#fb923c;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600">職場壓力</span></td>
+      <td style="color:#67e8f9;font-weight:700">857</td>
+      <td style="color:#f472b6;font-weight:700">8</td>
+      <td style="color:#34d399">4</td>
+      <td style="color:#fbbf24">1.52%</td>
+      <td>⭐</td>
+      <td><span style="color:#64748b;font-size:11px">📌 純有機</span></td>
+    </tr><tr>
+      <td><div style="font-weight:600;color:#e2e8f0;font-size:13px"> 靈性成長的代價，真的可以用錢「跳過」嗎？</div>
+          <div style="color:#64748b;font-size:11px;margin-top:2px">2026-03-25</div></td>
+      <td><span style="background:#22c55e22;color:#22c55e;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600">靜心課程</span></td>
+      <td style="color:#67e8f9;font-weight:700">1,412</td>
+      <td style="color:#f472b6;font-weight:700">6</td>
+      <td style="color:#34d399">5</td>
+      <td style="color:#fbbf24">0.85%</td>
+      <td>⭐</td>
+      <td><span style="color:#4ade80;font-size:11px">✅ NT$73</span></td>
+    </tr><tr>
+      <td><div style="font-weight:600;color:#e2e8f0;font-size:13px">「#我被騙了，這根本不是算命！」</div>
+          <div style="color:#64748b;font-size:11px;margin-top:2px">2026-04-13</div></td>
+      <td><span style="background:#a78bfa22;color:#a78bfa;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600">算命／諮詢</span></td>
+      <td style="color:#67e8f9;font-weight:700">371</td>
+      <td style="color:#f472b6;font-weight:700">3</td>
+      <td style="color:#34d399">5</td>
+      <td style="color:#fbbf24">2.7%</td>
+      <td>⭐⭐</td>
+      <td><span style="color:#64748b;font-size:11px">📌 純有機</span></td>
+    </tr><tr>
+      <td><div style="font-weight:600;color:#e2e8f0;font-size:13px">#新春開紅盤 🧧 感謝有你，破千追蹤！</div>
+          <div style="color:#64748b;font-size:11px;margin-top:2px">2026-02-23</div></td>
+      <td><span style="background:#22c55e22;color:#22c55e;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600">靜心課程</span></td>
+      <td style="color:#67e8f9;font-weight:700">753</td>
+      <td style="color:#f472b6;font-weight:700">2</td>
+      <td style="color:#34d399">1</td>
+      <td style="color:#fbbf24">0.4%</td>
+      <td>⭐</td>
+      <td><span style="color:#64748b;font-size:11px">📌 純有機</span></td>
+    </tr></tbody>
+    </table>
+  </div>
+</div>
+
+<div style="text-align:center;color:#475569;font-size:12px;padding:20px 0 10px">
+  Empower Mindfulness · 內容 x 廣告交叉分析 · 資料截至 2026-04-18 · 由 Claude AI 生成
+</div>
+</div>
+
+<script>
+const labels=[" \u6709\u4e00\u7a2e\u75c5\u53eb\u300c\u9577\u59d0\u75c5\u300d\uff1a\u61c2\u4e8b\u5f97\u8b93", "\u5225\u7528\u4e00\u751f\u53bb\u6cbb\u7652\u7ae5\u5e74\uff0c\u56e0\u70ba\u4f60\u5df2\u7d93\u6bd4", "\u5fcd\u8fb1\u9084\u662f\u5fcd\u8010\uff0c\u4f60\u78ba\u5b9a\u4f60\u4fee\u884c\u4fee\u5c0d\u4e86", "#\u5438\u5f15\u529b\u6cd5\u5247 #\u5584\u8b77\u5ff5\u4f60\u7684\u5ff5\u982d", "#\u793e\u4ea4\u8c41\u514d\u6b0a #\u91cd\u5851\u5927\u8166\u5c0d\u8ca0\u9762\u8a55", "\u7126\u616e\u662f\u5927\u8166\u7684\u751f\u5b58\u9a19\u5c40", "\ud83d\udc49 \u5225\u518d\u554f\u70ba\u4ec0\u9ebc\u547d\u4e0d\u597d\uff01\u63ed\u5bc6\u80fd\u91cf", "\u4f60\u770b\u5230\u7684\u662f\u653b\u64ca\uff0c\u6211\u770b\u5230\u7684\u662f\u6c42\u6551\u3002", " \u4eba\u751f\u662f\u4e00\u5834\u9577\u5f81\uff0c\u5982\u4f55\u9577\u51fa\u5c6c\u65bc\u4f60", "#\u7121\u8def\u662f\u56e0\u70ba\u4f60\u53ea\u60f3\u8d70\u773c\u524d\u7684\u9019\u689d\u8def"];
+const reactions=[593, 455, 407, 390, 281, 193, 99, 88, 76, 67];
+const shares=[184, 216, 213, 140, 138, 100, 32, 18, 28, 42];
+const reaches=[26353, 31898, 19410, 20946, 20125, 24365, 4291, 5972, 9437, 8653];
+const isAdv=[0, 1, 1, 1, 0, 1, 0, 1, 1, 1];
+const catLabels=["\u7b97\u547d\uff0f\u8aee\u8a62", "\u975c\u5fc3\u8ab2\u7a0b", "\u60c5\u7dd2\uff0f\u7126\u616e", "\u8166\u79d1\u5b78", "\u8077\u5834\u58d3\u529b", "\u4eba\u751f\u54f2\u601d"];
+const catValues=[1867, 795, 407, 34, 21, 9];
+
+new Chart(document.getElementById('reactChart'),{
+  type:'bar',
+  data:{labels,datasets:[
+    {label:'Reactions',data:reactions,backgroundColor:'#f472b688',borderColor:'#f472b6',borderWidth:1.5,borderRadius:4},
+    {label:'Shares',data:shares,backgroundColor:'#34d39988',borderColor:'#34d399',borderWidth:1.5,borderRadius:4}
+  ]},
+  options:{responsive:true,maintainAspectRatio:false,
+    plugins:{legend:{labels:{color:'#94a3b8',font:{size:11}}}},
+    scales:{x:{ticks:{color:'#64748b',font:{size:10}},grid:{color:'#1e293b'}},
+             y:{ticks:{color:'#64748b'},grid:{color:'#1e293b'}}}}
+});
+
+new Chart(document.getElementById('catChart'),{
+  type:'doughnut',
+  data:{labels:catLabels,datasets:[{data:catValues,
+    backgroundColor:['#ec4899','#f59e0b','#22c55e','#a78bfa','#67e8f9','#60a5fa','#fb923c','#94a3b8'],
+    borderColor:'#0f172a',borderWidth:2}]},
+  options:{responsive:true,maintainAspectRatio:false,
+    plugins:{legend:{position:'right',labels:{color:'#94a3b8',font:{size:11},boxWidth:12}}}}
+});
+
+new Chart(document.getElementById('reachChart'),{
+  type:'bar',
+  data:{labels,datasets:[{label:'觸及人數',data:reaches,
+    backgroundColor:reaches.map((v,i)=>isAdv[i]?'#67e8f988':'#fbbf2488'),
+    borderColor:reaches.map((v,i)=>isAdv[i]?'#67e8f9':'#fbbf24'),
+    borderWidth:1.5,borderRadius:4}]},
+  options:{responsive:true,maintainAspectRatio:false,
+    plugins:{legend:{labels:{color:'#94a3b8',font:{size:11}}},
+      tooltip:{callbacks:{label:ctx=>ctx.parsed.y.toLocaleString()+' 人'}}
+    },
+    scales:{x:{ticks:{color:'#64748b',font:{size:10}},grid:{color:'#1e293b'}},
+             y:{ticks:{color:'#64748b'},grid:{color:'#1e293b'}}}}
+});
+
+new Chart(document.getElementById('advChart'),{
+  type:'bar',
+  data:{labels,datasets:[{label:'藍=有廣告 / 黃=純有機',data:reaches,
+    backgroundColor:reaches.map((v,i)=>isAdv[i]?'#6366f188':'#f59e0b88'),
+    borderColor:reaches.map((v,i)=>isAdv[i]?'#6366f1':'#f59e0b'),
+    borderWidth:1.5,borderRadius:4}]},
+  options:{responsive:true,maintainAspectRatio:false,
+    plugins:{legend:{labels:{color:'#94a3b8',font:{size:11}}}},
+    scales:{x:{ticks:{color:'#64748b',font:{size:10}},grid:{color:'#1e293b'}},
+             y:{ticks:{color:'#64748b'},grid:{color:'#1e293b'}}}}
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+{
+  "spirit": {
+    "age_min": 35,
+    "age_max": 55,
+    "geo_locations": {
+      "cities": [
+        {
+          "key": "2306179"
+        },
+        {
+          "key": "226984"
+        },
+        {
+          "key": "2306182"
+        },
+        {
+          "key": "2306183"
+        },
+        {
+          "key": "2306185"
+        },
+        {
+          "key": "2306188",
+          "radius": 25,
+          "distance_unit": "mile"
+        }
+      ],
+      "countries": [
+        "HK"
+      ],
+      "regions": [
+        {
+          "key": "3847"
+        }
+      ]
+    },
+    "flexible_spec": [
+      {
+        "interests": [
+          {
+            "name": "Spirituality"
+          },
+          {
+            "id": "6003748928462",
+            "name": "Personal development"
+          },
+          {
+            "id": "6003081944901",
+            "name": "Self-awareness"
+          },
+          {
+            "id": "6003224104145",
+            "name": "Psychology"
+          }
+        ]
+      },
+      {
+        "interests": [
+          {
+            "id": "6003840137852",
+            "name": "Astrology"
+          },
+          {
+            "name": "Buddhism"
+          },
+          {
+            "name": "Mindfulness"
+          },
+          {
+            "id": "6003199479265",
+            "name": "Life Coach"
+          }
+        ]
+      }
+    ]
+  }
+}
