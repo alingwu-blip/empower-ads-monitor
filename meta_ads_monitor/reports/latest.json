@@ -1,0 +1,389 @@
+{
+  "generated_at": "2026-05-11 11:28",
+  "frequency_stops": [],
+  "frequency_warnings": [],
+  "slowdown_alerts": [
+    {
+      "name": "猴子管理學-spirit",
+      "campaign": "AB test #7"
+    }
+  ],
+  "active_ads": [
+    {
+      "campaign": "AB test #7",
+      "ad_name": "在關係中丟失自己-spirit",
+      "spend": 220.0,
+      "reach": 4263,
+      "frequency": 1.221206,
+      "results": 144,
+      "cpr": 1.527778,
+      "cpc": 0.348101,
+      "follows_30d": 20,
+      "follows_delta_today": 0,
+      "slowdown": false,
+      "no_data": false
+    },
+    {
+      "campaign": "AB test #7",
+      "ad_name": "猴子管理學-spirit",
+      "spend": 1100.0,
+      "reach": 18977,
+      "frequency": 1.416873,
+      "results": 848,
+      "cpr": 1.29717,
+      "cpc": 0.3207,
+      "follows_30d": 51,
+      "follows_delta_today": 2,
+      "slowdown": true,
+      "no_data": false
+    },
+    {
+      "campaign": "AB test #8",
+      "ad_name": "婚姻關係好治百病-spirit",
+      "spend": 1.0,
+      "reach": 84,
+      "frequency": 1.202381,
+      "results": 3,
+      "cpr": 0.333333,
+      "cpc": 0.083333,
+      "follows_30d": 0,
+      "follows_delta_today": null,
+      "slowdown": false,
+      "no_data": false
+    },
+    {
+      "campaign": "AB test #8",
+      "ad_name": "天堂地獄都在人間-spirit",
+      "spend": 198.0,
+      "reach": 3297,
+      "frequency": 1.381862,
+      "results": 39,
+      "cpr": 5.076923,
+      "cpc": 0.356757,
+      "follows_30d": 3,
+      "follows_delta_today": null,
+      "slowdown": false,
+      "no_data": false
+    },
+    {
+      "campaign": "AB test #8",
+      "ad_name": "你越用力要他改變-spirit",
+      "spend": 34.0,
+      "reach": 605,
+      "frequency": 1.380165,
+      "results": 40,
+      "cpr": 0.85,
+      "cpc": 0.283333,
+      "follows_30d": 3,
+      "follows_delta_today": null,
+      "slowdown": false,
+      "no_data": false
+    },
+    {
+      "campaign": "",
+      "ad_name": "根本不是對錯的問題-spirit",
+      "spend": 0.0,
+      "reach": 0,
+      "frequency": 0.0,
+      "results": 0,
+      "cpr": null,
+      "cpc": null,
+      "follows_30d": 0,
+      "follows_delta_today": null,
+      "slowdown": false,
+      "no_data": true
+    },
+    {
+      "campaign": "",
+      "ad_name": "天堂地獄都在人間-spirit",
+      "spend": 0.0,
+      "reach": 0,
+      "frequency": 0.0,
+      "results": 0,
+      "cpr": null,
+      "cpc": null,
+      "follows_30d": 0,
+      "follows_delta_today": null,
+      "slowdown": false,
+      "no_data": true
+    },
+    {
+      "campaign": "",
+      "ad_name": "婚姻關係好治百病-spirit",
+      "spend": 0.0,
+      "reach": 0,
+      "frequency": 0.0,
+      "results": 0,
+      "cpr": null,
+      "cpc": null,
+      "follows_30d": 0,
+      "follows_delta_today": null,
+      "slowdown": false,
+      "no_data": true
+    },
+    {
+      "campaign": "",
+      "ad_name": "你越用力要他改變-spirit",
+      "spend": 0.0,
+      "reach": 0,
+      "frequency": 0.0,
+      "results": 0,
+      "cpr": null,
+      "cpc": null,
+      "follows_30d": 0,
+      "follows_delta_today": null,
+      "slowdown": false,
+      "no_data": true
+    }
+  ],
+  "inactive_ads_summary": [
+    {
+      "campaign": "AB test",
+      "ad_name": "定海神針-biz",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "frequency": 1.0,
+      "cpr": null,
+      "follows_30d": 0
+    },
+    {
+      "campaign": "AB test",
+      "ad_name": "定海神針-spirit",
+      "status": "PAUSED",
+      "spend": 3.0,
+      "frequency": 1.0,
+      "cpr": 3.0,
+      "follows_30d": 0
+    },
+    {
+      "campaign": "AB test #2",
+      "ad_name": "無反應練習-spirit",
+      "status": "PAUSED",
+      "spend": 101.0,
+      "frequency": 1.34442,
+      "cpr": 1.463768,
+      "follows_30d": 8
+    },
+    {
+      "campaign": "AB test #2",
+      "ad_name": "別再問當初-biz",
+      "status": "PAUSED",
+      "spend": 4.0,
+      "frequency": 1.12426,
+      "cpr": 1.0,
+      "follows_30d": 0
+    },
+    {
+      "campaign": "AB test #2",
+      "ad_name": "長姊病-biz",
+      "status": "PAUSED",
+      "spend": 1923.0,
+      "frequency": 1.657045,
+      "cpr": 1.685364,
+      "follows_30d": 117
+    },
+    {
+      "campaign": "AB test #2",
+      "ad_name": "無反應練習 -biz",
+      "status": "PAUSED",
+      "spend": 256.0,
+      "frequency": 1.446646,
+      "cpr": 1.72973,
+      "follows_30d": 25
+    },
+    {
+      "campaign": "AB test #2",
+      "ad_name": "長姊病-spirit -",
+      "status": "PAUSED",
+      "spend": 1300.0,
+      "frequency": 1.646276,
+      "cpr": 1.133391,
+      "follows_30d": 105
+    },
+    {
+      "campaign": "AB test #2",
+      "ad_name": "別再問當初-spirit",
+      "status": "PAUSED",
+      "spend": 11.0,
+      "frequency": 1.334328,
+      "cpr": 0.354839,
+      "follows_30d": 2
+    },
+    {
+      "campaign": "AB test #3",
+      "ad_name": "隱藏關卡-biz",
+      "status": "PAUSED",
+      "spend": 45.0,
+      "frequency": 1.195789,
+      "cpr": 3.0,
+      "follows_30d": 1
+    },
+    {
+      "campaign": "AB test #3",
+      "ad_name": "順著天意做事-biz",
+      "status": "PAUSED",
+      "spend": 316.0,
+      "frequency": 1.395846,
+      "cpr": 1.915152,
+      "follows_30d": 21
+    },
+    {
+      "campaign": "AB test #3",
+      "ad_name": "順著天意做事-spirit",
+      "status": "PAUSED",
+      "spend": 84.0,
+      "frequency": 1.233553,
+      "cpr": 1.150685,
+      "follows_30d": 5
+    },
+    {
+      "campaign": "AB test #3",
+      "ad_name": "良心生的太大顆-spirit",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "frequency": 1.058824,
+      "cpr": null,
+      "follows_30d": 0
+    },
+    {
+      "campaign": "AB test #3",
+      "ad_name": "隱藏關卡-spirit",
+      "status": "PAUSED",
+      "spend": 22.0,
+      "frequency": 1.126935,
+      "cpr": 1.047619,
+      "follows_30d": 2
+    },
+    {
+      "campaign": "AB test #4",
+      "ad_name": "良心生的太大顆-biz",
+      "status": "PAUSED",
+      "spend": 278.0,
+      "frequency": 1.360445,
+      "cpr": 2.355932,
+      "follows_30d": 11
+    },
+    {
+      "campaign": "AB test #4",
+      "ad_name": "良心生的太大顆-spirit",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "frequency": 1.029412,
+      "cpr": null,
+      "follows_30d": 0
+    },
+    {
+      "campaign": "AB test #4",
+      "ad_name": "害怕不夠努力-spirit",
+      "status": "PAUSED",
+      "spend": 618.0,
+      "frequency": 1.620003,
+      "cpr": 1.652406,
+      "follows_30d": 50
+    },
+    {
+      "campaign": "AB test #4",
+      "ad_name": "害怕不夠努力-biz",
+      "status": "PAUSED",
+      "spend": 498.0,
+      "frequency": 1.35057,
+      "cpr": 2.540816,
+      "follows_30d": 25
+    },
+    {
+      "campaign": "AB test #4",
+      "ad_name": "我被騙了，這根本不是算命-spirit",
+      "status": "PAUSED",
+      "spend": 15.0,
+      "frequency": 1.180147,
+      "cpr": 1.666667,
+      "follows_30d": 0
+    },
+    {
+      "campaign": "AB test #4",
+      "ad_name": "我被騙了，這根本不是算命-biz",
+      "status": "PAUSED",
+      "spend": 12.0,
+      "frequency": 1.078261,
+      "cpr": 2.4,
+      "follows_30d": 0
+    },
+    {
+      "campaign": "AB test #5",
+      "ad_name": "金錢循環-spirit",
+      "status": "PAUSED",
+      "spend": 240.0,
+      "frequency": 1.724415,
+      "cpr": 2.926829,
+      "follows_30d": 4
+    },
+    {
+      "campaign": "AB test #5",
+      "ad_name": "訴苦比他更累-spirit",
+      "status": "PAUSED",
+      "spend": 1350.0,
+      "frequency": 1.629609,
+      "cpr": 1.588235,
+      "follows_30d": 90
+    },
+    {
+      "campaign": "AB test #5",
+      "ad_name": "西藏啞口無言-spirit",
+      "status": "PAUSED",
+      "spend": 27.0,
+      "frequency": 1.125945,
+      "cpr": 2.25,
+      "follows_30d": 3
+    },
+    {
+      "campaign": "AB test #6",
+      "ad_name": "長姊病-spirit -",
+      "status": "PAUSED",
+      "spend": 1407.0,
+      "frequency": 1.362244,
+      "cpr": 0.16058,
+      "follows_30d": 48
+    },
+    {
+      "campaign": "AB test #6",
+      "ad_name": "害怕不夠努力-spirit",
+      "status": "PAUSED",
+      "spend": 302.0,
+      "frequency": 1.272172,
+      "cpr": 1.852761,
+      "follows_30d": 20
+    },
+    {
+      "campaign": "AB test #7",
+      "ad_name": "西藏啞口無言-spirit",
+      "status": "PAUSED",
+      "spend": 39.0,
+      "frequency": 1.268546,
+      "cpr": 2.166667,
+      "follows_30d": 2
+    },
+    {
+      "campaign": "AB test #9 -算命",
+      "ad_name": "順著天意做事-spirit",
+      "status": "PAUSED",
+      "spend": 17.0,
+      "frequency": 1.054598,
+      "cpr": 0.090909,
+      "follows_30d": 1
+    },
+    {
+      "campaign": "AB test #9 -算命",
+      "ad_name": "你算命嗎？算命是怎麼一回事呢？",
+      "status": "PAUSED",
+      "spend": 103.0,
+      "frequency": 1.268402,
+      "cpr": 0.20078,
+      "follows_30d": 0
+    }
+  ],
+  "suggestions": [
+    "📉 增速放緩：猴子管理學-spirit，考慮換廣告素材",
+    "⭐ 最佳廣告：你越用力要他改變-spirit（AB test #8），CPR NT$0.85",
+    "💡 可考慮重啟：長姊病-spirit -，CPR NT$0.16，頻率 1.36x"
+  ]
+}
