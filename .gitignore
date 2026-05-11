@@ -10,3 +10,4 @@ __pycache__/
 # 不需要的大檔案
 meta_ads_monitor/reports/report_*.json
 !meta_ads_monitor/reports/latest.json
+fb ads API token & secrete.md
