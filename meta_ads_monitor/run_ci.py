@@ -172,13 +172,56 @@ function r(data){
   if(cx&&ca.length)new Chart(cx,{type:'bar',data:{labels:ca.map(a=>a.ad_name.substring(0,10)),datasets:[{data:ca.map(a=>Number(a.cpr).toFixed(2)),backgroundColor:ca.map(a=>a.cpr<1?'#34c759aa':a.cpr<2?'#ff9500aa':'#ff3b30aa'),borderRadius:6}]},options:{responsive:true,plugins:{legend:{display:false}},scales:{y:{beginAtZero:true,ticks:{callback:v=>'NT$'+v}},x:{ticks:{font:{size:11}}}}}});
 }
 r(D);
+
+// 每日增粉折線圖
+const SNAP=__SNAPSHOT_DATA__;
+(function(){
+  const names=Object.keys(SNAP);
+  if(!names.length) return;
+  // 收集所有日期
+  const dateSet=new Set();
+  names.forEach(n=>SNAP[n].forEach(p=>dateSet.add(p.date)));
+  const dates=[...dateSet].sort();
+  if(dates.length<2) return;
+  // 顏色池
+  const colors=['#3b82f6','#10b981','#f59e0b','#ef4444','#8b5cf6','#06b6d4','#f97316','#84cc16'];
+  const datasets=names.map((n,i)=>({
+    label:n.substring(0,14),
+    data:dates.map(d=>{const p=SNAP[n].find(x=>x.date===d);return p?p.delta:null;}),
+    borderColor:colors[i%colors.length],
+    backgroundColor:colors[i%colors.length]+'22',
+    tension:0.3,
+    spanGaps:true,
+    pointRadius:4,
+    borderWidth:2,
+  }));
+  // 插入圖表 DOM
+  const wrap=document.createElement('div');
+  wrap.style.cssText='background:#fff;border-radius:12px;border:1px solid #e5e5ea;padding:16px;margin-bottom:20px;';
+  wrap.innerHTML='<div style="font-size:13px;font-weight:600;color:#6e6e73;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:10px">📈 每日增粉趨勢（各廣告）</div><canvas id="trendChart" style="max-height:220px"></canvas>';
+  const mc=document.getElementById('mc');
+  if(mc && mc.firstChild) mc.insertBefore(wrap, mc.firstChild);
+  const ctx=document.getElementById('trendChart');
+  if(ctx) new Chart(ctx,{
+    type:'line',
+    data:{labels:dates,datasets},
+    options:{responsive:true,interaction:{mode:'index',intersect:false},
+      plugins:{legend:{position:'bottom',labels:{font:{size:11},boxWidth:12}}},
+      scales:{
+        y:{beginAtZero:true,title:{display:true,text:'當日新增粉絲'}},
+        x:{ticks:{font:{size:10},maxTicksLimit:10}}
+      }
+    }
+  });
+})();
 </script>
 </body>
 </html>"""
 
-def generate_html(report_data):
+def generate_html(report_data, snapshot_chart=None):
     report_json = json.dumps(report_data, ensure_ascii=False)
-    return DASHBOARD_TEMPLATE.replace("__REPORT_DATA__", report_json)
+    snap_json   = json.dumps(snapshot_chart or {}, ensure_ascii=False)
+    return DASHBOARD_TEMPLATE.replace("__REPORT_DATA__", report_json).replace("__SNAPSHOT_DATA__", snap_json)
 
 # ── 主流程 ─────────────────────────────────────────────────────────────────
 def main():
@@ -263,6 +306,23 @@ def main():
         "suggestions": suggestions,
     }
 
+    # 從 snapshot 建立每日增粉折線圖數據（只取 active 廣告）
+    active_names = {a.get("ad_name") for a in active_ads}
+    snapshot_chart = {}
+    for ad_id, entry in snapshot.items():
+        ad_name = entry.get("ad_name", "")
+        if ad_name not in active_names:
+            continue
+        history = entry.get("history", [])
+        if len(history) < 2:
+            continue
+        deltas = []
+        for i in range(1, len(history)):
+            d = history[i]["follows"] - history[i-1]["follows"]
+            deltas.append({"date": history[i]["date"], "delta": max(0, d)})
+        if deltas:
+            snapshot_chart[ad_name] = deltas
+
     # 儲存 JSON（時間戳 + latest 兩份）
     report_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "reports")
     os.makedirs(report_dir, exist_ok=True)
@@ -278,7 +338,7 @@ def main():
     os.makedirs(dashboard_dir, exist_ok=True)
     html_path = os.path.join(dashboard_dir, "index.html")
     with open(html_path, "w", encoding="utf-8") as f:
-        f.write(generate_html(report_data))
+        f.write(generate_html(report_data, snapshot_chart))
     print(f"🌐 Dashboard 已產生：dashboard/index.html")
 
 
