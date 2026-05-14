@@ -1,16 +1,8 @@
 {
-  "generated_at": "2026-05-13 04:49",
+  "generated_at": "2026-05-14 04:45",
   "frequency_stops": [],
   "frequency_warnings": [],
   "slowdown_alerts": [
-    {
-      "name": "長姊病-spirit -",
-      "campaign": "AB test #6"
-    },
-    {
-      "name": "害怕不夠努力-spirit",
-      "campaign": "AB test #6"
-    },
     {
       "name": "在關係中丟失自己-spirit",
       "campaign": "AB test #7"
@@ -22,44 +14,16 @@
   ],
   "active_ads": [
     {
-      "campaign": "AB test #6",
-      "ad_name": "長姊病-spirit -",
-      "spend": 1550.0,
-      "reach": 15726,
-      "frequency": 1.435902,
-      "results": 9481,
-      "cpr": 0.163485,
-      "cpc": 0.610717,
-      "follows_30d": 49,
-      "follows_delta_today": 1,
-      "slowdown": true,
-      "no_data": false
-    },
-    {
-      "campaign": "AB test #6",
-      "ad_name": "害怕不夠努力-spirit",
-      "spend": 307.0,
-      "reach": 3316,
-      "frequency": 1.282569,
-      "results": 165,
-      "cpr": 1.860606,
-      "cpc": 0.7733,
-      "follows_30d": 20,
-      "follows_delta_today": 0,
-      "slowdown": true,
-      "no_data": false
-    },
-    {
       "campaign": "AB test #7",
       "ad_name": "在關係中丟失自己-spirit",
-      "spend": 293.0,
-      "reach": 5293,
-      "frequency": 1.281126,
-      "results": 176,
-      "cpr": 1.664773,
-      "cpc": 0.363975,
-      "follows_30d": 20,
-      "follows_delta_today": 0,
+      "spend": 386.0,
+      "reach": 6289,
+      "frequency": 1.373509,
+      "results": 207,
+      "cpr": 1.864734,
+      "cpc": 0.385614,
+      "follows_30d": 21,
+      "follows_delta_today": 1,
       "slowdown": true,
       "no_data": false
     },
@@ -68,68 +32,68 @@
       "ad_name": "猴子管理學-spirit",
       "spend": 1206.0,
       "reach": 20459,
-      "frequency": 1.45359,
+      "frequency": 1.453639,
       "results": 902,
       "cpr": 1.337029,
       "cpc": 0.319301,
       "follows_30d": 52,
-      "follows_delta_today": 1,
+      "follows_delta_today": 0,
       "slowdown": true,
       "no_data": false
     },
     {
       "campaign": "＃10 campaign",
       "ad_name": "天堂地獄都在人間-spirit",
-      "spend": 29.0,
-      "reach": 565,
-      "frequency": 1.072566,
-      "results": 9,
-      "cpr": 3.222222,
-      "cpc": 0.446154,
-      "follows_30d": 0,
-      "follows_delta_today": 0,
+      "spend": 146.0,
+      "reach": 2486,
+      "frequency": 1.211183,
+      "results": 26,
+      "cpr": 5.615385,
+      "cpc": 0.439759,
+      "follows_30d": 2,
+      "follows_delta_today": 2,
       "slowdown": false,
       "no_data": false
     },
     {
       "campaign": "＃10 campaign",
       "ad_name": "你越用力要他改變-spirit",
-      "spend": 83.0,
-      "reach": 728,
-      "frequency": 1.026099,
-      "results": 19,
-      "cpr": 4.368421,
-      "cpc": 1.509091,
+      "spend": 95.0,
+      "reach": 1068,
+      "frequency": 1.079588,
+      "results": 27,
+      "cpr": 3.518519,
+      "cpc": 1.010638,
       "follows_30d": 1,
-      "follows_delta_today": 1,
-      "slowdown": false,
-      "no_data": false
-    },
-    {
-      "campaign": "＃10 campaign",
-      "ad_name": "不在你的時間線",
-      "spend": 163.0,
-      "reach": 1478,
-      "frequency": 1.082544,
-      "results": 26,
-      "cpr": 6.269231,
-      "cpc": 1.336066,
-      "follows_30d": 0,
       "follows_delta_today": 0,
       "slowdown": false,
       "no_data": false
     },
     {
       "campaign": "＃10 campaign",
-      "ad_name": "根本不是對錯的問題-spirit",
-      "spend": 46.0,
-      "reach": 434,
-      "frequency": 1.004608,
-      "results": 9,
-      "cpr": 5.111111,
-      "cpc": 1.703704,
+      "ad_name": "不在你的時間線",
+      "spend": 201.0,
+      "reach": 2072,
+      "frequency": 1.17471,
+      "results": 38,
+      "cpr": 5.289474,
+      "cpc": 0.985294,
       "follows_30d": 1,
       "follows_delta_today": 1,
+      "slowdown": false,
+      "no_data": false
+    },
+    {
+      "campaign": "＃10 campaign",
+      "ad_name": "根本不是對錯的問題-spirit",
+      "spend": 54.0,
+      "reach": 636,
+      "frequency": 1.028302,
+      "results": 9,
+      "cpr": 6.0,
+      "cpc": 1.058824,
+      "follows_30d": 1,
+      "follows_delta_today": 0,
       "slowdown": false,
       "no_data": false
     }
@@ -139,62 +103,62 @@
       "campaign": "AB test #2",
       "ad_name": "無反應練習-spirit",
       "status": "PAUSED",
-      "spend": 72.0,
-      "frequency": 1.212591,
-      "cpr": 1.44,
-      "follows_30d": 4
+      "spend": 58.0,
+      "frequency": 1.183476,
+      "cpr": 1.45,
+      "follows_30d": 2
     },
     {
       "campaign": "AB test #2",
       "ad_name": "別再問當初-biz",
       "status": "PAUSED",
-      "spend": 3.0,
-      "frequency": 1.117117,
-      "cpr": 3.0,
+      "spend": 0.0,
+      "frequency": 1.111111,
+      "cpr": null,
       "follows_30d": 0
     },
     {
       "campaign": "AB test #2",
       "ad_name": "長姊病-biz",
       "status": "PAUSED",
-      "spend": 1555.0,
-      "frequency": 1.511314,
-      "cpr": 1.703176,
-      "follows_30d": 91
+      "spend": 1449.0,
+      "frequency": 1.471326,
+      "cpr": 1.69871,
+      "follows_30d": 87
     },
     {
       "campaign": "AB test #2",
       "ad_name": "無反應練習 -biz",
       "status": "PAUSED",
-      "spend": 250.0,
-      "frequency": 1.419828,
-      "cpr": 1.923077,
+      "spend": 231.0,
+      "frequency": 1.368636,
+      "cpr": 1.862903,
       "follows_30d": 21
     },
     {
       "campaign": "AB test #2",
       "ad_name": "長姊病-spirit -",
       "status": "PAUSED",
-      "spend": 1125.0,
-      "frequency": 1.542583,
-      "cpr": 1.138664,
-      "follows_30d": 89
+      "spend": 1063.0,
+      "frequency": 1.49853,
+      "cpr": 1.16302,
+      "follows_30d": 81
     },
     {
       "campaign": "AB test #2",
       "ad_name": "別再問當初-spirit",
       "status": "PAUSED",
       "spend": 6.0,
-      "frequency": 1.216216,
-      "cpr": 0.461538,
+      "frequency": 1.163934,
+      "cpr": 0.545455,
       "follows_30d": 0
     },
     {
       "campaign": "AB test #3",
       "ad_name": "隱藏關卡-biz",
       "status": "PAUSED",
-      "spend": 45.0,
-      "frequency": 1.195789,
+      "spend": 30.0,
+      "frequency": 1.149206,
       "cpr": 3.0,
       "follows_30d": 1
     },
@@ -202,27 +166,27 @@
       "campaign": "AB test #3",
       "ad_name": "順著天意做事-biz",
       "status": "PAUSED",
-      "spend": 316.0,
-      "frequency": 1.395846,
-      "cpr": 1.915152,
-      "follows_30d": 21
+      "spend": 270.0,
+      "frequency": 1.325672,
+      "cpr": 2.0,
+      "follows_30d": 18
     },
     {
       "campaign": "AB test #3",
       "ad_name": "順著天意做事-spirit",
       "status": "PAUSED",
-      "spend": 63.0,
-      "frequency": 1.260817,
-      "cpr": 1.067797,
+      "spend": 48.0,
+      "frequency": 1.222376,
+      "cpr": 1.021277,
       "follows_30d": 3
     },
     {
       "campaign": "AB test #3",
       "ad_name": "隱藏關卡-spirit",
       "status": "PAUSED",
-      "spend": 16.0,
-      "frequency": 1.107143,
-      "cpr": 1.0,
+      "spend": 5.0,
+      "frequency": 1.140187,
+      "cpr": 0.625,
       "follows_30d": 1
     },
     {
@@ -307,6 +271,24 @@
       "follows_30d": 3
     },
     {
+      "campaign": "AB test #6",
+      "ad_name": "長姊病-spirit -",
+      "status": "PAUSED",
+      "spend": 1589.0,
+      "frequency": 1.453539,
+      "cpr": 0.167387,
+      "follows_30d": 49
+    },
+    {
+      "campaign": "AB test #6",
+      "ad_name": "害怕不夠努力-spirit",
+      "status": "PAUSED",
+      "spend": 309.0,
+      "frequency": 1.286185,
+      "cpr": 1.861446,
+      "follows_30d": 20
+    },
+    {
       "campaign": "AB test #7",
       "ad_name": "西藏啞口無言-spirit",
       "status": "PAUSED",
@@ -362,11 +344,9 @@
     }
   ],
   "suggestions": [
-    "📉 增速放緩：長姊病-spirit -，考慮換廣告素材",
-    "📉 增速放緩：害怕不夠努力-spirit，考慮換廣告素材",
     "📉 增速放緩：在關係中丟失自己-spirit，考慮換廣告素材",
     "📉 增速放緩：猴子管理學-spirit，考慮換廣告素材",
-    "⭐ 最佳廣告：長姊病-spirit -（AB test #6），CPR NT$0.16",
-    "💡 可考慮重啟：順著天意做事-biz，CPR NT$1.92，頻率 1.40x"
+    "⭐ 最佳廣告：猴子管理學-spirit（AB test #7），CPR NT$1.34",
+    "💡 可考慮重啟：長姊病-spirit -，CPR NT$0.17，頻率 1.45x"
   ]
 }
