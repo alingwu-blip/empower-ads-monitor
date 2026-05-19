@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-05-18 05:07",
+  "generated_at": "2026-05-19 05:03",
   "frequency_stops": [],
   "frequency_warnings": [],
   "slowdown_alerts": [
     {
-      "name": "猴子管理學-spirit",
+      "name": "在關係中丟失自己-spirit",
       "campaign": "AB test #7"
     }
   ],
@@ -12,42 +12,42 @@
     {
       "campaign": "AB test #7",
       "ad_name": "在關係中丟失自己-spirit",
-      "spend": 633.0,
-      "reach": 8625,
-      "frequency": 1.597217,
-      "results": 271,
-      "cpr": 2.335793,
-      "cpc": 0.435351,
+      "spend": 671.0,
+      "reach": 8820,
+      "frequency": 1.654195,
+      "results": 282,
+      "cpr": 2.379433,
+      "cpc": 0.437419,
       "follows_30d": 26,
-      "follows_delta_today": 0,
-      "slowdown": false,
-      "no_data": false
-    },
-    {
-      "campaign": "AB test #7",
-      "ad_name": "猴子管理學-spirit",
-      "spend": 1377.0,
-      "reach": 22451,
-      "frequency": 1.505323,
-      "results": 972,
-      "cpr": 1.416667,
-      "cpc": 0.32982,
-      "follows_30d": 52,
       "follows_delta_today": 0,
       "slowdown": true,
       "no_data": false
     },
     {
+      "campaign": "AB test #7",
+      "ad_name": "猴子管理學-spirit",
+      "spend": 1437.0,
+      "reach": 22801,
+      "frequency": 1.542432,
+      "results": 994,
+      "cpr": 1.445674,
+      "cpc": 0.332793,
+      "follows_30d": 52,
+      "follows_delta_today": 0,
+      "slowdown": false,
+      "no_data": false
+    },
+    {
       "campaign": "#13 carousel",
       "ad_name": "修行誤會大了--video",
-      "spend": 321.0,
-      "reach": 4048,
-      "frequency": 1.359931,
-      "results": 1717,
-      "cpr": 0.186954,
-      "cpc": 0.771635,
-      "follows_30d": 6,
-      "follows_delta_today": 6,
+      "spend": 519.0,
+      "reach": 5780,
+      "frequency": 1.663668,
+      "results": 2950,
+      "cpr": 0.175932,
+      "cpc": 0.735127,
+      "follows_30d": 9,
+      "follows_delta_today": 3,
       "slowdown": false,
       "no_data": false
     }
@@ -58,7 +58,7 @@
       "ad_name": "無反應練習-spirit",
       "status": "PAUSED",
       "spend": 3.0,
-      "frequency": 1.046875,
+      "frequency": 1.05042,
       "cpr": 0.5,
       "follows_30d": 0
     },
@@ -75,82 +75,46 @@
       "campaign": "AB test #2",
       "ad_name": "長姊病-biz",
       "status": "PAUSED",
-      "spend": 852.0,
-      "frequency": 1.307587,
-      "cpr": 1.638462,
-      "follows_30d": 51
+      "spend": 599.0,
+      "frequency": 1.228107,
+      "cpr": 1.524173,
+      "follows_30d": 37
     },
     {
       "campaign": "AB test #2",
       "ad_name": "無反應練習 -biz",
       "status": "PAUSED",
-      "spend": 60.0,
-      "frequency": 1.098779,
-      "cpr": 1.666667,
+      "spend": 31.0,
+      "frequency": 1.099065,
+      "cpr": 1.192308,
       "follows_30d": 3
     },
     {
       "campaign": "AB test #2",
       "ad_name": "長姊病-spirit -",
       "status": "PAUSED",
-      "spend": 720.0,
-      "frequency": 1.349264,
-      "cpr": 1.16129,
-      "follows_30d": 56
+      "spend": 572.0,
+      "frequency": 1.322513,
+      "cpr": 1.167347,
+      "follows_30d": 44
     },
     {
       "campaign": "AB test #2",
       "ad_name": "別再問當初-spirit",
       "status": "PAUSED",
       "spend": 0.0,
-      "frequency": 1.0625,
+      "frequency": 1.086957,
       "cpr": null,
-      "follows_30d": 0
-    },
-    {
-      "campaign": "AB test #3",
-      "ad_name": "隱藏關卡-biz",
-      "status": "PAUSED",
-      "spend": 5.0,
-      "frequency": 1.060976,
-      "cpr": 5.0,
-      "follows_30d": 0
-    },
-    {
-      "campaign": "AB test #3",
-      "ad_name": "順著天意做事-biz",
-      "status": "PAUSED",
-      "spend": 61.0,
-      "frequency": 1.057715,
-      "cpr": 2.904762,
-      "follows_30d": 3
-    },
-    {
-      "campaign": "AB test #3",
-      "ad_name": "順著天意做事-spirit",
-      "status": "PAUSED",
-      "spend": 7.0,
-      "frequency": 1.046784,
-      "cpr": 1.0,
-      "follows_30d": 1
-    },
-    {
-      "campaign": "AB test #3",
-      "ad_name": "隱藏關卡-spirit",
-      "status": "PAUSED",
-      "spend": 2.0,
-      "frequency": 1.115385,
-      "cpr": 2.0,
       "follows_30d": 0
     },
     {
       "campaign": "AB test #4",
       "ad_name": "良心生的太大顆-biz",
       "status": "PAUSED",
-      "spend": 203.0,
-      "frequency": 1.295694,
-      "cpr": 2.050505,
-      "follows_30d": 10
+      "spend": 129.0,
+      "frequency": 1.236938,
+      "cpr": 1.791667,
+      "follows_30d": 7
     },
     {
       "campaign": "AB test #4",
@@ -379,8 +343,8 @@
     }
   ],
   "suggestions": [
-    "📉 增速放緩：猴子管理學-spirit，考慮換廣告素材",
-    "⭐ 最佳廣告：修行誤會大了--video（#13 carousel），CPR NT$0.19",
+    "📉 增速放緩：在關係中丟失自己-spirit，考慮換廣告素材",
+    "⭐ 最佳廣告：修行誤會大了--video（#13 carousel），CPR NT$0.18",
     "💡 可考慮重啟：長姊病-spirit -，CPR NT$0.17，頻率 1.45x"
   ]
 }
