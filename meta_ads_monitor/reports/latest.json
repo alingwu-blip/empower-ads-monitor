@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-05-25 05:21",
+  "generated_at": "2026-05-26 05:05",
   "frequency_stops": [],
   "frequency_warnings": [
     {
       "name": "修行誤會大了--video",
       "campaign": "#13 carousel",
-      "freq": 1.906547
+      "freq": 1.936736
     }
   ],
   "slowdown_alerts": [],
@@ -13,13 +13,13 @@
     {
       "campaign": "#13 carousel",
       "ad_name": "修行誤會大了--video",
-      "spend": 1735.0,
-      "reach": 19047,
-      "frequency": 1.906547,
-      "results": 10823,
-      "cpr": 0.160307,
-      "cpc": 0.672741,
-      "follows_30d": 83,
+      "spend": 2028.0,
+      "reach": 22161,
+      "frequency": 1.936736,
+      "results": 12786,
+      "cpr": 0.158611,
+      "cpc": 0.656948,
+      "follows_30d": 103,
       "follows_delta_today": 20,
       "slowdown": false,
       "no_data": false
@@ -37,56 +37,11 @@
     },
     {
       "campaign": "AB test #2",
-      "ad_name": "長姊病-biz",
-      "status": "PAUSED",
-      "spend": 71.0,
-      "frequency": 1.048662,
-      "cpr": 2.366667,
-      "follows_30d": 3
-    },
-    {
-      "campaign": "AB test #2",
       "ad_name": "長姊病-spirit -",
       "status": "PAUSED",
-      "spend": 141.0,
-      "frequency": 1.121699,
-      "cpr": 1.532609,
-      "follows_30d": 10
-    },
-    {
-      "campaign": "AB test #4",
-      "ad_name": "良心生的太大顆-biz",
-      "status": "PAUSED",
-      "spend": 18.0,
-      "frequency": 1.054608,
-      "cpr": 1.384615,
-      "follows_30d": 2
-    },
-    {
-      "campaign": "AB test #4",
-      "ad_name": "良心生的太大顆-spirit",
-      "status": "PAUSED",
-      "spend": 0.0,
-      "frequency": 1.0,
-      "cpr": null,
-      "follows_30d": 0
-    },
-    {
-      "campaign": "AB test #4",
-      "ad_name": "害怕不夠努力-spirit",
-      "status": "PAUSED",
-      "spend": 100.0,
-      "frequency": 1.092135,
-      "cpr": 2.040816,
-      "follows_30d": 6
-    },
-    {
-      "campaign": "AB test #4",
-      "ad_name": "害怕不夠努力-biz",
-      "status": "PAUSED",
-      "spend": 110.0,
-      "frequency": 1.095882,
-      "cpr": 2.894737,
+      "spend": 66.0,
+      "frequency": 1.070615,
+      "cpr": 1.434783,
       "follows_30d": 4
     },
     {
@@ -307,7 +262,7 @@
     }
   ],
   "suggestions": [
-    "🟡 頻率警告：修行誤會大了--video（1.91x），準備新素材",
+    "🟡 頻率警告：修行誤會大了--video（1.94x），準備新素材",
     "⭐ 最佳廣告：修行誤會大了--video（#13 carousel），CPR NT$0.16",
     "💡 可考慮重啟：長姊病-spirit -，CPR NT$0.17，頻率 1.45x"
   ]
