@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-05-26 05:05",
+  "generated_at": "2026-05-27 05:18",
   "frequency_stops": [],
   "frequency_warnings": [
     {
       "name": "修行誤會大了--video",
       "campaign": "#13 carousel",
-      "freq": 1.936736
+      "freq": 1.991356
     }
   ],
   "slowdown_alerts": [],
@@ -13,37 +13,19 @@
     {
       "campaign": "#13 carousel",
       "ad_name": "修行誤會大了--video",
-      "spend": 2028.0,
-      "reach": 22161,
-      "frequency": 1.936736,
-      "results": 12786,
-      "cpr": 0.158611,
-      "cpc": 0.656948,
-      "follows_30d": 103,
+      "spend": 2275.0,
+      "reach": 24064,
+      "frequency": 1.991356,
+      "results": 14214,
+      "cpr": 0.160053,
+      "cpc": 0.658466,
+      "follows_30d": 123,
       "follows_delta_today": 20,
       "slowdown": false,
       "no_data": false
     }
   ],
   "inactive_ads_summary": [
-    {
-      "campaign": "AB test #2",
-      "ad_name": "無反應練習-spirit",
-      "status": "PAUSED",
-      "spend": 1.0,
-      "frequency": 1.033333,
-      "cpr": 0.5,
-      "follows_30d": 0
-    },
-    {
-      "campaign": "AB test #2",
-      "ad_name": "長姊病-spirit -",
-      "status": "PAUSED",
-      "spend": 66.0,
-      "frequency": 1.070615,
-      "cpr": 1.434783,
-      "follows_30d": 4
-    },
     {
       "campaign": "AB test #5",
       "ad_name": "金錢循環-spirit",
@@ -262,7 +244,7 @@
     }
   ],
   "suggestions": [
-    "🟡 頻率警告：修行誤會大了--video（1.94x），準備新素材",
+    "🟡 頻率警告：修行誤會大了--video（1.99x），準備新素材",
     "⭐ 最佳廣告：修行誤會大了--video（#13 carousel），CPR NT$0.16",
     "💡 可考慮重啟：長姊病-spirit -，CPR NT$0.17，頻率 1.45x"
   ]
