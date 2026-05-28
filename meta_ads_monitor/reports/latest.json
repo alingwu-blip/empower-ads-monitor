@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-05-27 05:18",
-  "frequency_stops": [],
-  "frequency_warnings": [
+  "generated_at": "2026-05-28 05:10",
+  "frequency_stops": [
     {
       "name": "修行誤會大了--video",
       "campaign": "#13 carousel",
-      "freq": 1.991356
+      "freq": 2.08162
     }
   ],
+  "frequency_warnings": [],
   "slowdown_alerts": [],
   "active_ads": [
     {
       "campaign": "#13 carousel",
       "ad_name": "修行誤會大了--video",
-      "spend": 2275.0,
-      "reach": 24064,
-      "frequency": 1.991356,
-      "results": 14214,
-      "cpr": 0.160053,
-      "cpc": 0.658466,
-      "follows_30d": 123,
-      "follows_delta_today": 20,
+      "spend": 2618.0,
+      "reach": 25974,
+      "frequency": 2.08162,
+      "results": 15928,
+      "cpr": 0.164365,
+      "cpc": 0.664467,
+      "follows_30d": 145,
+      "follows_delta_today": 22,
       "slowdown": false,
       "no_data": false
     }
@@ -30,45 +30,45 @@
       "campaign": "AB test #5",
       "ad_name": "金錢循環-spirit",
       "status": "PAUSED",
-      "spend": 240.0,
-      "frequency": 1.724415,
-      "cpr": 2.926829,
+      "spend": 227.0,
+      "frequency": 1.796281,
+      "cpr": 3.66129,
       "follows_30d": 4
     },
     {
       "campaign": "AB test #5",
       "ad_name": "訴苦比他更累-spirit",
       "status": "PAUSED",
-      "spend": 1350.0,
-      "frequency": 1.629609,
-      "cpr": 1.588235,
-      "follows_30d": 90
+      "spend": 1309.0,
+      "frequency": 1.622346,
+      "cpr": 1.624069,
+      "follows_30d": 85
     },
     {
       "campaign": "AB test #5",
       "ad_name": "西藏啞口無言-spirit",
       "status": "PAUSED",
-      "spend": 27.0,
-      "frequency": 1.125945,
-      "cpr": 2.25,
+      "spend": 16.0,
+      "frequency": 1.089362,
+      "cpr": 1.6,
       "follows_30d": 3
     },
     {
       "campaign": "AB test #6",
       "ad_name": "長姊病-spirit -",
       "status": "PAUSED",
-      "spend": 1589.0,
-      "frequency": 1.453539,
-      "cpr": 0.167387,
+      "spend": 1575.0,
+      "frequency": 1.44359,
+      "cpr": 0.167268,
       "follows_30d": 49
     },
     {
       "campaign": "AB test #6",
       "ad_name": "害怕不夠努力-spirit",
       "status": "PAUSED",
-      "spend": 309.0,
-      "frequency": 1.286185,
-      "cpr": 1.861446,
+      "spend": 283.0,
+      "frequency": 1.277649,
+      "cpr": 1.825806,
       "follows_30d": 20
     },
     {
@@ -244,8 +244,8 @@
     }
   ],
   "suggestions": [
-    "🟡 頻率警告：修行誤會大了--video（1.99x），準備新素材",
+    "🔴 頻率超標：修行誤會大了--video（2.08x），請立即停用",
     "⭐ 最佳廣告：修行誤會大了--video（#13 carousel），CPR NT$0.16",
-    "💡 可考慮重啟：長姊病-spirit -，CPR NT$0.17，頻率 1.45x"
+    "💡 可考慮重啟：長姊病-spirit -，CPR NT$0.17，頻率 1.44x"
   ]
 }
