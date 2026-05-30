@@ -1,28 +1,22 @@
 {
-  "generated_at": "2026-05-30 04:53",
-  "frequency_stops": [
-    {
-      "name": "修行誤會大了--video",
-      "campaign": "#13 carousel",
-      "freq": 2.188295
-    }
-  ],
+  "generated_at": "2026-05-30 08:41",
+  "frequency_stops": [],
   "frequency_warnings": [],
   "slowdown_alerts": [],
   "active_ads": [
     {
-      "campaign": "#13 carousel",
-      "ad_name": "修行誤會大了--video",
-      "spend": 3232.0,
-      "reach": 30755,
-      "frequency": 2.188295,
-      "results": 19803,
-      "cpr": 0.163208,
-      "cpc": 0.656644,
-      "follows_30d": 187,
-      "follows_delta_today": 17,
+      "campaign": "",
+      "ad_name": "人身難得了--video",
+      "spend": 0.0,
+      "reach": 0,
+      "frequency": 0.0,
+      "results": 0,
+      "cpr": null,
+      "cpc": null,
+      "follows_30d": 0,
+      "follows_delta_today": null,
       "slowdown": false,
-      "no_data": false
+      "no_data": true
     }
   ],
   "inactive_ads_summary": [
@@ -216,6 +210,15 @@
       "follows_30d": 0
     },
     {
+      "campaign": "#13 carousel",
+      "ad_name": "修行誤會大了--video",
+      "status": "PAUSED",
+      "spend": 3232.0,
+      "frequency": 2.188327,
+      "cpr": 0.163208,
+      "follows_30d": 187
+    },
+    {
       "campaign": "AB test for carousel and image",
       "ad_name": "不在你的時間線-image",
       "status": "PAUSED",
@@ -235,8 +238,6 @@
     }
   ],
   "suggestions": [
-    "🔴 頻率超標：修行誤會大了--video（2.19x），請立即停用",
-    "⭐ 最佳廣告：修行誤會大了--video（#13 carousel），CPR NT$0.16",
     "💡 可考慮重啟：長姊病-spirit -，CPR NT$0.16，頻率 1.40x"
   ]
 }
