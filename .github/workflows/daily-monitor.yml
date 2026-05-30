@@ -37,6 +37,7 @@ jobs:
           git add meta_ads_monitor/reports/latest.json
           git add meta_ads_monitor/follows_snapshot.json
           git diff --staged --quiet || git commit -m "📊 每日報告 $(date -u '+%Y-%m-%d')"
+          git pull --rebase origin main
           git push
 
       - name: 上傳 dashboard 到主機
