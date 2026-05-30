@@ -49,4 +49,4 @@ jobs:
           username: u420995027.empower-biz.com
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: dashboard/
-          server-dir: public_html/AI-Project/ads-dashboard/
+          server-dir: /AI-Project/ads-dashboard/
