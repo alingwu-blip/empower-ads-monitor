@@ -7,8 +7,6 @@ on:
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
 
 jobs:
   monitor:
@@ -41,18 +39,11 @@ jobs:
           git diff --staged --quiet || git commit -m "📊 每日報告 $(date -u '+%Y-%m-%d')"
           git push
 
-      - name: 上傳 dashboard 到 GitHub Pages
-        uses: actions/upload-pages-artifact@v3
+      - name: 上傳 dashboard 到主機
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
-          path: dashboard/
-
-  deploy:
-    needs: monitor
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - name: 部署到 GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+          server: 45.130.228.43
+          username: u420995027.empower-biz.com
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: dashboard/
+          server-dir: /public_html/ads-dashboard/
