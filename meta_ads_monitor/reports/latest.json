@@ -1,22 +1,22 @@
 {
-  "generated_at": "2026-05-30 09:08",
+  "generated_at": "2026-05-31 05:20",
   "frequency_stops": [],
   "frequency_warnings": [],
   "slowdown_alerts": [],
   "active_ads": [
     {
-      "campaign": "",
+      "campaign": "#13 carousel",
       "ad_name": "人身難得了--video",
-      "spend": 0.0,
-      "reach": 0,
-      "frequency": 0.0,
-      "results": 0,
-      "cpr": null,
-      "cpc": null,
-      "follows_30d": 0,
-      "follows_delta_today": null,
+      "spend": 132.0,
+      "reach": 1575,
+      "frequency": 1.094603,
+      "results": 427,
+      "cpr": 0.309133,
+      "cpc": 1.168142,
+      "follows_30d": 6,
+      "follows_delta_today": 6,
       "slowdown": false,
-      "no_data": true
+      "no_data": false
     }
   ],
   "inactive_ads_summary": [
@@ -33,26 +33,26 @@
       "campaign": "AB test #5",
       "ad_name": "訴苦比他更累-spirit",
       "status": "PAUSED",
-      "spend": 955.0,
-      "frequency": 1.503076,
-      "cpr": 1.768519,
-      "follows_30d": 54
+      "spend": 769.0,
+      "frequency": 1.524704,
+      "cpr": 1.927318,
+      "follows_30d": 42
     },
     {
       "campaign": "AB test #6",
       "ad_name": "長姊病-spirit -",
       "status": "PAUSED",
-      "spend": 1277.0,
-      "frequency": 1.399519,
-      "cpr": 0.15541,
-      "follows_30d": 34
+      "spend": 1093.0,
+      "frequency": 1.397778,
+      "cpr": 0.145636,
+      "follows_30d": 28
     },
     {
       "campaign": "AB test #6",
       "ad_name": "害怕不夠努力-spirit",
       "status": "PAUSED",
       "spend": 175.0,
-      "frequency": 1.183302,
+      "frequency": 1.181095,
       "cpr": 1.88172,
       "follows_30d": 14
     },
@@ -213,10 +213,10 @@
       "campaign": "#13 carousel",
       "ad_name": "修行誤會大了--video",
       "status": "PAUSED",
-      "spend": 3232.0,
-      "frequency": 2.188327,
-      "cpr": 0.163208,
-      "follows_30d": 187
+      "spend": 3386.0,
+      "frequency": 2.208803,
+      "cpr": 0.164489,
+      "follows_30d": 193
     },
     {
       "campaign": "AB test for carousel and image",
@@ -238,6 +238,7 @@
     }
   ],
   "suggestions": [
-    "💡 可考慮重啟：長姊病-spirit -，CPR NT$0.16，頻率 1.40x"
+    "⭐ 最佳廣告：人身難得了--video（#13 carousel），CPR NT$0.31",
+    "💡 可考慮重啟：長姊病-spirit -，CPR NT$0.15，頻率 1.40x"
   ]
 }
