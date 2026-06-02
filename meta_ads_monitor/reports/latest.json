@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-01 06:05",
+  "generated_at": "2026-06-02 05:51",
   "frequency_stops": [],
   "frequency_warnings": [],
   "slowdown_alerts": [],
@@ -7,14 +7,14 @@
     {
       "campaign": "#13 carousel",
       "ad_name": "人身難得了--video",
-      "spend": 472.0,
-      "reach": 4442,
-      "frequency": 1.325304,
-      "results": 1628,
-      "cpr": 0.289926,
-      "cpc": 1.085057,
-      "follows_30d": 23,
-      "follows_delta_today": 17,
+      "spend": 701.0,
+      "reach": 5648,
+      "frequency": 1.502656,
+      "results": 2311,
+      "cpr": 0.303332,
+      "cpc": 1.12701,
+      "follows_30d": 31,
+      "follows_delta_today": 8,
       "slowdown": false,
       "no_data": false
     }
@@ -24,63 +24,63 @@
       "campaign": "AB test #5",
       "ad_name": "金錢循環-spirit",
       "status": "PAUSED",
-      "spend": 184.0,
-      "frequency": 1.889855,
-      "cpr": 5.111111,
+      "spend": 180.0,
+      "frequency": 1.875792,
+      "cpr": 5.142857,
       "follows_30d": 1
     },
     {
       "campaign": "AB test #5",
       "ad_name": "訴苦比他更累-spirit",
       "status": "PAUSED",
-      "spend": 592.0,
-      "frequency": 1.543519,
-      "cpr": 2.084507,
-      "follows_30d": 26
+      "spend": 504.0,
+      "frequency": 1.464997,
+      "cpr": 2.311927,
+      "follows_30d": 20
     },
     {
       "campaign": "AB test #6",
       "ad_name": "長姊病-spirit -",
       "status": "PAUSED",
-      "spend": 925.0,
-      "frequency": 1.402257,
-      "cpr": 0.135333,
-      "follows_30d": 18
+      "spend": 884.0,
+      "frequency": 1.413271,
+      "cpr": 0.132454,
+      "follows_30d": 16
     },
     {
       "campaign": "AB test #6",
       "ad_name": "害怕不夠努力-spirit",
       "status": "PAUSED",
-      "spend": 174.0,
-      "frequency": 1.17832,
-      "cpr": 1.870968,
-      "follows_30d": 14
+      "spend": 119.0,
+      "frequency": 1.119339,
+      "cpr": 2.016949,
+      "follows_30d": 8
     },
     {
       "campaign": "AB test #7",
       "ad_name": "在關係中丟失自己-spirit",
       "status": "PAUSED",
-      "spend": 692.0,
-      "frequency": 1.742471,
-      "cpr": 2.601504,
-      "follows_30d": 20
+      "spend": 637.0,
+      "frequency": 1.807304,
+      "cpr": 2.806167,
+      "follows_30d": 13
     },
     {
       "campaign": "AB test #7",
       "ad_name": "猴子管理學-spirit",
       "status": "PAUSED",
-      "spend": 1436.0,
-      "frequency": 1.536628,
-      "cpr": 1.456389,
-      "follows_30d": 51
+      "spend": 1351.0,
+      "frequency": 1.498662,
+      "cpr": 1.528281,
+      "follows_30d": 41
     },
     {
       "campaign": "AB test #7",
       "ad_name": "西藏啞口無言-spirit",
       "status": "PAUSED",
       "spend": 39.0,
-      "frequency": 1.268256,
-      "cpr": 2.166667,
+      "frequency": 1.258675,
+      "cpr": 2.294118,
       "follows_30d": 2
     },
     {
@@ -238,7 +238,7 @@
     }
   ],
   "suggestions": [
-    "⭐ 最佳廣告：人身難得了--video（#13 carousel），CPR NT$0.29",
-    "💡 可考慮重啟：長姊病-spirit -，CPR NT$0.14，頻率 1.40x"
+    "⭐ 最佳廣告：人身難得了--video（#13 carousel），CPR NT$0.30",
+    "💡 可考慮重啟：長姊病-spirit -，CPR NT$0.13，頻率 1.41x"
   ]
 }
