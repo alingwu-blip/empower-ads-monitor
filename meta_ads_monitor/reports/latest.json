@@ -1,31 +1,251 @@
 {
-  "generated_at": "2026-06-03 06:05",
+  "generated_at": "2026-06-04 05:58",
   "frequency_stops": [],
-  "frequency_warnings": [],
-  "slowdown_alerts": [
+  "frequency_warnings": [
     {
       "name": "人身難得了--video",
-      "campaign": ""
+      "campaign": "#13 carousel",
+      "freq": 1.820297
     }
   ],
+  "slowdown_alerts": [],
   "active_ads": [
     {
-      "campaign": "",
+      "campaign": "#13 carousel",
       "ad_name": "人身難得了--video",
-      "spend": 0.0,
-      "reach": 0,
-      "frequency": 0.0,
-      "results": 0,
-      "cpr": null,
-      "cpc": null,
-      "follows_30d": 0,
-      "follows_delta_today": 0,
-      "slowdown": true,
-      "no_data": true
+      "spend": 1332.0,
+      "reach": 8553,
+      "frequency": 1.820297,
+      "results": 4217,
+      "cpr": 0.315864,
+      "cpc": 1.20434,
+      "follows_30d": 53,
+      "follows_delta_today": 53,
+      "slowdown": false,
+      "no_data": false
     }
   ],
-  "inactive_ads_summary": [],
+  "inactive_ads_summary": [
+    {
+      "campaign": "AB test #5",
+      "ad_name": "金錢循環-spirit",
+      "status": "PAUSED",
+      "spend": 163.0,
+      "frequency": 1.772191,
+      "cpr": 7.409091,
+      "follows_30d": 1
+    },
+    {
+      "campaign": "AB test #5",
+      "ad_name": "訴苦比他更累-spirit",
+      "status": "PAUSED",
+      "spend": 330.0,
+      "frequency": 1.362796,
+      "cpr": 2.773109,
+      "follows_30d": 6
+    },
+    {
+      "campaign": "AB test #6",
+      "ad_name": "長姊病-spirit -",
+      "status": "PAUSED",
+      "spend": 793.0,
+      "frequency": 1.422164,
+      "cpr": 0.12778,
+      "follows_30d": 12
+    },
+    {
+      "campaign": "AB test #6",
+      "ad_name": "害怕不夠努力-spirit",
+      "status": "PAUSED",
+      "spend": 7.0,
+      "frequency": 1.189286,
+      "cpr": 2.333333,
+      "follows_30d": 0
+    },
+    {
+      "campaign": "AB test #7",
+      "ad_name": "在關係中丟失自己-spirit",
+      "status": "PAUSED",
+      "spend": 591.0,
+      "frequency": 1.904954,
+      "cpr": 3.062176,
+      "follows_30d": 9
+    },
+    {
+      "campaign": "AB test #7",
+      "ad_name": "猴子管理學-spirit",
+      "status": "PAUSED",
+      "spend": 1094.0,
+      "frequency": 1.49742,
+      "cpr": 1.778862,
+      "follows_30d": 17
+    },
+    {
+      "campaign": "AB test #7",
+      "ad_name": "西藏啞口無言-spirit",
+      "status": "PAUSED",
+      "spend": 34.0,
+      "frequency": 1.17658,
+      "cpr": 2.833333,
+      "follows_30d": 0
+    },
+    {
+      "campaign": "AB test #8",
+      "ad_name": "婚姻關係好治百病-spirit",
+      "status": "PAUSED",
+      "spend": 3.0,
+      "frequency": 1.282895,
+      "cpr": 0.75,
+      "follows_30d": 0
+    },
+    {
+      "campaign": "AB test #8",
+      "ad_name": "天堂地獄都在人間-spirit",
+      "status": "PAUSED",
+      "spend": 291.0,
+      "frequency": 1.491228,
+      "cpr": 5.596154,
+      "follows_30d": 5
+    },
+    {
+      "campaign": "AB test #8",
+      "ad_name": "你越用力要他改變-spirit",
+      "status": "PAUSED",
+      "spend": 64.0,
+      "frequency": 1.426095,
+      "cpr": 1.207547,
+      "follows_30d": 3
+    },
+    {
+      "campaign": "AB test #9 -算命",
+      "ad_name": "順著天意做事-spirit",
+      "status": "PAUSED",
+      "spend": 17.0,
+      "frequency": 1.054598,
+      "cpr": 0.090909,
+      "follows_30d": 1
+    },
+    {
+      "campaign": "AB test #9 -算命",
+      "ad_name": "你算命嗎？算命是怎麼一回事呢？",
+      "status": "PAUSED",
+      "spend": 103.0,
+      "frequency": 1.268402,
+      "cpr": 0.20078,
+      "follows_30d": 0
+    },
+    {
+      "campaign": "＃10 campaign",
+      "ad_name": "天堂地獄都在人間-spirit",
+      "status": "PAUSED",
+      "spend": 284.0,
+      "frequency": 1.366,
+      "cpr": 7.282051,
+      "follows_30d": 2
+    },
+    {
+      "campaign": "＃10 campaign",
+      "ad_name": "你越用力要他改變-spirit",
+      "status": "PAUSED",
+      "spend": 157.0,
+      "frequency": 1.144834,
+      "cpr": 2.211268,
+      "follows_30d": 7
+    },
+    {
+      "campaign": "＃10 campaign",
+      "ad_name": "不在你的時間線",
+      "status": "PAUSED",
+      "spend": 244.0,
+      "frequency": 1.308051,
+      "cpr": 4.784314,
+      "follows_30d": 3
+    },
+    {
+      "campaign": "＃10 campaign",
+      "ad_name": "根本不是對錯的問題-spirit",
+      "status": "PAUSED",
+      "spend": 72.0,
+      "frequency": 1.181915,
+      "cpr": 3.428571,
+      "follows_30d": 1
+    },
+    {
+      "campaign": "1 image v.s. 7 carousel",
+      "ad_name": "1 image v.s. 7 carousel",
+      "status": "PAUSED",
+      "spend": 6.0,
+      "frequency": 1.033333,
+      "cpr": 1.2,
+      "follows_30d": 4
+    },
+    {
+      "campaign": "Ads#11 image v.s. carousel",
+      "ad_name": "靜心有沒有那麼神奇-carousel",
+      "status": "PAUSED",
+      "spend": 134.0,
+      "frequency": 1.285022,
+      "cpr": 1.046875,
+      "follows_30d": 2
+    },
+    {
+      "campaign": "Ads#11 image v.s. carousel",
+      "ad_name": "靜心有沒有那麼神奇-image",
+      "status": "PAUSED",
+      "spend": 42.0,
+      "frequency": 1.213645,
+      "cpr": 6.0,
+      "follows_30d": 0
+    },
+    {
+      "campaign": "#12 carousel",
+      "ad_name": "你越用力要他改變-carousel",
+      "status": "PAUSED",
+      "spend": 75.0,
+      "frequency": 1.046235,
+      "cpr": 1.5625,
+      "follows_30d": 5
+    },
+    {
+      "campaign": "#12 carousel",
+      "ad_name": "不在你的時間線-carousel",
+      "status": "PAUSED",
+      "spend": 1.0,
+      "frequency": 1.015504,
+      "cpr": 0.166667,
+      "follows_30d": 0
+    },
+    {
+      "campaign": "#13 carousel",
+      "ad_name": "修行誤會大了--video",
+      "status": "PAUSED",
+      "spend": 3386.0,
+      "frequency": 2.208803,
+      "cpr": 0.164489,
+      "follows_30d": 193
+    },
+    {
+      "campaign": "AB test for carousel and image",
+      "ad_name": "不在你的時間線-image",
+      "status": "PAUSED",
+      "spend": 157.0,
+      "frequency": 1.478084,
+      "cpr": 0.165962,
+      "follows_30d": 2
+    },
+    {
+      "campaign": "AB test for carousel and image",
+      "ad_name": "不在你的時間線-carousel",
+      "status": "PAUSED",
+      "spend": 74.0,
+      "frequency": 1.335121,
+      "cpr": 0.181373,
+      "follows_30d": 2
+    }
+  ],
   "suggestions": [
-    "📉 增速放緩：人身難得了--video，考慮換廣告素材"
+    "🟡 頻率警告：人身難得了--video（1.82x），準備新素材",
+    "⭐ 最佳廣告：人身難得了--video（#13 carousel），CPR NT$0.32",
+    "💡 可考慮重啟：長姊病-spirit -，CPR NT$0.13，頻率 1.42x"
   ]
 }
