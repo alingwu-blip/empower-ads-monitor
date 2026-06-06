@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-05 05:20",
+  "generated_at": "2026-06-06 04:54",
   "frequency_stops": [],
   "frequency_warnings": [],
   "slowdown_alerts": [],
@@ -7,14 +7,14 @@
     {
       "campaign": "#13 carousel",
       "ad_name": "本自具足--video",
-      "spend": 104.0,
-      "reach": 1330,
-      "frequency": 1.090977,
-      "results": 450,
-      "cpr": 0.231111,
-      "cpc": 0.852459,
-      "follows_30d": 5,
-      "follows_delta_today": null,
+      "spend": 426.0,
+      "reach": 4765,
+      "frequency": 1.265268,
+      "results": 1588,
+      "cpr": 0.268262,
+      "cpc": 0.988399,
+      "follows_30d": 15,
+      "follows_delta_today": 10,
       "slowdown": false,
       "no_data": false
     }
@@ -24,28 +24,28 @@
       "campaign": "AB test #5",
       "ad_name": "金錢循環-spirit",
       "status": "PAUSED",
-      "spend": 121.0,
-      "frequency": 1.564214,
-      "cpr": 8.642857,
-      "follows_30d": 1
+      "spend": 71.0,
+      "frequency": 1.302923,
+      "cpr": 14.2,
+      "follows_30d": 0
     },
     {
       "campaign": "AB test #5",
       "ad_name": "訴苦比他更累-spirit",
       "status": "PAUSED",
-      "spend": 185.0,
-      "frequency": 1.219749,
-      "cpr": 3.7,
+      "spend": 115.0,
+      "frequency": 1.099702,
+      "cpr": 4.107143,
       "follows_30d": 0
     },
     {
       "campaign": "AB test #6",
       "ad_name": "長姊病-spirit -",
       "status": "PAUSED",
-      "spend": 690.0,
-      "frequency": 1.432191,
-      "cpr": 0.122275,
-      "follows_30d": 5
+      "spend": 605.0,
+      "frequency": 1.473237,
+      "cpr": 0.116212,
+      "follows_30d": 3
     },
     {
       "campaign": "AB test #6",
@@ -60,27 +60,27 @@
       "campaign": "AB test #7",
       "ad_name": "在關係中丟失自己-spirit",
       "status": "PAUSED",
-      "spend": 576.0,
-      "frequency": 1.928664,
-      "cpr": 3.2,
-      "follows_30d": 9
+      "spend": 565.0,
+      "frequency": 1.975614,
+      "cpr": 3.403614,
+      "follows_30d": 7
     },
     {
       "campaign": "AB test #7",
       "ad_name": "猴子管理學-spirit",
       "status": "PAUSED",
-      "spend": 965.0,
-      "frequency": 1.575677,
-      "cpr": 1.965377,
-      "follows_30d": 10
+      "spend": 873.0,
+      "frequency": 1.662633,
+      "cpr": 2.18797,
+      "follows_30d": 5
     },
     {
       "campaign": "AB test #7",
       "ad_name": "西藏啞口無言-spirit",
       "status": "PAUSED",
-      "spend": 22.0,
-      "frequency": 1.115486,
-      "cpr": 2.444444,
+      "spend": 9.0,
+      "frequency": 1.103896,
+      "cpr": 3.0,
       "follows_30d": 0
     },
     {
@@ -247,7 +247,7 @@
     }
   ],
   "suggestions": [
-    "⭐ 最佳廣告：本自具足--video（#13 carousel），CPR NT$0.23",
-    "💡 可考慮重啟：長姊病-spirit -，CPR NT$0.12，頻率 1.43x"
+    "⭐ 最佳廣告：本自具足--video（#13 carousel），CPR NT$0.27",
+    "💡 可考慮重啟：你越用力要他改變-carousel，CPR NT$1.56，頻率 1.05x"
   ]
 }
