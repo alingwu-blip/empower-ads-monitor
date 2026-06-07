@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-06 04:54",
+  "generated_at": "2026-06-07 05:23",
   "frequency_stops": [],
   "frequency_warnings": [],
   "slowdown_alerts": [],
@@ -7,13 +7,13 @@
     {
       "campaign": "#13 carousel",
       "ad_name": "本自具足--video",
-      "spend": 426.0,
-      "reach": 4765,
-      "frequency": 1.265268,
-      "results": 1588,
-      "cpr": 0.268262,
-      "cpc": 0.988399,
-      "follows_30d": 15,
+      "spend": 694.0,
+      "reach": 6980,
+      "frequency": 1.402149,
+      "results": 2593,
+      "cpr": 0.267644,
+      "cpc": 1.025111,
+      "follows_30d": 25,
       "follows_delta_today": 10,
       "slowdown": false,
       "no_data": false
@@ -24,28 +24,28 @@
       "campaign": "AB test #5",
       "ad_name": "金錢循環-spirit",
       "status": "PAUSED",
-      "spend": 71.0,
-      "frequency": 1.302923,
-      "cpr": 14.2,
+      "spend": 33.0,
+      "frequency": 1.12656,
+      "cpr": 11.0,
       "follows_30d": 0
     },
     {
       "campaign": "AB test #5",
       "ad_name": "訴苦比他更累-spirit",
       "status": "PAUSED",
-      "spend": 115.0,
-      "frequency": 1.099702,
-      "cpr": 4.107143,
+      "spend": 82.0,
+      "frequency": 1.082744,
+      "cpr": 3.904762,
       "follows_30d": 0
     },
     {
       "campaign": "AB test #6",
       "ad_name": "長姊病-spirit -",
       "status": "PAUSED",
-      "spend": 605.0,
-      "frequency": 1.473237,
-      "cpr": 0.116212,
-      "follows_30d": 3
+      "spend": 455.0,
+      "frequency": 1.4566,
+      "cpr": 0.118551,
+      "follows_30d": 2
     },
     {
       "campaign": "AB test #6",
@@ -60,27 +60,27 @@
       "campaign": "AB test #7",
       "ad_name": "在關係中丟失自己-spirit",
       "status": "PAUSED",
-      "spend": 565.0,
-      "frequency": 1.975614,
-      "cpr": 3.403614,
-      "follows_30d": 7
+      "spend": 537.0,
+      "frequency": 1.971193,
+      "cpr": 3.420382,
+      "follows_30d": 6
     },
     {
       "campaign": "AB test #7",
       "ad_name": "猴子管理學-spirit",
       "status": "PAUSED",
-      "spend": 873.0,
-      "frequency": 1.662633,
-      "cpr": 2.18797,
-      "follows_30d": 5
+      "spend": 686.0,
+      "frequency": 1.609287,
+      "cpr": 2.164038,
+      "follows_30d": 3
     },
     {
       "campaign": "AB test #7",
       "ad_name": "西藏啞口無言-spirit",
       "status": "PAUSED",
-      "spend": 9.0,
-      "frequency": 1.103896,
-      "cpr": 3.0,
+      "spend": 1.0,
+      "frequency": 1.128205,
+      "cpr": null,
       "follows_30d": 0
     },
     {
