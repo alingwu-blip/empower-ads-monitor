@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-07 05:23",
+  "generated_at": "2026-06-08 05:52",
   "frequency_stops": [],
   "frequency_warnings": [],
   "slowdown_alerts": [],
@@ -7,44 +7,26 @@
     {
       "campaign": "#13 carousel",
       "ad_name": "本自具足--video",
-      "spend": 694.0,
-      "reach": 6980,
-      "frequency": 1.402149,
-      "results": 2593,
-      "cpr": 0.267644,
-      "cpc": 1.025111,
-      "follows_30d": 25,
-      "follows_delta_today": 10,
+      "spend": 1003.0,
+      "reach": 9464,
+      "frequency": 1.482883,
+      "results": 3649,
+      "cpr": 0.27487,
+      "cpc": 1.078495,
+      "follows_30d": 37,
+      "follows_delta_today": 12,
       "slowdown": false,
       "no_data": false
     }
   ],
   "inactive_ads_summary": [
     {
-      "campaign": "AB test #5",
-      "ad_name": "金錢循環-spirit",
-      "status": "PAUSED",
-      "spend": 33.0,
-      "frequency": 1.12656,
-      "cpr": 11.0,
-      "follows_30d": 0
-    },
-    {
-      "campaign": "AB test #5",
-      "ad_name": "訴苦比他更累-spirit",
-      "status": "PAUSED",
-      "spend": 82.0,
-      "frequency": 1.082744,
-      "cpr": 3.904762,
-      "follows_30d": 0
-    },
-    {
       "campaign": "AB test #6",
       "ad_name": "長姊病-spirit -",
       "status": "PAUSED",
-      "spend": 455.0,
-      "frequency": 1.4566,
-      "cpr": 0.118551,
+      "spend": 355.0,
+      "frequency": 1.345295,
+      "cpr": 0.127974,
       "follows_30d": 2
     },
     {
@@ -60,55 +42,46 @@
       "campaign": "AB test #7",
       "ad_name": "在關係中丟失自己-spirit",
       "status": "PAUSED",
-      "spend": 537.0,
-      "frequency": 1.971193,
-      "cpr": 3.420382,
+      "spend": 517.0,
+      "frequency": 1.952773,
+      "cpr": 3.379085,
       "follows_30d": 6
     },
     {
       "campaign": "AB test #7",
       "ad_name": "猴子管理學-spirit",
       "status": "PAUSED",
-      "spend": 686.0,
-      "frequency": 1.609287,
-      "cpr": 2.164038,
-      "follows_30d": 3
-    },
-    {
-      "campaign": "AB test #7",
-      "ad_name": "西藏啞口無言-spirit",
-      "status": "PAUSED",
-      "spend": 1.0,
-      "frequency": 1.128205,
-      "cpr": null,
-      "follows_30d": 0
+      "spend": 535.0,
+      "frequency": 1.5188,
+      "cpr": 2.114625,
+      "follows_30d": 2
     },
     {
       "campaign": "AB test #8",
       "ad_name": "婚姻關係好治百病-spirit",
       "status": "PAUSED",
       "spend": 3.0,
-      "frequency": 1.282895,
-      "cpr": 0.75,
+      "frequency": 1.276786,
+      "cpr": 1.5,
       "follows_30d": 0
     },
     {
       "campaign": "AB test #8",
       "ad_name": "天堂地獄都在人間-spirit",
       "status": "PAUSED",
-      "spend": 291.0,
-      "frequency": 1.491228,
-      "cpr": 5.596154,
+      "spend": 252.0,
+      "frequency": 1.425087,
+      "cpr": 5.361702,
       "follows_30d": 5
     },
     {
       "campaign": "AB test #8",
       "ad_name": "你越用力要他改變-spirit",
       "status": "PAUSED",
-      "spend": 64.0,
-      "frequency": 1.426095,
-      "cpr": 1.207547,
-      "follows_30d": 3
+      "spend": 60.0,
+      "frequency": 1.34847,
+      "cpr": 1.666667,
+      "follows_30d": 0
     },
     {
       "campaign": "AB test #9 -算命",
@@ -123,9 +96,9 @@
       "campaign": "AB test #9 -算命",
       "ad_name": "你算命嗎？算命是怎麼一回事呢？",
       "status": "PAUSED",
-      "spend": 103.0,
-      "frequency": 1.268402,
-      "cpr": 0.20078,
+      "spend": 64.0,
+      "frequency": 1.163539,
+      "cpr": 0.191617,
       "follows_30d": 0
     },
     {
