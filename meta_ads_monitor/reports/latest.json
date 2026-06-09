@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-08 05:52",
+  "generated_at": "2026-06-09 05:08",
   "frequency_stops": [],
   "frequency_warnings": [],
   "slowdown_alerts": [],
@@ -7,13 +7,13 @@
     {
       "campaign": "#13 carousel",
       "ad_name": "本自具足--video",
-      "spend": 1003.0,
-      "reach": 9464,
-      "frequency": 1.482883,
-      "results": 3649,
-      "cpr": 0.27487,
-      "cpc": 1.078495,
-      "follows_30d": 37,
+      "spend": 1303.0,
+      "reach": 11160,
+      "frequency": 1.561918,
+      "results": 4523,
+      "cpr": 0.288083,
+      "cpc": 1.116538,
+      "follows_30d": 49,
       "follows_delta_today": 12,
       "slowdown": false,
       "no_data": false
@@ -24,9 +24,9 @@
       "campaign": "AB test #6",
       "ad_name": "長姊病-spirit -",
       "status": "PAUSED",
-      "spend": 355.0,
-      "frequency": 1.345295,
-      "cpr": 0.127974,
+      "spend": 304.0,
+      "frequency": 1.28837,
+      "cpr": 0.139642,
       "follows_30d": 2
     },
     {
@@ -51,54 +51,36 @@
       "campaign": "AB test #7",
       "ad_name": "猴子管理學-spirit",
       "status": "PAUSED",
-      "spend": 535.0,
-      "frequency": 1.5188,
-      "cpr": 2.114625,
-      "follows_30d": 2
+      "spend": 444.0,
+      "frequency": 1.440169,
+      "cpr": 2.19802,
+      "follows_30d": 1
     },
     {
       "campaign": "AB test #8",
       "ad_name": "婚姻關係好治百病-spirit",
       "status": "PAUSED",
-      "spend": 3.0,
-      "frequency": 1.276786,
-      "cpr": 1.5,
+      "spend": 2.0,
+      "frequency": 1.194175,
+      "cpr": 1.0,
       "follows_30d": 0
     },
     {
       "campaign": "AB test #8",
       "ad_name": "天堂地獄都在人間-spirit",
       "status": "PAUSED",
-      "spend": 252.0,
-      "frequency": 1.425087,
-      "cpr": 5.361702,
-      "follows_30d": 5
+      "spend": 178.0,
+      "frequency": 1.240683,
+      "cpr": 5.393939,
+      "follows_30d": 3
     },
     {
       "campaign": "AB test #8",
       "ad_name": "你越用力要他改變-spirit",
       "status": "PAUSED",
-      "spend": 60.0,
-      "frequency": 1.34847,
-      "cpr": 1.666667,
-      "follows_30d": 0
-    },
-    {
-      "campaign": "AB test #9 -算命",
-      "ad_name": "順著天意做事-spirit",
-      "status": "PAUSED",
-      "spend": 17.0,
-      "frequency": 1.054598,
-      "cpr": 0.090909,
-      "follows_30d": 1
-    },
-    {
-      "campaign": "AB test #9 -算命",
-      "ad_name": "你算命嗎？算命是怎麼一回事呢？",
-      "status": "PAUSED",
-      "spend": 64.0,
-      "frequency": 1.163539,
-      "cpr": 0.191617,
+      "spend": 47.0,
+      "frequency": 1.254749,
+      "cpr": 1.88,
       "follows_30d": 0
     },
     {
@@ -220,7 +202,7 @@
     }
   ],
   "suggestions": [
-    "⭐ 最佳廣告：本自具足--video（#13 carousel），CPR NT$0.27",
+    "⭐ 最佳廣告：本自具足--video（#13 carousel），CPR NT$0.29",
     "💡 可考慮重啟：你越用力要他改變-carousel，CPR NT$1.56，頻率 1.05x"
   ]
 }
