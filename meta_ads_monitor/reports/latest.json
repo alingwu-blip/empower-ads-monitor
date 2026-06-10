@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-09 05:08",
+  "generated_at": "2026-06-10 05:21",
   "frequency_stops": [],
   "frequency_warnings": [],
   "slowdown_alerts": [],
@@ -7,14 +7,14 @@
     {
       "campaign": "#13 carousel",
       "ad_name": "本自具足--video",
-      "spend": 1303.0,
-      "reach": 11160,
-      "frequency": 1.561918,
-      "results": 4523,
-      "cpr": 0.288083,
-      "cpc": 1.116538,
-      "follows_30d": 49,
-      "follows_delta_today": 12,
+      "spend": 1630.0,
+      "reach": 13842,
+      "frequency": 1.606632,
+      "results": 5648,
+      "cpr": 0.288598,
+      "cpc": 1.145467,
+      "follows_30d": 65,
+      "follows_delta_today": 16,
       "slowdown": false,
       "no_data": false
     }
@@ -24,10 +24,10 @@
       "campaign": "AB test #6",
       "ad_name": "長姊病-spirit -",
       "status": "PAUSED",
-      "spend": 304.0,
-      "frequency": 1.28837,
-      "cpr": 0.139642,
-      "follows_30d": 2
+      "spend": 182.0,
+      "frequency": 1.160632,
+      "cpr": 0.249315,
+      "follows_30d": 1
     },
     {
       "campaign": "AB test #6",
@@ -51,9 +51,9 @@
       "campaign": "AB test #7",
       "ad_name": "猴子管理學-spirit",
       "status": "PAUSED",
-      "spend": 444.0,
-      "frequency": 1.440169,
-      "cpr": 2.19802,
+      "spend": 341.0,
+      "frequency": 1.31348,
+      "cpr": 2.304054,
       "follows_30d": 1
     },
     {
@@ -61,26 +61,26 @@
       "ad_name": "婚姻關係好治百病-spirit",
       "status": "PAUSED",
       "spend": 2.0,
-      "frequency": 1.194175,
-      "cpr": 1.0,
+      "frequency": 1.068182,
+      "cpr": 2.0,
       "follows_30d": 0
     },
     {
       "campaign": "AB test #8",
       "ad_name": "天堂地獄都在人間-spirit",
       "status": "PAUSED",
-      "spend": 178.0,
-      "frequency": 1.240683,
-      "cpr": 5.393939,
-      "follows_30d": 3
+      "spend": 93.0,
+      "frequency": 1.092857,
+      "cpr": 7.153846,
+      "follows_30d": 2
     },
     {
       "campaign": "AB test #8",
       "ad_name": "你越用力要他改變-spirit",
       "status": "PAUSED",
-      "spend": 47.0,
-      "frequency": 1.254749,
-      "cpr": 1.88,
+      "spend": 30.0,
+      "frequency": 1.106383,
+      "cpr": 2.307692,
       "follows_30d": 0
     },
     {
