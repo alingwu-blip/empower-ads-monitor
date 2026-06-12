@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-11 05:50",
+  "generated_at": "2026-06-12 05:50",
   "frequency_stops": [],
   "frequency_warnings": [],
   "slowdown_alerts": [],
@@ -7,14 +7,14 @@
     {
       "campaign": "#13 carousel",
       "ad_name": "本自具足--video",
-      "spend": 1938.0,
-      "reach": 15616,
-      "frequency": 1.707095,
-      "results": 6781,
-      "cpr": 0.285799,
-      "cpc": 1.157706,
-      "follows_30d": 75,
-      "follows_delta_today": 10,
+      "spend": 2237.0,
+      "reach": 17632,
+      "frequency": 1.755558,
+      "results": 7933,
+      "cpr": 0.281987,
+      "cpc": 1.157867,
+      "follows_30d": 88,
+      "follows_delta_today": 13,
       "slowdown": false,
       "no_data": false
     }
@@ -24,73 +24,73 @@
       "campaign": "AB test #6",
       "ad_name": "長姊病-spirit -",
       "status": "PAUSED",
-      "spend": 120.0,
-      "frequency": 1.090087,
-      "cpr": 3.428571,
-      "follows_30d": 1
+      "spend": 39.0,
+      "frequency": 1.05787,
+      "cpr": 3.25,
+      "follows_30d": 0
     },
     {
       "campaign": "AB test #6",
       "ad_name": "害怕不夠努力-spirit",
       "status": "PAUSED",
-      "spend": 7.0,
-      "frequency": 1.162698,
-      "cpr": 7.0,
+      "spend": 2.0,
+      "frequency": 1.083333,
+      "cpr": 2.0,
       "follows_30d": 0
     },
     {
       "campaign": "AB test #7",
       "ad_name": "在關係中丟失自己-spirit",
       "status": "PAUSED",
-      "spend": 486.0,
-      "frequency": 1.899161,
-      "cpr": 3.471429,
+      "spend": 444.0,
+      "frequency": 1.797548,
+      "cpr": 3.669421,
       "follows_30d": 6
     },
     {
       "campaign": "AB test #7",
       "ad_name": "猴子管理學-spirit",
       "status": "PAUSED",
-      "spend": 274.0,
-      "frequency": 1.229545,
-      "cpr": 2.209677,
-      "follows_30d": 1
+      "spend": 235.0,
+      "frequency": 1.195676,
+      "cpr": 2.5,
+      "follows_30d": 0
     },
     {
       "campaign": "＃10 campaign",
       "ad_name": "天堂地獄都在人間-spirit",
       "status": "PAUSED",
-      "spend": 284.0,
-      "frequency": 1.366,
-      "cpr": 7.282051,
+      "spend": 255.0,
+      "frequency": 1.302906,
+      "cpr": 8.5,
       "follows_30d": 2
     },
     {
       "campaign": "＃10 campaign",
       "ad_name": "你越用力要他改變-spirit",
       "status": "PAUSED",
-      "spend": 154.0,
-      "frequency": 1.147991,
-      "cpr": 2.169014,
-      "follows_30d": 7
+      "spend": 74.0,
+      "frequency": 1.178668,
+      "cpr": 1.423077,
+      "follows_30d": 6
     },
     {
       "campaign": "＃10 campaign",
       "ad_name": "不在你的時間線",
       "status": "PAUSED",
-      "spend": 162.0,
-      "frequency": 1.348037,
-      "cpr": 3.6,
+      "spend": 81.0,
+      "frequency": 1.335606,
+      "cpr": 3.24,
       "follows_30d": 3
     },
     {
       "campaign": "＃10 campaign",
       "ad_name": "根本不是對錯的問題-spirit",
       "status": "PAUSED",
-      "spend": 52.0,
-      "frequency": 1.224516,
-      "cpr": 2.6,
-      "follows_30d": 1
+      "spend": 24.0,
+      "frequency": 1.269303,
+      "cpr": 2.0,
+      "follows_30d": 0
     },
     {
       "campaign": "1 image v.s. 7 carousel",
@@ -175,7 +175,7 @@
     }
   ],
   "suggestions": [
-    "⭐ 最佳廣告：本自具足--video（#13 carousel），CPR NT$0.29",
-    "💡 可考慮重啟：你越用力要他改變-carousel，CPR NT$1.56，頻率 1.05x"
+    "⭐ 最佳廣告：本自具足--video（#13 carousel），CPR NT$0.28",
+    "💡 可考慮重啟：你越用力要他改變-spirit，CPR NT$1.42，頻率 1.18x"
   ]
 }
