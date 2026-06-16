@@ -1,92 +1,35 @@
 {
-  "generated_at": "2026-06-15 06:27",
+  "generated_at": "2026-06-16 06:34",
   "frequency_stops": [],
-  "frequency_warnings": [
-    {
-      "name": "本自具足--video",
-      "campaign": "#13 carousel",
-      "freq": 1.864566
-    }
-  ],
+  "frequency_warnings": [],
   "slowdown_alerts": [],
-  "active_ads": [
-    {
-      "campaign": "#13 carousel",
-      "ad_name": "本自具足--video",
-      "spend": 3157.0,
-      "reach": 23480,
-      "frequency": 1.864566,
-      "results": 11195,
-      "cpr": 0.282001,
-      "cpc": 1.19177,
-      "follows_30d": 130,
-      "follows_delta_today": 11,
-      "slowdown": false,
-      "no_data": false
-    }
-  ],
+  "active_ads": [],
   "inactive_ads_summary": [
     {
       "campaign": "AB test #7",
       "ad_name": "在關係中丟失自己-spirit",
       "status": "PAUSED",
-      "spend": 237.0,
-      "frequency": 1.506028,
-      "cpr": 4.016949,
-      "follows_30d": 2
+      "spend": 150.0,
+      "frequency": 1.388371,
+      "cpr": 4.054054,
+      "follows_30d": 0
     },
     {
       "campaign": "AB test #7",
       "ad_name": "猴子管理學-spirit",
       "status": "PAUSED",
-      "spend": 146.0,
-      "frequency": 1.09266,
-      "cpr": 2.607143,
-      "follows_30d": 0
-    },
-    {
-      "campaign": "Ads#11 image v.s. carousel",
-      "ad_name": "靜心有沒有那麼神奇-carousel",
-      "status": "PAUSED",
-      "spend": 70.0,
-      "frequency": 1.205366,
-      "cpr": 1.029412,
-      "follows_30d": 1
-    },
-    {
-      "campaign": "Ads#11 image v.s. carousel",
-      "ad_name": "靜心有沒有那麼神奇-image",
-      "status": "PAUSED",
-      "spend": 23.0,
-      "frequency": 1.089404,
-      "cpr": null,
-      "follows_30d": 0
-    },
-    {
-      "campaign": "#12 carousel",
-      "ad_name": "你越用力要他改變-carousel",
-      "status": "PAUSED",
-      "spend": 38.0,
-      "frequency": 1.026349,
-      "cpr": 1.583333,
-      "follows_30d": 3
-    },
-    {
-      "campaign": "#12 carousel",
-      "ad_name": "不在你的時間線-carousel",
-      "status": "PAUSED",
-      "spend": 1.0,
-      "frequency": 1.017241,
-      "cpr": 0.166667,
+      "spend": 120.0,
+      "frequency": 1.100203,
+      "cpr": 3.076923,
       "follows_30d": 0
     },
     {
       "campaign": "#13 carousel",
       "ad_name": "修行誤會大了--video",
       "status": "PAUSED",
-      "spend": 3386.0,
-      "frequency": 2.208803,
-      "cpr": 0.164489,
+      "spend": 3318.0,
+      "frequency": 2.193391,
+      "cpr": 0.16369,
       "follows_30d": 193
     },
     {
@@ -115,10 +58,18 @@
       "frequency": 1.890892,
       "cpr": 0.317946,
       "follows_30d": 67
+    },
+    {
+      "campaign": "#13 carousel",
+      "ad_name": "本自具足--video",
+      "status": "PAUSED",
+      "spend": 3198.0,
+      "frequency": 1.863293,
+      "cpr": 0.281143,
+      "follows_30d": 131
     }
   ],
   "suggestions": [
-    "🟡 頻率警告：本自具足--video（1.86x），準備新素材",
-    "⭐ 最佳廣告：本自具足--video（#13 carousel），CPR NT$0.28"
+    "🟢 所有 ACTIVE 廣告狀態正常，繼續觀察"
   ]
 }
