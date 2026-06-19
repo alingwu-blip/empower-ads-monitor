@@ -1,53 +1,35 @@
 {
-  "generated_at": "2026-06-18 05:57",
+  "generated_at": "2026-06-19 06:22",
   "frequency_stops": [],
   "frequency_warnings": [],
   "slowdown_alerts": [],
   "active_ads": [],
   "inactive_ads_summary": [
     {
-      "campaign": "AB test #7",
-      "ad_name": "在關係中丟失自己-spirit",
-      "status": "PAUSED",
-      "spend": 66.0,
-      "frequency": 1.090909,
-      "cpr": 4.4,
-      "follows_30d": 0
-    },
-    {
-      "campaign": "AB test #7",
-      "ad_name": "猴子管理學-spirit",
-      "status": "PAUSED",
-      "spend": 4.0,
-      "frequency": 1.010204,
-      "cpr": 2.0,
-      "follows_30d": 0
-    },
-    {
       "campaign": "#13 carousel",
       "ad_name": "修行誤會大了--video",
       "status": "PAUSED",
-      "spend": 2867.0,
-      "frequency": 2.009985,
-      "cpr": 0.162611,
-      "follows_30d": 184
+      "spend": 2655.0,
+      "frequency": 1.960909,
+      "cpr": 0.163064,
+      "follows_30d": 181
     },
     {
       "campaign": "AB test for carousel and image",
       "ad_name": "不在你的時間線-image",
       "status": "PAUSED",
-      "spend": 157.0,
-      "frequency": 1.478084,
-      "cpr": 0.165962,
-      "follows_30d": 2
+      "spend": 121.0,
+      "frequency": 1.337599,
+      "cpr": 0.170183,
+      "follows_30d": 1
     },
     {
       "campaign": "AB test for carousel and image",
       "ad_name": "不在你的時間線-carousel",
       "status": "PAUSED",
-      "spend": 74.0,
-      "frequency": 1.335121,
-      "cpr": 0.181373,
+      "spend": 62.0,
+      "frequency": 1.265451,
+      "cpr": 0.180233,
       "follows_30d": 2
     },
     {
