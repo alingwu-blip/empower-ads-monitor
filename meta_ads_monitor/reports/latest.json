@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-19 06:22",
+  "generated_at": "2026-06-20 05:17",
   "frequency_stops": [],
   "frequency_warnings": [],
   "slowdown_alerts": [],
@@ -9,27 +9,27 @@
       "campaign": "#13 carousel",
       "ad_name": "修行誤會大了--video",
       "status": "PAUSED",
-      "spend": 2655.0,
-      "frequency": 1.960909,
-      "cpr": 0.163064,
-      "follows_30d": 181
+      "spend": 2476.0,
+      "frequency": 1.926792,
+      "cpr": 0.163584,
+      "follows_30d": 178
     },
     {
       "campaign": "AB test for carousel and image",
       "ad_name": "不在你的時間線-image",
       "status": "PAUSED",
-      "spend": 121.0,
-      "frequency": 1.337599,
-      "cpr": 0.170183,
-      "follows_30d": 1
+      "spend": 52.0,
+      "frequency": 1.105263,
+      "cpr": 0.189781,
+      "follows_30d": 0
     },
     {
       "campaign": "AB test for carousel and image",
       "ad_name": "不在你的時間線-carousel",
       "status": "PAUSED",
-      "spend": 62.0,
-      "frequency": 1.265451,
-      "cpr": 0.180233,
+      "spend": 54.0,
+      "frequency": 1.195986,
+      "cpr": 0.188153,
       "follows_30d": 2
     },
     {
