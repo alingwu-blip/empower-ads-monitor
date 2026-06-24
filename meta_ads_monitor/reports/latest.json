@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-23 05:03",
+  "generated_at": "2026-06-24 05:02",
   "frequency_stops": [],
   "frequency_warnings": [],
   "slowdown_alerts": [],
@@ -9,10 +9,10 @@
       "campaign": "#13 carousel",
       "ad_name": "修行誤會大了--video",
       "status": "PAUSED",
-      "spend": 1964.0,
-      "frequency": 1.857692,
-      "cpr": 0.165515,
-      "follows_30d": 130
+      "spend": 1651.0,
+      "frequency": 1.679968,
+      "cpr": 0.169212,
+      "follows_30d": 110
     },
     {
       "campaign": "#13 carousel",
