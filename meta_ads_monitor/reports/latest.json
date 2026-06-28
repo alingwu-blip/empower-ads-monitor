@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-27 04:55",
+  "generated_at": "2026-06-28 05:18",
   "frequency_stops": [],
   "frequency_warnings": [],
   "slowdown_alerts": [],
@@ -9,10 +9,10 @@
       "campaign": "#13 carousel",
       "ad_name": "修行誤會大了--video",
       "status": "PAUSED",
-      "spend": 768.0,
-      "frequency": 1.293731,
-      "cpr": 0.164948,
-      "follows_30d": 48
+      "spend": 453.0,
+      "frequency": 1.148873,
+      "cpr": 0.173963,
+      "follows_30d": 23
     },
     {
       "campaign": "#13 carousel",
@@ -34,6 +34,6 @@
     }
   ],
   "suggestions": [
-    "💡 可考慮重啟：修行誤會大了--video，CPR NT$0.16，頻率 1.29x"
+    "💡 可考慮重啟：修行誤會大了--video，CPR NT$0.17，頻率 1.15x"
   ]
 }
