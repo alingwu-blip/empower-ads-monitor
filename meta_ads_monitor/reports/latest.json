@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-29 05:52",
+  "generated_at": "2026-06-30 05:06",
   "frequency_stops": [],
   "frequency_warnings": [],
   "slowdown_alerts": [],
@@ -7,21 +7,12 @@
   "inactive_ads_summary": [
     {
       "campaign": "#13 carousel",
-      "ad_name": "修行誤會大了--video",
-      "status": "PAUSED",
-      "spend": 154.0,
-      "frequency": 1.0625,
-      "cpr": 0.196931,
-      "follows_30d": 6
-    },
-    {
-      "campaign": "#13 carousel",
       "ad_name": "人身難得了--video",
       "status": "PAUSED",
-      "spend": 1529.0,
-      "frequency": 1.890892,
-      "cpr": 0.317946,
-      "follows_30d": 67
+      "spend": 1397.0,
+      "frequency": 1.802365,
+      "cpr": 0.318804,
+      "follows_30d": 61
     },
     {
       "campaign": "#13 carousel",
@@ -34,6 +25,6 @@
     }
   ],
   "suggestions": [
-    "💡 可考慮重啟：修行誤會大了--video，CPR NT$0.20，頻率 1.06x"
+    "🟢 所有 ACTIVE 廣告狀態正常，繼續觀察"
   ]
 }
