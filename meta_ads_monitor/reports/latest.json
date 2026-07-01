@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-30 05:06",
+  "generated_at": "2026-07-01 05:23",
   "frequency_stops": [],
   "frequency_warnings": [],
   "slowdown_alerts": [],
@@ -9,10 +9,10 @@
       "campaign": "#13 carousel",
       "ad_name": "人身難得了--video",
       "status": "PAUSED",
-      "spend": 1397.0,
-      "frequency": 1.802365,
-      "cpr": 0.318804,
-      "follows_30d": 61
+      "spend": 1057.0,
+      "frequency": 1.60165,
+      "cpr": 0.332285,
+      "follows_30d": 44
     },
     {
       "campaign": "#13 carousel",
