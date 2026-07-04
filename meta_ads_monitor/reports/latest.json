@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-03 04:43",
+  "generated_at": "2026-07-04 04:36",
   "frequency_stops": [],
   "frequency_warnings": [],
   "slowdown_alerts": [],
@@ -9,10 +9,10 @@
       "campaign": "#13 carousel",
       "ad_name": "人身難得了--video",
       "status": "PAUSED",
-      "spend": 560.0,
-      "frequency": 1.253644,
-      "cpr": 0.314607,
-      "follows_30d": 25
+      "spend": 197.0,
+      "frequency": 1.092059,
+      "cpr": 0.333898,
+      "follows_30d": 14
     },
     {
       "campaign": "#13 carousel",
@@ -25,6 +25,6 @@
     }
   ],
   "suggestions": [
-    "💡 可考慮重啟：人身難得了--video，CPR NT$0.31，頻率 1.25x"
+    "💡 可考慮重啟：人身難得了--video，CPR NT$0.33，頻率 1.09x"
   ]
 }
