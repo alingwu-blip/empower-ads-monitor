@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-04 04:36",
+  "generated_at": "2026-07-05 04:57",
   "frequency_stops": [],
   "frequency_warnings": [],
   "slowdown_alerts": [],
@@ -7,24 +7,15 @@
   "inactive_ads_summary": [
     {
       "campaign": "#13 carousel",
-      "ad_name": "人身難得了--video",
-      "status": "PAUSED",
-      "spend": 197.0,
-      "frequency": 1.092059,
-      "cpr": 0.333898,
-      "follows_30d": 14
-    },
-    {
-      "campaign": "#13 carousel",
       "ad_name": "本自具足--video",
       "status": "PAUSED",
-      "spend": 3198.0,
-      "frequency": 1.863293,
-      "cpr": 0.281118,
-      "follows_30d": 131
+      "spend": 3094.0,
+      "frequency": 1.834978,
+      "cpr": 0.283178,
+      "follows_30d": 126
     }
   ],
   "suggestions": [
-    "💡 可考慮重啟：人身難得了--video，CPR NT$0.33，頻率 1.09x"
+    "🟢 所有 ACTIVE 廣告狀態正常，繼續觀察"
   ]
 }
