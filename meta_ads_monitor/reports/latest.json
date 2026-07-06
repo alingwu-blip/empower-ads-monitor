@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-05 04:57",
+  "generated_at": "2026-07-06 05:13",
   "frequency_stops": [],
   "frequency_warnings": [],
   "slowdown_alerts": [],
@@ -9,10 +9,10 @@
       "campaign": "#13 carousel",
       "ad_name": "本自具足--video",
       "status": "PAUSED",
-      "spend": 3094.0,
-      "frequency": 1.834978,
-      "cpr": 0.283178,
-      "follows_30d": 126
+      "spend": 2772.0,
+      "frequency": 1.750764,
+      "cpr": 0.283233,
+      "follows_30d": 116
     }
   ],
   "suggestions": [
