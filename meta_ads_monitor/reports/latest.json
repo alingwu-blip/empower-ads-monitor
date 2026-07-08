@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-07-07 04:53",
+  "generated_at": "2026-07-08 04:15",
   "frequency_stops": [],
   "frequency_warnings": [],
   "slowdown_alerts": [],
   "active_ads": [],
   "inactive_ads_summary": [
     {
-      "campaign": "#13 carousel",
+      "campaign": "#13 video",
       "ad_name": "本自具足--video",
       "status": "PAUSED",
-      "spend": 2504.0,
-      "frequency": 1.646561,
-      "cpr": 0.285226,
-      "follows_30d": 106
+      "spend": 2195.0,
+      "frequency": 1.590355,
+      "cpr": 0.284069,
+      "follows_30d": 94
     }
   ],
   "suggestions": [
