@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-09 04:55",
+  "generated_at": "2026-07-10 04:53",
   "frequency_stops": [],
   "frequency_warnings": [],
   "slowdown_alerts": [],
@@ -9,13 +9,13 @@
       "campaign": "#13 video",
       "ad_name": "本自具足--video",
       "status": "PAUSED",
-      "spend": 1895.0,
-      "frequency": 1.527234,
-      "cpr": 0.276521,
-      "follows_30d": 82
+      "spend": 1568.0,
+      "frequency": 1.440941,
+      "cpr": 0.273791,
+      "follows_30d": 66
     }
   ],
   "suggestions": [
-    "🟢 所有 ACTIVE 廣告狀態正常，繼續觀察"
+    "💡 可考慮重啟：本自具足--video，CPR NT$0.27，頻率 1.44x"
   ]
 }
